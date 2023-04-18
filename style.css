@@ -328,7 +328,7 @@ h1 {
   padding: 1rem;
 }
 
-.project_img {
+.project_img, .project2_img {
   height: auto;
   width: 40rem;
   border-radius: 5%;
@@ -351,11 +351,23 @@ h1 {
   height: auto;
   width: 100%;
   transform: translateY(0%); 
+  transition: transform 20s ease-in-out 0s;
+}
+
+.project2_img img {
+  height: auto;
+  width: 100%;
+  transform: translateY(0%); 
   transition: transform 10s ease-in-out 0s;
 }
 
 .project_img:hover img {
-  transform: translateY(-64%); 
+  transform: translateY(-83%); 
+  transition: transform 20s ease-in-out 0s;
+}
+
+.project2_img:hover img {
+  transform: translateY(-59%); 
   transition: transform 10s ease-in-out 0s;
 }
 
@@ -643,7 +655,7 @@ footer {
     flex-wrap: wrap;
     width: auto;
   }
-  .project_img {
+  .project_img, .project2_img {
     height: 28rem;
     width: auto;
   }
@@ -658,25 +670,25 @@ footer {
 }
 
 @media screen and (max-width: 650px) {
-  .project_img {
+  .project_img, .project2_img {
     max-height: 22rem;
   }
 }
 
 @media screen and (max-width: 550px) {
-  .project_img {
+  .project_img, .project2_img {
     max-height: 17rem;
   }
 }
 
 @media screen and (max-width: 450px) {
-  .project_img {
+  .project_img, .project2_img {
     max-height: 13rem;
   }
 }
 
 @media screen and (max-width: 380px) {
-  .project_img {
+  .project_img, .project2_img {
     max-height: 10rem;
   }
 }
