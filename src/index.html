@@ -34,7 +34,7 @@
         document.title = previousTitle;
       })
 
-      // Posicionarse en el inicio de la página con un botón
+      // Mostrar botón ir inicio
       const irArriba = (pxPantalla) => {
         window.addEventListener('scroll', () => {
           let scroll = document.documentElement.scrollTop;
@@ -48,7 +48,12 @@
           }
         })
       };
-      irArriba(1000);
+      irArriba(2500);
+
+      // Posicionarse en el inicio de la página
+      const irInicio = () => {
+        document.documentElement.scrollTo(0, 0)
+      }
 
       // Mostrar alerta al hacer clic en el logo AS
       const mostrarAlerta = () => {
@@ -63,14 +68,12 @@
     <!-- Barra de navegación -->
     <nav class="navbar navbar-expand-md " style="background-color: #1b1b32;">
       <div class="container-fluid">
-        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarTogglerDemo01" aria-controls="navbarTogglerDemo01" aria-expanded="false" aria-label="Toggle navigation">
+        <button class="navbar-toggler" style="background-color: #303082;" type="button" data-bs-toggle="collapse" data-bs-target="#navbarTogglerDemo01" aria-controls="navbarTogglerDemo01" aria-expanded="false" aria-label="Toggle navigation">
           <span class="navbar-toggler-icon"></span>
         </button>
         <div class="collapse navbar-collapse" id="navbarTogglerDemo01">
-          <a href="#">
-            <img id="logoAS" onclick="mostrarAlerta()" src="./imagenes/General/LogoAS.png" alt="LogoAS" width="60" height="50" title="Clic me">
-          </a>
           <ul class="navbar-nav d-flex justify-content-center align-items-center">
+            <img class="nav-link" id="logoAS" onclick="mostrarAlerta()" src="./imagenes/General/LogoAS.png" alt="LogoAS" width="60" height="50" title="Clic me">
             <li class="nav-item">
               <a class="nav-link" href="#sobre-mi">About</a>
             </li>
@@ -121,12 +124,13 @@
             <p class="experiencia-titulo">Web Development</p>
             <p>I have these knowledge as a developer:</p>
             <div class="badges-contenedor">
-              <span class="badge text-bg-primary">HTML</span>
-              <span class="badge text-bg-primary">CSS</span>
+              <span class="badge text-bg-primary">Html</span>
+              <span class="badge text-bg-primary">Css</span>
               <span class="badge text-bg-primary">JavaScript</span>
               <span class="badge text-bg-primary">React</span>
               <span class="badge text-bg-primary">Redux</span>
               <span class="badge text-bg-primary">NodeJS</span>
+              <span class="badge text-bg-primary">Express</span>
               <span class="badge text-bg-primary">PostgreSQL</span>
               <span class="badge text-bg-primary">Git</span>
             </div>
@@ -138,9 +142,9 @@
           <p class="experiencia-titulo">Extras</p>
           <p>It never hurts to know things like:</p>
           <div class="badges-contenedor">
-            <span class="badge text-bg-primary">English conversational B1</span>
-            <span class="badge text-bg-primary">Photoshop</span>
-            <span class="badge text-bg-primary">Office package</span>
+            <span class="badge text-bg-primary">English Conversational B1</span>
+            <span class="badge text-bg-primary">Adobe Photoshop</span>
+            <span class="badge text-bg-primary">Microsoft Office package</span>
           </div>
         </div>
 
@@ -152,7 +156,7 @@
             <div class="badges-contenedor">
               <span class="badge text-bg-primary">TI Engineering Degree</span>
               <span class="badge text-bg-primary">Bootcamp SoyHenry</span>
-              <span class="badge text-bg-primary">FreeCodeCamp course</span>
+              <span class="badge text-bg-primary">FreeCodeCamp Course</span>
             </div>
           </div>
 
@@ -197,7 +201,7 @@
                   <a target="_blank" href="https://github.com/delcas/Pf_My-seam" rel="noreferrer">Code
                     <i class="bi bi-github"></i>
                   </a>
-                  <a target="_blank" href="https://my-seam.vercel.app/" rel="noreferrer">Live Demo
+                  <a target="_blank" href="https://my-seam.vercel.app/" rel="noreferrer">Demo
                     <i class="bi bi-code-slash"></i>
                   </a>
                 </div>
@@ -233,7 +237,7 @@
                   <a target="_blank" href="https://github.com/Asilvazavala/PI-Videogames" rel="noreferrer">Code
                     <i class="bi bi-github"></i>
                   </a>
-                  <a target="_blank" href="https://antoniogamesfront.onrender.com/" rel="noreferrer">Live Demo
+                  <a target="_blank" href="https://antoniogamesfront.onrender.com/" rel="noreferrer">Demo
                     <i class="bi bi-code-slash"></i>
                   </a>
                 </div>
@@ -269,7 +273,7 @@
                   <a target="_blank" href="" rel="noreferrer">Code
                     <i class="bi bi-github"></i>
                   </a>
-                  <a target="_blank" href="" rel="noreferrer">Live Demo
+                  <a target="_blank" href="" rel="noreferrer">Demo
                     <i class="bi bi-code-slash"></i>
                   </a>
                 </div>
@@ -377,16 +381,16 @@
     </section> -->
     
     <!-- Boton ir inicio -->
-    <a class="nav-link" href="#home">
+    <button onclick="irInicio()">
       <img 
         src="imagenes/General/circle-up-solid.svg" 
         id='botonArriba' 
-        class="botonArriba"  
+        class="hideBotonArriba"  
         width='35px' 
         height='35px' 
         alt='BotonArriba'
       />   
-    </a>       
+    </button>       
 
     <!-- Contacto -->
     <section id="contacto" class="contacto seccion-oscura">

@@ -626,6 +626,18 @@ footer {
   }
 }
 
+@media screen and (max-width: 650px) {
+  .seccion-texto {
+    padding: 50px;
+  }
+}
+
+@media screen and (max-width: 585px) {
+  .sobre-mi {
+    height: 700px;
+  }
+}
+
 @media screen and (max-width: 400px){
   .overlay p {
     font-size: 18px;
@@ -633,6 +645,19 @@ footer {
 
   .overlay i {
     font-size: 40px;
+  }
+
+  .sobre-mi {
+    height: 800px;
+  }
+}
+
+@media screen and (max-width: 350px) {
+  .sobre-mi {
+    height: 1000px;
+  }
+  .hero-imagen-perfil {
+    width: 250px;
   }
 }
 
@@ -659,6 +684,10 @@ footer {
     height: 28rem;
     width: auto;
   }
+  .pro_text {
+    margin-left: 20%;
+  }
+
   .projects-grid .pro_1 {
     gap: 2rem;
     height: auto;
@@ -691,6 +720,13 @@ footer {
   .project_img, .project2_img {
     max-height: 10rem;
   }
+  .links a {
+    font-size: 1.0rem;
+  }
+  .links a i {
+    font-size: 1.4rem;
+  }
+  
 }
   
 
