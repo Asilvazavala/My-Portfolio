@@ -87,6 +87,7 @@ h1 {
   bottom: 20px;
   right: 2px;
   transition: all 1s;
+  cursor: pointer;
 }
 
 .hideBotonArriba {
@@ -347,26 +348,30 @@ h1 {
   border-radius: 1.7rem;
 }
 
-.project_img img {
+.project1 {
   height: auto;
   width: 100%;
   transform: translateY(0%); 
   transition: transform 20s ease-in-out 0s;
 }
 
-.project2_img img {
+.project1Effect {
+  height: auto;
+  width: 100%;
+  transform: translateY(-83%); 
+  transition: transform 20s ease-in-out 0s;
+}
+
+.project2 {
   height: auto;
   width: 100%;
   transform: translateY(0%); 
   transition: transform 10s ease-in-out 0s;
 }
 
-.project_img:hover img {
-  transform: translateY(-83%); 
-  transition: transform 20s ease-in-out 0s;
-}
-
-.project2_img:hover img {
+.project2Effect {
+  height: auto;
+  width: 100%;
   transform: translateY(-59%); 
   transition: transform 10s ease-in-out 0s;
 }

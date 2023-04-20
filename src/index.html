@@ -48,7 +48,7 @@
           }
         })
       };
-      irArriba(2500);
+      irArriba(1800);
 
       // Posicionarse en el inicio de la página
       const irInicio = () => {
@@ -58,8 +58,30 @@
       // Mostrar alerta al hacer clic en el logo AS
       const mostrarAlerta = () => {
         const alert = document.getElementById('alert')
-            alert.className = "alert alert-success alert-dismissible show" 
+        alert.className = "alert alert-success alert-dismissible show" 
+        document.documentElement.scrollTo(0, 0)
       }
+
+      // Iniciar efecto imagen proyecto1
+      const effectProject1 = () => {
+        const project1 = document.getElementById('project1');
+        project1.className = "project1Effect"     
+      };
+
+      // Iniciar efecto imagen proyecto1
+      const effectProject2 = () => {
+        const project2 = document.getElementById('project2');
+        project2.className = "project2Effect"     
+      };
+
+      // Regresar a la imagen original proyecto1
+      const normalProject = () => {
+        const project1 = document.getElementById('project1');
+        project1.className = "project1"     
+        const project2 = document.getElementById('project2');
+        project2.className = "project2"     
+      };
+      
 
     </script>
   </head>  
@@ -172,13 +194,15 @@
           <div class="projects-grid">
 
             <!-- Proyecto 1 -->
-            <div class="pro pro_1">
+            <div onmousemove="effectProject1()" onmouseleave="normalProject()" class="pro pro_1">
               <div class="project_img">
                 <a target="_blank" href="https://my-seam.vercel.app/" rel="noreferrer">
                   <!-- Imagen -->
-                  <img 
-                    src="./imagenes/Projects/MySeam.png" 
-                    alt="Project1" 
+                  <img   
+                    src="./imagenes/Projects/MySeam.png"
+                    class="project1" 
+                    id='project1'
+                    alt="project1" 
                     >
                 </a>
               </div>
@@ -208,14 +232,17 @@
               </div>
             </div>
 
+
             <!-- Proyecto 2 -->
-            <div class="pro pro_1 reversed-proj">
+            <div onmousemove="effectProject2()" onmouseleave="normalProject()" class="pro pro_1 reversed-proj">
               <div class="project2_img">
                 <a target="_blank" href="https://antoniogamesfront.onrender.com/" rel="noreferrer">
                   <!-- Imagen -->
                   <img 
                     src="./imagenes/Projects/GamesSearch.png" 
-                    alt="Project1" 
+                    class="project2" 
+                    id='project2'
+                    alt="project2" 
                   >
                 </a>
               </div>
@@ -244,6 +271,7 @@
               </div>
             </div>
 
+            
             <!-- Proyecto 3 -->
             <div class="pro pro_1">
               <div class="project_img">
@@ -251,7 +279,8 @@
                   <!-- Imagen -->
                   <img 
                     src="./imagenes/Projects/WebConstruction.jpg" 
-                    alt="Project1" 
+                    alt="project3"
+                    class="project1" 
                     >
                 </a>
               </div>
@@ -381,8 +410,9 @@
     </section> -->
     
     <!-- Boton ir inicio -->
-    <button onclick="irInicio()">
+    <a>
       <img 
+        onclick="irInicio()"
         src="imagenes/General/circle-up-solid.svg" 
         id='botonArriba' 
         class="hideBotonArriba"  
@@ -390,7 +420,7 @@
         height='35px' 
         alt='BotonArriba'
       />   
-    </button>       
+    </a>       
 
     <!-- Contacto -->
     <section id="contacto" class="contacto seccion-oscura">
