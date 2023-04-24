@@ -358,7 +358,7 @@ h1 {
 .project1Effect {
   height: auto;
   width: 100%;
-  transform: translateY(-83%); 
+  transform: translateY(-86%); 
   transition: transform 20s ease-in-out 0s;
 }
 
@@ -372,7 +372,7 @@ h1 {
 .project2Effect {
   height: auto;
   width: 100%;
-  transform: translateY(-59%); 
+  transform: translateY(-47%); 
   transition: transform 10s ease-in-out 0s;
 }
 
