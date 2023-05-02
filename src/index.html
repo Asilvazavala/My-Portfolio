@@ -68,33 +68,40 @@
         project1.className = "project1Effect"     
       };
 
-      // Iniciar efecto imagen proyecto1
+      // Iniciar efecto imagen proyecto2
       const effectProject2 = () => {
         const project2 = document.getElementById('project2');
         project2.className = "project2Effect"     
       };
 
-      // Regresar a la imagen original proyecto1
+      // Iniciar efecto imagen proyecto3
+      const effectProject3 = () => {
+        const project3 = document.getElementById('project3');
+        project3.className = "project3Effect"     
+      };
+
+      // Regresar a la imagen original proyectos
       const normalProject = () => {
         const project1 = document.getElementById('project1');
         project1.className = "project1"     
         const project2 = document.getElementById('project2');
         project2.className = "project2"     
+        const project3 = document.getElementById('project3');
+        project3.className = "project3"     
       };
-      
 
     </script>
   </head>  
   
   <body>
     <!-- Barra de navegación -->
-    <nav class="navbar navbar-expand-md " style="background-color: #1b1b32;">
+    <nav class="navbar navbar-expand-md w-100" style="background-color: #1b1b32;">
       <div class="container-fluid">
         <button class="navbar-toggler" style="background-color: #303082;" type="button" data-bs-toggle="collapse" data-bs-target="#navbarTogglerDemo01" aria-controls="navbarTogglerDemo01" aria-expanded="false" aria-label="Toggle navigation">
           <span class="navbar-toggler-icon"></span>
         </button>
-        <div class="collapse navbar-collapse" id="navbarTogglerDemo01">
-          <ul class="navbar-nav d-flex justify-content-center align-items-center">
+        <div class="d-flex justify-content-sm-between align-items-center collapse navbar-collapse w-100" id="navbarTogglerDemo01">
+          <ul class="navbar-nav d-flex justify-content-sm-between align-items-center">
             <img class="nav-link" id="logoAS" onclick="mostrarAlerta()" src="./imagenes/General/LogoAS.png" alt="LogoAS" width="60" height="50" title="Clic me">
             <li class="nav-item">
               <a class="nav-link" href="#sobre-mi">About</a>
@@ -118,11 +125,11 @@
           <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
         </div>
         <div class="hero-imagen-perfil"></div> 
-        <h1>Hola, soy Antonio Silva</h1>
+        <h1>Hi, I´m Antonio Silva</h1>
         <h2>Website developer</h2>
       </div>
       <div class="hero-inferior">
-        <img class="hero-imagen-inferior img-fluid" src="imagenes/General/HTML-CSS-JS-React.png" alt="Monitor laptop y logos de HTML, CSS, JavaScript y React">
+        <img class="hero-imagen-inferior img-fluid" src="imagenes/General/Sin-fondo-HTML-CSS-JS-React-removebg-preview.png" alt="Monitor laptop y logos de HTML, CSS, JavaScript y React">
       </div>
     </section>
 
@@ -130,18 +137,21 @@
     <section id="sobre-mi" class="sobre-mi seccion-oscura">
       <div class="contenedor d-flex flex-column ">
         <h2 class="seccion-titulo">Meet Antonio Silva</h2>
-        <p class="seccion-texto">I am a proud Mexican who likes everything related to technology, especially programming, I have a degree in this subject and I have been working for 8 years as a support technician in Hardware and Software, now I have delved deeper into web development with various courses, I also do other activities that imply discipline and perseverance such as sports, because the new challenges I face, I take them with total seriousness to give the best of me.</p>
+        <p class="seccion-texto">Hi I´m Antonio, I studied systems engineering at the Universidad de la Salle Bajío. In the last 8 years I have worked as a hardware and software support technician for my local government.
+          Since I was a child people related me as the person who could give them references on any technologyc topic. <br><br>For this reason, I decided to be a fullstack web developer, 
+          
+          I consider myself a person with a hunger for self-improvement and a passion for acquiring new knowledge. I am a reliable person, easy to deal with and eager to develop both professionally and personally. If you like my profile do´nt doubt to contact me.</p>
       </div>
     </section>
 
     <!-- Experiencia -->
-    <section class="experiencia seccion-clara">
+    <section class="experiencia seccion-semiClara">
       <div class="container text-center">
         <div class="row">
           <h2 class="seccion-titulo texto-negro">My skills</h2>
 
           <!-- Desarrollo web -->
-          <div class="col-12 col-md-4 columna">
+          <div class="col-12 col-md-4 columna experienciaCard">
             <i class="bi bi-laptop"></i>
             <p class="experiencia-titulo">Web Development</p>
             <p>I have these knowledge as a developer:</p>
@@ -159,7 +169,7 @@
           </div>
 
         <!-- Extras -->
-        <div class="col-12 col-md-4 columna">
+        <div class="col-12 col-md-4 columna experienciaCard">
           <i class="bi bi-bag-plus-fill"></i>
           <p class="experiencia-titulo">Extras</p>
           <p>It never hurts to know things like:</p>
@@ -171,7 +181,7 @@
         </div>
 
           <!-- Estudiante -->
-          <div class="col-12 col-md-4 columna">
+          <div class="col-12 col-md-4 columna experienciaCard">
             <i class="bi bi-person-vcard-fill"></i>
             <p class="experiencia-titulo">Student</p>
             <p>I have completed the following courses/degree:</p>
@@ -187,7 +197,7 @@
     </section>
 
     <!-- Proyectos -->
-    <section id="proyectos" class="proyectos-recientes seccion-clara d-flex flex-column">
+    <section id="proyectos" class="proyectos-recientes d-flex flex-column seccion-semiClara">
       <h2 class="seccion-titulo texto-negro">My projects</h2>
       <div class="container">
         <div class="project-content">
@@ -236,14 +246,51 @@
             <!-- Proyecto 2 -->
             <div onmousemove="effectProject2()" onmouseleave="normalProject()" class="pro pro_1 reversed-proj">
               <div class="project2_img">
-                <a target="_blank" href="https://pokemon-world-antonio-silva.vercel.app" rel="noreferrer">
+                <a target="_blank" href="https://gym-as.vercel.app/" rel="noreferrer">
                   <!-- Imagen -->
                   <img 
-                    src="./imagenes/Projects/PokemonWorld.png" 
+                    src="./imagenes/Projects/GymAS.png" 
                     class="project2" 
                     id='project2'
                     alt="project2" 
                   >
+                </a>
+              </div>
+              <div class="pro_text">
+                <!-- Nombre y descripción -->
+                <h3>Gym Fitness Club</h3>
+                <p>Focused on the people who loves do excersice, this website offers simplicity and clean design, prioritizes the user experience with  responsive design, join us to fit easily and completely your body, do you accept the challenge? </p>
+                <div class="stack">
+                  <!-- Tecnologías Usadas -->
+                  <img src="./imagenes/Technologys/javascript-original.svg" title="JavaScript" alt="JavaScript" width="40" height="40"/>&nbsp;
+                  <img src="./imagenes/Technologys/react-original.svg" title="React" alt="React" width="40" height="40"/>&nbsp;
+                  <img src="./imagenes/Technologys/css3-original.svg" title="CSS3" alt="CSS3" width="40" height="40"/>&nbsp;
+                  <img src="./imagenes/Technologys/materialui-original.svg" title="MaterialUI" alt="MaterialUI" width="40" height="40"/>&nbsp;
+                </div>
+                <!-- Código de github y página en vivo -->
+                <div class="links">
+                  <a target="_blank" href="https://github.com/Asilvazavala/GYM-AS" rel="noreferrer">Code
+                    <i class="bi bi-github"></i>
+                  </a>
+                  <a target="_blank" href="https://gym-as.vercel.app/" rel="noreferrer">Demo
+                    <i class="bi bi-code-slash"></i>
+                  </a>
+                </div>
+              </div>
+            </div>
+
+            
+            <!-- Proyecto 3 -->
+            <div onmousemove="effectProject3()" onmouseleave="normalProject()" class="pro pro_1">
+              <div class="project3_img">
+                <a target="_blank" href="https://pokemon-world-antonio-silva.vercel.app" rel="noreferrer">
+                  <!-- Imagen -->
+                  <img 
+                    src="./imagenes/Projects/PokemonWorld.png" 
+                    alt="project3"
+                    id='project3'
+                    class="project3" 
+                    >
                 </a>
               </div>
               <div class="pro_text">
@@ -261,7 +308,7 @@
                 </div>
                 <!-- Código de github y página en vivo -->
                 <div class="links">
-                  <a target="_blank" href="https://github.com/Asilvazavala/PI-Videogames" rel="noreferrer">Code
+                  <a target="_blank" href="https://github.com/Asilvazavala/deploy-pokemon" rel="noreferrer">Code
                     <i class="bi bi-github"></i>
                   </a>
                   <a target="_blank" href="https://pokemon-world-antonio-silva.vercel.app" rel="noreferrer">Demo
@@ -271,10 +318,10 @@
               </div>
             </div>
 
-            
-            <!-- Proyecto 3 -->
-            <div class="pro pro_1">
-              <div class="project_img">
+
+            <!-- Proyecto 4 -->
+            <div class="pro pro_1 reversed-proj">
+              <div class="project2_img">
                 <a target="_blank" href="#" rel="noreferrer">
                   <!-- Imagen -->
                   <img 
@@ -286,8 +333,8 @@
               </div>
               <div class="pro_text">
                 <!-- Nombre y descripción -->
-                <h3>Gym Fitness Club</h3>
-                <p>Focused on the people who loves do excersice, offers simplicity and clean design, this store prioritizes the user experience.</p>
+                <h3>Cine Club</h3>
+                <p>Focused on the people who loves movies, offers simplicity and clean design for the user experience, see any movie in any place.</p>
                 <div class="stack">
                   <!-- Tecnologías Usadas -->
                   <img src="./imagenes/Technologys/javascript-original.svg" title="JavaScript" alt="JavaScript" width="40" height="40"/>&nbsp;
@@ -438,8 +485,8 @@
             </div>
             <!-- Columna 3 -->
             <div class="col-12 col-md-4">
-              <a href="mailto:asilvazavala@gmail.com?subject=Questions">
-                <button type="button">
+              <a  href="#contacto">
+                <button onclick="sendEmail()" type="button">
                   Contact
                   <i class="bi bi-envelope"></i>
                 </button>
@@ -453,6 +500,27 @@
 
     <!-- Footer -->
     <footer class="seccion-oscura d-flex flex-column align-items-center justify-content-center">
+      <form action="https://formsubmit.co/asilvazavala@gmail.com" method="POST" class="d-flex flex-column formContact">
+        <label class="labelFormContact">Name
+          <input type="text" name="name" id="name" class="m-3 p-2 inputFormContact" placeholder='Antonio silva...' />
+        </label>
+       
+        <label class="labelFormContact">Email
+          <input type='email' name="email" id="email" class="m-3 p-2 inputFormContact" placeholder='youremail@email.com...' />
+        </label>
+        
+        <label class="labelFormContact">Message
+          <textarea name="message" id="message" class="m-3 p-2 textAreaFormContact" placeholder='Your appreciate comment...' > </textarea>
+        </label>
+        
+        <div class="containerButtonForm">
+          <input onclick="alert('Message submit succesfully, Thanks!')" type="submit" value="Submit" class="buttonFormContact"> />
+        </div>
+
+        <input type="hidden" name="_next" value="https://antonio-silva-portfolio.onrender.com/#contacto">
+        <input type="hidden" name="_captcha" value="false">
+      </form>
+
       <img class="footer-logo" src="imagenes/General/yo-linkedin.jpg" alt="Logo del portafolio">
       <p class="footer-texto text-center">I learn and create every day.<br>Let's create a project together.</p>
       <div class="iconos-redes-sociales d-flex flex-wrap align-items-center justify-content-center">
@@ -462,7 +530,7 @@
         <a href="https://github.com/Asilvazavala?tab=repositories" target="_blank" rel="noopener noreferrer">
           <i class="bi bi-github"></i>
         </a>
-        <a href="mailto:asilvazavala@gmail.com?subject=Questions">
+        <a href="#contacto">
           <i class="bi bi-envelope"></i>
         </a>
       </div>
@@ -472,7 +540,18 @@
     </footer>
 
     <!-- Bootstrap JS-->
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js" integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js" integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN" crossorigin="anonymous">
+      // Enviar correo
+      const sendEmail = () => {
+
+        var emailAddress = "asilvazavala@gmail.com";
+        var subject = "Subject";
+        var body = "Hi, i want more information";
+
+        var mailtoLink = "mailto:" + emailAddress + "?subject=" + encodeURIComponent(subject) + "&body=" + encodeURIComponent(body);
+        window.location.href = mailtoLink;
+      }
+    </script>
   </body>
 </html>
 

@@ -1,4 +1,8 @@
 /* Estilos generales */
+body {
+  background: rgb(232, 232, 232);
+}
+
 section {
   display: flex;
   flex-direction: column;
@@ -17,7 +21,12 @@ h1 {
 }
 
 .seccion-clara {
-  background-color: white;
+  background-color: rgb(255, 255, 255);
+  color: black;
+}
+
+.seccion-semiClara {
+  background-color: rgb(232, 232, 232);
   color: black;
 }
 
@@ -119,9 +128,7 @@ h1 {
 }
 
 .navbar a:hover {
-  color: black;
-  background-color: white;
-  border-radius: 50%;
+  color: #00abf0;
 }
 
 .navbar-collapse {
@@ -133,7 +140,7 @@ h1 {
 
 /* Sección Hero */
 .hero {
-  background-color: white;
+  background-color: rgb(232, 232, 232);
   min-height: 450px;
   text-align: center;
   margin-top: 100px;
@@ -251,19 +258,30 @@ h1 {
   margin: 100px 0 50px 0;
 }
 
+.experienciaCard {
+  background-color: rgb(255, 255, 255);
+  border-top-left-radius: 20%;
+  border-bottom-right-radius: 20%;
+}
+
 .experiencia .columna {
   padding: 20px;
   border: 2px solid #8080804d;
   display: flex;
   flex-direction: column;
   align-items: center;
-  justify-content: space-evenly;
+  justify-content: space-between;
   transition: all 0.2s ease-in;
 }
 
 .experiencia .columna:hover {
   color: white;
   background-color: #1b1b32;
+  border-top-right-radius: 20%;
+  border-bottom-left-radius: 20%;
+  border-top-left-radius: 0%;
+  border-bottom-right-radius: 0%;
+
 }
 
 .experiencia .columna:hover i {
@@ -329,12 +347,11 @@ h1 {
   padding: 1rem;
 }
 
-.project_img, .project2_img {
+.project_img, .project2_img, .project3_img {
   height: auto;
   width: 40rem;
   border-radius: 5%;
   overflow: hidden;
-  background-color: rgb(240, 240, 240);
 }
 
 .reversed-proj {
@@ -342,12 +359,20 @@ h1 {
 }
 
 .projects-grid .pro {
-  background-color: rgb(239, 239, 239);
+  background-color: rgb(255, 255, 255);
   box-shadow: rgba(0, 0, 0, 0.1) 0px 0px 10px;
   display: flex;
   border-radius: 1.7rem;
 }
 
+.project3 {
+  height: auto;
+  width: 100%;
+  transform: translateY(0%); 
+  transition: transform 10s ease-in-out 0s;
+}
+
+.project2,
 .project1 {
   height: auto;
   width: 100%;
@@ -355,25 +380,26 @@ h1 {
   transition: transform 20s ease-in-out 0s;
 }
 
+.project2Effect,
 .project1Effect {
   height: auto;
   width: 100%;
-  transform: translateY(-86%); 
   transition: transform 20s ease-in-out 0s;
 }
 
-.project2 {
-  height: auto;
-  width: 100%;
-  transform: translateY(0%); 
-  transition: transform 10s ease-in-out 0s;
+.project1Effect {
+  transform: translateY(-86%); 
 }
 
 .project2Effect {
+  transform: translateY(-84%); 
+}
+
+.project3Effect {
   height: auto;
   width: 100%;
-  transform: translateY(-47%); 
   transition: transform 10s ease-in-out 0s;
+  transform: translateY(-47%); 
 }
 
 .projects-grid .pro_text {
@@ -557,6 +583,52 @@ footer {
   padding: 20px;
   margin-bottom: 30px;
   font-family: 'Quicksand', sans-serif;
+}
+
+.formContact {
+  background: #f7f5f7;
+  width: 50%;
+  padding: 50px;
+  margin-top: 60px;
+  margin-bottom: 140px;
+  border-radius: 20px;
+}
+
+.labelFormContact {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  font-size: 1.8rem;
+  font-weight: 600;
+  color: #0a0a23;
+}
+
+.inputFormContact {
+  font-size: 1.2rem;
+  padding: 15px;
+}
+
+.textAreaFormContact {
+  height: 160px;
+  font-size: 1.2rem;
+}
+
+.containerButtonForm {
+  display: flex;
+  justify-content: center;
+}
+
+.buttonFormContact {
+  margin-top: 10px;
+  font-size: 1.6rem;
+  padding: 7px 15px;
+  background: #0a0a23;
+  color: white;
+}
+
+.buttonFormContact:hover {
+  color: #0a0a23;
+  background: white;
 }
 
 .iconos-redes-sociales a {
