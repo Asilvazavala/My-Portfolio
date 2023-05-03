@@ -109,7 +109,6 @@ h1 {
 /* Barra de navegación */
 .navbar {
   padding: 1rem;
-  background-color: #f7f5f7;
   font-size: 20px;
   position: fixed;
   top: 0;
@@ -125,18 +124,12 @@ h1 {
 
 .navbar a {
   color: white;
+  margin: 0 20px;
 }
 
 .navbar a:hover {
   color: #00abf0;
 }
-
-.navbar-collapse {
-  align-items: center;
-  justify-content: space-between;
-}
-
-
 
 /* Sección Hero */
 .hero {
@@ -241,8 +234,8 @@ h1 {
 
 /* Sobre mi */
 .sobre-mi {
-  height: 500px;
-  padding: 10px;
+  height: 550px;
+  padding: 100px 0 100px 0;
 }
 
 .sobre-mi .contenedor {
@@ -254,7 +247,7 @@ h1 {
 
 /* Experiencia */
 .experiencia {
-  padding: 40px 40px 60px 40px;
+  padding: 60px 40px 60px 40px;
   margin: 100px 0 50px 0;
 }
 
@@ -262,6 +255,10 @@ h1 {
   background-color: rgb(255, 255, 255);
   border-top-left-radius: 20%;
   border-bottom-right-radius: 20%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
 }
 
 .experiencia .columna {
@@ -316,7 +313,7 @@ h1 {
 
 /* Proyectos */
 .proyectos-recientes {
-  padding: 40px;
+  padding: 70px 40px 40px 40px;
   margin-bottom: 150px;
 }
 
@@ -440,79 +437,6 @@ h1 {
 }
 
 
-/* Artículos */
-.articulos {
-  min-height: 500px;
-  padding: 30px;
-}
-
-.articulos .card {
-  width: 80%;
-  max-width: 600px;
-  margin: 20px;
-}
-
-.articulos .card-header {
-  font-weight: bold;
-}
-
-
-
-/* Testimonios */
-.testimonios {
-  padding: 40px 40px 80px 40px;
-}
-
-.testimonios .carousel {
-  max-width: 800px;
-}
-
-.carousel-item {
-  height: 500px;
-}
-
-.carousel-item .container {
-  width: 100%;
-  height: 100%;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-}
-
-.testimonio-imagen {
-  height: 150px;
-  width: 150px;
-  margin: 10px 10px 20px 10px;
-}
-
-.testimonio-texto {
-  max-width: 70%;
-  font-size: 20px;
-  text-align: center;
-  font-family: 'Share Tech Mono', monospace;
-}
-
-.testimonio-info {
-  font-weight: bold;
-  text-align: center;
-}
-
-.testimonio-info p {
-  margin-bottom: 0;
-}
-
-.testimonio-footer .cliente {
-  font-size: 1.2rem;
-}
-
-.testimonio-info .cargo {
-  font-size: 0.9rem;
-  color: #656060;
-}
-
-
-
 /* Contacto */
 .contacto .container {
   max-width: 1100px;
@@ -588,7 +512,7 @@ footer {
 .formContact {
   background: #f7f5f7;
   width: 50%;
-  padding: 50px;
+  padding: 70px;
   margin-top: 60px;
   margin-bottom: 140px;
   border-radius: 20px;
@@ -715,7 +639,7 @@ footer {
   }
 }
 
-@media screen and (max-width: 400px){
+@media screen and (max-width: 420px){
   .overlay p {
     font-size: 18px;
   }
@@ -725,30 +649,38 @@ footer {
   }
 
   .sobre-mi {
-    height: 800px;
+    min-height: 1000px;
   }
 }
 
-@media screen and (max-width: 350px) {
+@media screen and (max-width: 320px) {
   .sobre-mi {
-    height: 1000px;
+    height: 1300px;
   }
   .hero-imagen-perfil {
     width: 250px;
   }
 }
 
-@media screen and (max-width: 800px) {
-  .testimonio-imagen {
-    height: 120px;
-    width: 120px;
+/* Experiencia */
+@media screen and (max-width: 400px){
+  .experiencia-titulo {
+    font-size: 22px;
+    padding-bottom: 0;
+    margin-bottom: 0;
   }
-
-  .testimonio-texto {
-    font-size: 18px;
+  
+  .badges-contenedor {
+    padding-top: 0;
+    font-size: 19px;
+  }
+  
+  .experiencia i {
+    font-size: 2.2rem;
   }
 }
 
+/* Proyectos */
 @media screen and (max-width: 1060px) {
   .pro {
     display: flex;
@@ -757,7 +689,7 @@ footer {
     flex-wrap: wrap;
     width: auto;
   }
-  .project_img, .project2_img {
+  .project_img, .project2_img, .project3_img {
     height: 28rem;
     width: auto;
   }
@@ -776,25 +708,25 @@ footer {
 }
 
 @media screen and (max-width: 650px) {
-  .project_img, .project2_img {
+  .project_img, .project2_img, .project3_img {
     max-height: 22rem;
   }
 }
 
 @media screen and (max-width: 550px) {
-  .project_img, .project2_img {
+  .project_img, .project2_img, .project3_img {
     max-height: 17rem;
   }
 }
 
 @media screen and (max-width: 450px) {
-  .project_img, .project2_img {
+  .project_img, .project2_img, .project3_img {
     max-height: 13rem;
   }
 }
 
 @media screen and (max-width: 380px) {
-  .project_img, .project2_img {
+  .project_img, .project2_img, .project3_img {
     max-height: 10rem;
   }
   .links a {
@@ -806,6 +738,33 @@ footer {
   
 }
   
+/* Form Contact */
+@media screen and (max-width: 800px) {
+  .formContact {
+    width: 90%;
+    padding: 15px;
+  }
+}
+
+@media screen and (max-width: 400px) {
+  .labelFormContact {
+    font-size: 1.3rem;
+  }
+  
+  .inputFormContact {
+    font-size: 1rem;
+  }
+  
+  .textAreaFormContact {
+    height: 160px;
+    font-size: 1rem;
+  }
+  
+  .buttonFormContact {
+    font-size: 1.2rem;
+    padding: 5px 10px;
+  }
+}
 
 
 
