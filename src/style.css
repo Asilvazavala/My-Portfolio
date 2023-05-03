@@ -689,18 +689,24 @@ footer {
     flex-wrap: wrap;
     width: auto;
   }
+
   .project_img, .project2_img, .project3_img {
     height: 28rem;
     width: auto;
+    padding: 10px 10px;
   }
-  .pro_text {
-    margin-left: 20%;
+  
+  .projects-grid .pro_text {
+    padding-left: 15px;
+    margin-right: 15px;
+    max-width: 100%;
   }
 
   .projects-grid .pro_1 {
     gap: 2rem;
     height: auto;
   }
+  
   .links {
     display: flex;
     flex-wrap: wrap;
@@ -723,19 +729,18 @@ footer {
   .project_img, .project2_img, .project3_img {
     max-height: 13rem;
   }
+  .links a {
+    font-size: 1.2rem;
+  }
+  .links a i {
+    font-size: 1.6rem;
+  }
 }
 
 @media screen and (max-width: 380px) {
   .project_img, .project2_img, .project3_img {
     max-height: 10rem;
   }
-  .links a {
-    font-size: 1.0rem;
-  }
-  .links a i {
-    font-size: 1.4rem;
-  }
-  
 }
   
 /* Form Contact */
