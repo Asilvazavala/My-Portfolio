@@ -1,6 +1,51 @@
-/* Estilos generales */
+/* Modo Dark/Light */
+:root {
+  --text-color-primary: #000;
+  --text-color-secondary: #000;
+  --bg-color: rgb(232, 232, 232);
+  --bg-color-nav: #024c81;
+  --bg-color-about: #fff;
+  --bg-color-black: #081b29;
+}
+
 body {
-  background: rgb(232, 232, 232);
+  background-color: var(--bg-color);
+  color: var(--text-color-primary);
+}
+
+body.dark {
+  --text-color-primary: #00abf0;
+  --text-color-secondary: #081b29;
+  --bg-color: #192e3c;
+  --bg-color-nav: #081b29;
+  --bg-color-about: #00abf0;
+  --bg-color-black: #fff;
+}
+
+.toggleThemeIcon {
+ width: 30px;
+ color: white;
+ background: white;
+ border-radius: 50%;
+}
+
+/* Idiomas */
+.flags {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.idiom {
+  width: 38px;
+  margin-left: 40px;
+  cursor: pointer;
+  display: block;
+ }
+
+/* Estilos generales */
+* {
+  box-sizing: border-box;
 }
 
 section {
@@ -16,17 +61,12 @@ h1 {
 }
 
 .seccion-oscura {
-  background-color: #1b1b32;
+  background-color: var(--bg-color-nav);
   color: white;
 }
 
 .seccion-clara {
   background-color: rgb(255, 255, 255);
-  color: black;
-}
-
-.seccion-semiClara {
-  background-color: rgb(232, 232, 232);
   color: black;
 }
 
@@ -90,22 +130,6 @@ h1 {
   color: white;
 }
 
-/* Boton ir inicio */
-.botonArriba {
-  position: fixed;
-  bottom: 20px;
-  right: 2px;
-  transition: all 1s;
-  cursor: pointer;
-}
-
-.hideBotonArriba {
-  position: fixed;
-  bottom: 20px;
-  right: -100px;
-  transition: all 1s;
-}
-
 /* Barra de navegación */
 .navbar {
   padding: 1rem;
@@ -115,6 +139,7 @@ h1 {
   width: 100%;
   overflow: hidden;
   z-index: 1000;
+  transition: all 1s ease-in-out 0s;
 }
 
 .navbar img {
@@ -123,20 +148,24 @@ h1 {
 }
 
 .navbar a {
-  color: white;
+  color: var(--bg-color-about);
   margin: 0 20px;
+  font-weight: 600;
+  transition: all 1s ease-in-out 0s;
 }
 
 .navbar a:hover {
-  color: #00abf0;
+  color: var(--bg-color-black);
+  transition: all 1s ease-in-out 0s;
 }
 
 /* Sección Hero */
 .hero {
-  background-color: rgb(232, 232, 232);
+  background-color: var(--bg-color);
+  transition: all 1s ease-in-out 0s;
   min-height: 450px;
   text-align: center;
-  margin-top: 100px;
+  padding-top: 100px;
 }
 
 .hero-principal {
@@ -183,7 +212,9 @@ h1 {
 
 .hero-principal h2 {
   font-size: 1.5rem;
-  color: #615151;
+  color: var(--text-color-primary);
+  font-weight: 500;
+  transition: all 1s ease-in-out 0s;
 }
 
 .hero-imagen-perfil {
@@ -236,6 +267,17 @@ h1 {
 .sobre-mi {
   height: 550px;
   padding: 100px 0 100px 0;
+  transition: all 1s ease-in-out 0s;
+}
+
+.sobre-mi p {
+  color: var(--bg-color-about);
+  transition: all 1s ease-in-out 0s;
+  font-weight: 500;
+}
+.sobre-mi h2 {
+  color: var(--bg-color-about);
+  transition: all 1s ease-in-out 0s;
 }
 
 .sobre-mi .contenedor {
@@ -247,8 +289,9 @@ h1 {
 
 /* Experiencia */
 .experiencia {
-  padding: 60px 40px 60px 40px;
-  margin: 100px 0 50px 0;
+  padding: 160px 40px 110px 40px;
+  background-color: var(--bg-color);
+  transition: all 1s ease-in-out 0s;
 }
 
 .experienciaCard {
@@ -261,19 +304,31 @@ h1 {
   justify-content: space-between;
 }
 
+.experienciaCard .experiencia-description {
+  font-weight: 500;
+}
+
+.experienciaCard .experiencia-titulo {
+  font-weight: 700;
+}
+
 .experiencia .columna {
   padding: 20px;
   border: 2px solid #8080804d;
   display: flex;
+  color: var(--bg-color-nav);
+  transition: all 1s ease-in-out 0s;
   flex-direction: column;
   align-items: center;
   justify-content: space-between;
   transition: all 0.2s ease-in;
+  box-shadow: 0 15px 20px #3337;
 }
 
 .experiencia .columna:hover {
   color: white;
-  background-color: #1b1b32;
+  background-color: var(--bg-color-nav);
+  transition: all 1s ease-in-out 0s;
   border-top-right-radius: 20%;
   border-bottom-left-radius: 20%;
   border-top-left-radius: 0%;
@@ -281,9 +336,7 @@ h1 {
 
 }
 
-.experiencia .columna:hover i {
-  background-color: #323258;
-}
+
 
 .experiencia-titulo {
   font-size: 25px;
@@ -309,12 +362,24 @@ h1 {
   border-radius: 50%;
 }
 
+.experiencia h2 {
+  color: var(--text-color-primary);
+  transition: all 1s ease-in-out 0s;
+}
+
 
 
 /* Proyectos */
 .proyectos-recientes {
-  padding: 70px 40px 40px 40px;
-  margin-bottom: 150px;
+  padding: 70px 40px 140px 40px;
+  background-color: var(--bg-color);
+  transition: all 1s ease-in-out 0s;
+}
+
+.pro_text h3 {
+  color: var(--text-color-primary);
+  transition: all 1s ease-in-out 0s;
+  font-weight: 600;
 }
 
 .container {
@@ -425,7 +490,8 @@ h1 {
 }
 
 .links a {
-  color: rgb(45, 46, 50);
+  color: var(--text-color-primary);
+  transition: all 1s ease-in-out 0s;
   font-size: 1.4rem;
   font-weight: 500;
   margin-right: 45px; 
@@ -436,6 +502,10 @@ h1 {
   font-size: 1.8rem;
 }
 
+.proyectos-recientes h2 {
+  color: var(--text-color-primary);
+  transition: all 1s ease-in-out 0s;
+}
 
 /* Contacto */
 .contacto .container {
@@ -493,6 +563,7 @@ h1 {
 /* Footer */
 footer {
   min-height: 500px;
+  transition: all 1s ease-in-out 0s;
 }
 
 .footer-logo {
@@ -524,7 +595,8 @@ footer {
   text-align: center;
   font-size: 1.8rem;
   font-weight: 600;
-  color: #0a0a23;
+  color: var(--bg-color-nav);
+  transition: all 1s ease-in-out 0s;
 }
 
 .inputFormContact {
@@ -546,7 +618,8 @@ footer {
   margin-top: 10px;
   font-size: 1.6rem;
   padding: 7px 15px;
-  background: #0a0a23;
+  background: var(--bg-color-nav);
+  transition: all 1s ease-in-out 0s;
   color: white;
 }
 
@@ -563,13 +636,21 @@ footer {
   justify-content: center;
   padding: 2px;
   margin: 10px;
-  border: 2px solid white;
+  border: 2px solid var(--bg-color-about);
+  transition: all 1s ease-in-out 0s;
   border-radius: 50%;
   transition: all 0.2s ease-in;
 }
 
+footer p {
+  color: var(--bg-color-about);
+  transition: all 1s ease-in-out 0s;
+  font-weight: 600;
+}
+
 .iconos-redes-sociales i {
-  color: white;
+  color: var(--bg-color-about);
+  transition: all 1s ease-in-out 0s;
   font-size: 1.5rem;
   transition: all 0.2s ease-in; 
 }
@@ -607,8 +688,9 @@ footer {
 }
 
 .derechos-de-autor {
-  font-size: 15px;
-  color: #aeaeae;
+  font-size: 18px;
+  color: var(--bg-color-about);
+  transition: all 1s ease-in-out 0s;
   padding: 20px ;
 }
 
@@ -635,8 +717,11 @@ footer {
 
 @media screen and (max-width: 585px) {
   .sobre-mi {
-    height: 700px;
+    height: 900px;
   }
+  .idiom {
+    margin-left: 0;
+   }
 }
 
 @media screen and (max-width: 420px){
@@ -649,13 +734,13 @@ footer {
   }
 
   .sobre-mi {
-    min-height: 1000px;
+    min-height: 1200px;
   }
 }
 
 @media screen and (max-width: 320px) {
   .sobre-mi {
-    height: 1300px;
+    height: 1500px;
   }
   .hero-imagen-perfil {
     width: 250px;

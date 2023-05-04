@@ -1,0 +1,66 @@
+{
+  "navbar": {
+    "about": "Acerca de",
+    "skills": "Habilidades",
+    "projects": "Proyectos",
+    "contact": "Contacto"
+  },
+  "hero": {
+    "alert": "¡Gracias por tu visita! ❤️",
+    "name": "Hola, soy Antonio Silva",
+    "occupation": "Desarrollador Web"
+  },
+  "about": {
+    "title": "Conoce a Antonio Silva",
+    "description": "Hola soy Antonio, estudié ingeniería en sistemas en la Universidad de la Salle Bajío. En los últimos 8 años he trabajado como técnico de soporte de hardware y software para mi gobierno local. Desde niño la gente me relacionaba como la persona que les podía dar referencias sobre cualquier tema tecnológico.<br><br>Por esta razón, decidí ser un desarrollador web fullstack, me considero una persona con hambre de superación personal y pasión por adquirir nuevos conocimientos. Soy una persona confiable, de fácil trato y con muchas ganas de desarrollarme tanto profesional como personalmente. Si te gusta mi perfil no dudes en contactarme."
+  },
+  "skills": {
+    "title": "Mis conocimientos",
+    "project1Name": "Desarrollador Web",
+    "project1Description": "Tengo estos conocimientos como desarrollador:",
+    "project1Skill1": "Html",
+    "project1Skill2": "Css",
+    "project1Skill3": "Javascript",
+    "project1Skill4": "React",
+    "project1Skill5": "Redux",
+    "project1Skill6": "NodeJS",
+    "project1Skill7": "Express",
+    "project1Skill8": "PostgreSQL",
+    "project1Skill9": "Git",
+    "project2Name": "Extras",
+    "project2Description": "Nunca estorba saber cosas como:",
+    "project2Skill1": "Inglés Conversacional B1",
+    "project2Skill2": "Adobe Photoshop",
+    "project2Skill3": "Microsoft Office paquetería",
+    "project3Name": "Estudiante",
+    "project3Description": "He completado los siguientes cursos/carrera:",
+    "project3Skill1": "Licenciatura en Ingeniería en TI",
+    "project3Skill2": "Bootcamp SoyHenry",
+    "project3Skill3": "Curso de FreeCodeCamp"
+  },
+  "projects": {
+    "title": "Mis proyectos",
+    "project1Name": "Tienda Mi costura",
+    "project1Description": "Enfocada en las personas que realizan servicios de costura y venden estos artículos, Mi Costura ofrece sencillez y diseño limpio, esta tienda prioriza la experiencia del usuario, facilitando que los clientes inicien sesión con Auth0 y compren con Mercado pago.",
+    "project2Name": "Gimnasio Club",
+    "project2Description": "Enfocada a las personas que aman hacer ejercicio, esta web ofrece sencillez y diseño limpio, prioriza la experiencia del usuario con un diseño responsivo, únete a nosotros para que se ajuste fácil y completamente a tu cuerpo, ¿aceptas el reto?",
+    "project3Name": "Mundo Pokemon",
+    "project3Description": "Enfocado a las personas amantes de los pokemon, se pueden consultar, modificar, eliminar y crear pokemon, los cuales son consumidos a través de una API externa y, a su vez, son almacenados en una base de datos. Hecho por un amante de este maravilloso mundo.",
+    "project4Name": "Cine Club",
+    "project4Description": "Enfocado a las personas que aman las películas, ofrece simplicidad y un diseño limpio para la experiencia del usuario, vea cualquier película en cualquier lugar.",
+    "code": "Código <i class='bi bi-github'></i>",
+    "demo": "En vivo <i class='bi bi-code-slash'></i>"
+  },
+  "contact": {
+    "title": "¡Hablémos!",
+    "description": "Contáctame para empezar con el desarrollo de tu proyecto asilvazavala@gmail.com"
+  },
+  "footer": {
+    "formName": "Nombre <input type='text' name='name' id='name' class='m-3 p-2 inputFormContact' placeholder='Antonio silva...' />",
+    "formEmail": "Correo <input type='email' name='email' id='email' class='m-3 p-2 inputFormContact' placeholder='tucorreo@correo.com...' />",
+    "formMessage": "Mensaje <textarea name='message' id='message' class='m-3 p-2 textAreaFormContact' placeholder='Tu valioso comentario...' > </textarea>",
+    "formButton": "Enviar <input onclick='alert('Mensaje enviado correctamente, Gracias!')' type='submit' value='Enviar' class='buttonFormContact'> />",
+    "phrase": "Aprendo y creo todos los días.<br>Hagámos un proyecto juntos.",
+    "copyright": "Creado por Antonio Silva (2023) &#169;"
+  }
+}

@@ -21,81 +21,11 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@500&family=Rubik+Dirt&family=Share+Tech+Mono&display=swap" rel="stylesheet">  
-    <!-- JavaScript -->
-    <script>
-      let previousTitle = document.title;
-
-      window.addEventListener('blur', () => {
-        previousTitle = document.title
-        document.title = `😱 ¡Come back!`
-      })
-
-      window.addEventListener('focus', () => {
-        document.title = previousTitle;
-      })
-
-      // Mostrar botón ir inicio
-      const irArriba = (pxPantalla) => {
-        window.addEventListener('scroll', () => {
-          let scroll = document.documentElement.scrollTop;
-          let botonArriba = document.getElementById('botonArriba');
-          if (botonArriba) {
-            if (scroll > pxPantalla) {
-              botonArriba.className = "botonArriba"              
-            } else {
-                botonArriba.className = "hideBotonArriba"
-              }
-          }
-        })
-      };
-      irArriba(1800);
-
-      // Posicionarse en el inicio de la página
-      const irInicio = () => {
-        document.documentElement.scrollTo(0, 0)
-      }
-
-      // Mostrar alerta al hacer clic en el logo AS
-      const mostrarAlerta = () => {
-        const alert = document.getElementById('alert')
-        alert.className = "alert alert-success alert-dismissible show" 
-        document.documentElement.scrollTo(0, 0)
-      }
-
-      // Iniciar efecto imagen proyecto1
-      const effectProject1 = () => {
-        const project1 = document.getElementById('project1');
-        project1.className = "project1Effect"     
-      };
-
-      // Iniciar efecto imagen proyecto2
-      const effectProject2 = () => {
-        const project2 = document.getElementById('project2');
-        project2.className = "project2Effect"     
-      };
-
-      // Iniciar efecto imagen proyecto3
-      const effectProject3 = () => {
-        const project3 = document.getElementById('project3');
-        project3.className = "project3Effect"     
-      };
-
-      // Regresar a la imagen original proyectos
-      const normalProject = () => {
-        const project1 = document.getElementById('project1');
-        project1.className = "project1"     
-        const project2 = document.getElementById('project2');
-        project2.className = "project2"     
-        const project3 = document.getElementById('project3');
-        project3.className = "project3"     
-      };
-
-    </script>
   </head>  
   
-  <body>
+  <body class="dark">
     <!-- Barra de navegación -->
-    <nav class="navbar navbar-expand-md" style="background-color: #1b1b32;">
+    <nav class="navbar navbar-expand-md" style="background-color: var(--bg-color-nav);">
       <div class="container-fluid">
         <button class="navbar-toggler" style="background-color: #303082;" type="button" data-bs-toggle="collapse" data-bs-target="#navbarTogglerDemo01" aria-controls="navbarTogglerDemo01" aria-expanded="false" aria-label="Toggle navigation">
           <span class="navbar-toggler-icon"></span>
@@ -104,18 +34,26 @@
         <div class="collapse navbar-collapse" id="navbarTogglerDemo01">
           <ul id="ulNav" class="navbar-nav d-flex justify-content-sm-between align-items-center ulNav">
             <li class="nav-item">
-              <a class="nav-link" href="#sobre-mi">About</a>
+              <a data-section="navbar" data-value="about" class="nav-link" href="#sobre-mi">About</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="#experiencia">Skills</a>
+              <a data-section="navbar" data-value="skills" class="nav-link" href="#experiencia">Skills</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="#proyectos">Projects</a>
+              <a data-section="navbar" data-value="projects" class="nav-link" href="#proyectos">Projects</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="#contacto">Contact</a>
+              <a data-section="navbar" data-value="contact" class="nav-link" href="#contacto">Contact</a>
             </li>
           </ul> 
+        </div>
+        <div id="toggleTheme">
+          <img title="Cambiar Tema" id="toggleIcon" class="toggleThemeIcon" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACQAAAAkCAYAAADhAJiYAAAAAXNSR0IArs4c6QAAAeNJREFUWEftloFNAzEMRd1JgEmATWASYBLYBJgEmAT0qjMylhPb14JOqJFOapU7++f/b8c72djabQyP/EtA9yJytzD9ICL8X72OwdAJ0I2IPE006DBErBcReR/FyyR7FpErEZl5g30eFsl4omVjccAQ1AwQp3k0kQ8xrILRcLcj1jOGAASwNNBEUn8w2AFQuDJAfKSgkOI6iIJc58uj/vByaIwpGGJXAPEexvX9xZrZ40Re75OsOPYxqoBsQtjgxGrkEfuwhTTDioo+XAPIG5SEJP8QkUsHlD1kLoPqAvIykcyXOdJwlcAkq1WdXUCfhuYIjG574BdVljwgb1zb6Djx25IRCUgyW7yrLFlAtpHaA4Smtgx4ujtXhG0X/LaNMKrOb2I8QzNAtsGl/WRpE9FY0gI0kwyqqTDWqElaCa1k1m8tyRJb7D2kvhjeR0vpK/hWv+tWmac7AmWZ/PWyJ4FlSeV7FZGzhRllkL1KNf5QpcsQH5MQOWziSGp8RlMczUehPaqAoklP77MIWNSdj3a5ZpOeVo3eadG9VZk8w8boaSxPepPybE2enRG20gxHuCrVWWKoMulVh3wFNW2qFVNnZuzccVmsVROjl6UDKLsJToD+hKE0SeeFiqk78Q5+d3OAvgBANYYl1GOAsQAAAABJRU5ErkJggg=="/>
+        </div>
+        <div id="flags" class="flags">
+          <div data-language="es">
+            <img title="Cambiar Idioma" id="toggleIconLanguage" class="idiom" src="./imagenes/General/spain.svg" alt="Idioma español" />
+          </div>
         </div>
       </div>
     </nav>
@@ -124,12 +62,12 @@
     <section id="home" class="hero align-items-stretch">
       <div class="hero-principal d-flex flex-column justify-content-center align-items-center">
         <div id="alert" class="hide" role="alert">
-          <div>Thanks for watching! ❤️</div>
+          <div data-section="hero" data-value="alert">Thanks for watching! ❤️</div>
           <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
         </div>
         <div class="hero-imagen-perfil"></div> 
-        <h1>Hi, I´m Antonio Silva</h1>
-        <h2>Website developer</h2>
+        <h1 data-section="hero" data-value="name">Hi, I´m Antonio Silva</h1>
+        <h2 data-section="hero" data-value="occupation">Website developer</h2>
       </div>
       <div class="hero-inferior">
         <img class="hero-imagen-inferior img-fluid" src="imagenes/General/Sin-fondo-HTML-CSS-JS-React-removebg-preview.png" alt="Monitor laptop y logos de HTML, CSS, JavaScript y React">
@@ -139,8 +77,8 @@
     <!-- Sobre mi -->
     <section id="sobre-mi" class="sobre-mi seccion-oscura">
       <div class="contenedor d-flex flex-column ">
-        <h2 class="seccion-titulo">Meet Antonio Silva</h2>
-        <p class="seccion-texto">Hi I´m Antonio, I studied systems engineering at the Universidad de la Salle Bajío. In the last 8 years I have worked as a hardware and software support technician for my local government.
+        <h2 data-section="about" data-value="title" class="seccion-titulo">Meet Antonio Silva</h2>
+        <p data-section="about" data-value="description" class="seccion-texto">Hi I´m Antonio, I studied systems engineering at the Universidad de la Salle Bajío. In the last 8 years I have worked as a hardware and software support technician for my local government.
           Since I was a child people related me as the person who could give them references on any technologyc topic. <br><br>For this reason, I decided to be a fullstack web developer, 
           
           I consider myself a person with a hunger for self-improvement and a passion for acquiring new knowledge. I am a reliable person, easy to deal with and eager to develop both professionally and personally. If you like my profile do´nt doubt to contact me.</p>
@@ -151,47 +89,47 @@
     <section id="experiencia" class="experiencia seccion-semiClara">
       <div class="container text-center">
         <div class="row">
-          <h2 class="seccion-titulo texto-negro">My skills</h2>
+          <h2 data-section="skills" data-value="title" class="seccion-titulo texto-negro">My skills</h2>
 
           <!-- Desarrollo web -->
           <div class="col-12 col-md-4 columna experienciaCard">
             <i class="bi bi-laptop"></i>
-            <p class="experiencia-titulo">Web Development</p>
-            <p>I have these knowledge as a developer:</p>
+            <p data-section="skills" data-value="project1Name" class="experiencia-titulo">Web Development</p>
+            <p data-section="skills" data-value="project1Description" class="experiencia-description">I have these knowledge as a developer:</p>
             <div class="badges-contenedor">
-              <span class="badge text-bg-primary">Html</span>
-              <span class="badge text-bg-primary">Css</span>
-              <span class="badge text-bg-primary">JavaScript</span>
-              <span class="badge text-bg-primary">React</span>
-              <span class="badge text-bg-primary">Redux</span>
-              <span class="badge text-bg-primary">NodeJS</span>
-              <span class="badge text-bg-primary">Express</span>
-              <span class="badge text-bg-primary">PostgreSQL</span>
-              <span class="badge text-bg-primary">Git</span>
+              <span data-section="skills" data-value="project1Skill1" class="badge text-bg-primary">Html</span>
+              <span data-section="skills" data-value="project1Skill2" class="badge text-bg-primary">Css</span>
+              <span data-section="skills" data-value="project1Skill3" class="badge text-bg-primary">JavaScript</span>
+              <span data-section="skills" data-value="project1Skill4" class="badge text-bg-primary">React</span>
+              <span data-section="skills" data-value="project1Skill5" class="badge text-bg-primary">Redux</span>
+              <span data-section="skills" data-value="project1Skill6" class="badge text-bg-primary">NodeJS</span>
+              <span data-section="skills" data-value="project1Skill7" class="badge text-bg-primary">Express</span>
+              <span data-section="skills" data-value="project1Skill8" class="badge text-bg-primary">PostgreSQL</span>
+              <span data-section="skills" data-value="project1Skill9" class="badge text-bg-primary">Git</span>
             </div>
           </div>
 
         <!-- Extras -->
         <div class="col-12 col-md-4 columna experienciaCard">
           <i class="bi bi-bag-plus-fill"></i>
-          <p class="experiencia-titulo">Extras</p>
-          <p>It never hurts to know things like:</p>
+          <p data-section="skills" data-value="project2Name" class="experiencia-titulo">Extras</p>
+          <p data-section="skills" data-value="project2Description" class="experiencia-description">It never hurts to know things like:</p>
           <div class="badges-contenedor">
-            <span class="badge text-bg-primary">English Conversational B1</span>
-            <span class="badge text-bg-primary">Adobe Photoshop</span>
-            <span class="badge text-bg-primary">Microsoft Office package</span>
+            <span data-section="skills" data-value="project2Skill1" class="badge text-bg-primary">English Conversational B1</span>
+            <span data-section="skills" data-value="project2Skill2" class="badge text-bg-primary">Adobe Photoshop</span>
+            <span data-section="skills" data-value="project2Skill3" class="badge text-bg-primary">Microsoft Office package</span>
           </div>
         </div>
 
           <!-- Estudiante -->
           <div class="col-12 col-md-4 columna experienciaCard">
             <i class="bi bi-person-vcard-fill"></i>
-            <p class="experiencia-titulo">Student</p>
-            <p>I have completed the following courses/degree:</p>
+            <p data-section="skills" data-value="project3Name" class="experiencia-titulo">Student</p>
+            <p data-section="skills" data-value="project3Description" class="experiencia-description">I have completed the following courses/degree:</p>
             <div class="badges-contenedor">
-              <span class="badge text-bg-primary">TI Engineering Degree</span>
-              <span class="badge text-bg-primary">Bootcamp SoyHenry</span>
-              <span class="badge text-bg-primary">FreeCodeCamp Course</span>
+              <span data-section="skills" data-value="project3Skill1" class="badge text-bg-primary">TI Engineering Degree</span>
+              <span data-section="skills" data-value="project3Skill2" class="badge text-bg-primary">Bootcamp SoyHenry</span>
+              <span data-section="skills" data-value="project3Skill3" class="badge text-bg-primary">FreeCodeCamp Course</span>
             </div>
           </div>
 
@@ -201,7 +139,7 @@
 
     <!-- Proyectos -->
     <section id="proyectos" class="proyectos-recientes d-flex flex-column seccion-semiClara">
-      <h2 class="seccion-titulo texto-negro">My projects</h2>
+      <h2 data-section="projects" data-value="title" class="seccion-titulo texto-negro">My projects</h2>
       <div class="container">
         <div class="project-content">
           <div class="projects-grid">
@@ -221,8 +159,8 @@
               </div>
               <div class="pro_text">
                 <!-- Nombre y descripción -->
-                <h3>Marketplace "My seam"</h3>
-                <p>Focused on the people who perform sewing services and sell these items, My seam offers simplicity and clean design, this store prioritizes the user experience, making it easy for customers login with Auth0 and buy with Mercado pago.</p>
+                <h3 data-section="projects" data-value="project1Name">Marketplace "My seam"</h3>
+                <p data-section="projects" data-value="project1Description">Focused on the people who perform sewing services and sell these items, My seam offers simplicity and clean design, this store prioritizes the user experience, making it easy for customers login with Auth0 and buy with Mercado pago.</p>
                 <div class="stack">
                   <!-- Tecnologías Usadas -->
                   <img src="./imagenes/Technologys/javascript-original.svg" title="JavaScript" alt="JavaScript" width="40" height="40"/>&nbsp;
@@ -235,10 +173,10 @@
                 </div>
                 <!-- Código de github y página en vivo -->
                 <div class="links">
-                  <a target="_blank" href="https://github.com/delcas/Pf_My-seam" rel="noreferrer">Code
+                  <a data-section="projects" data-value="code" target="_blank" href="https://github.com/delcas/Pf_My-seam" rel="noreferrer">Code
                     <i class="bi bi-github"></i>
                   </a>
-                  <a target="_blank" href="https://my-seam.vercel.app/" rel="noreferrer">Demo
+                  <a data-section="projects" data-value="demo" target="_blank" href="https://my-seam.vercel.app/" rel="noreferrer">Demo
                     <i class="bi bi-code-slash"></i>
                   </a>
                 </div>
@@ -261,8 +199,8 @@
               </div>
               <div class="pro_text">
                 <!-- Nombre y descripción -->
-                <h3>Gym Fitness Club</h3>
-                <p>Focused on the people who loves do excersice, this website offers simplicity and clean design, prioritizes the user experience with  responsive design, join us to fit easily and completely your body, do you accept the challenge? </p>
+                <h3 data-section="projects" data-value="project2Name">Gym Fitness Club</h3>
+                <p data-section="projects" data-value="project2Description">Focused on the people who loves do excersice, this website offers simplicity and clean design, prioritizes the user experience with  responsive design, join us to fit easily and completely your body, do you accept the challenge? </p>
                 <div class="stack">
                   <!-- Tecnologías Usadas -->
                   <img src="./imagenes/Technologys/javascript-original.svg" title="JavaScript" alt="JavaScript" width="40" height="40"/>&nbsp;
@@ -272,10 +210,10 @@
                 </div>
                 <!-- Código de github y página en vivo -->
                 <div class="links">
-                  <a target="_blank" href="https://github.com/Asilvazavala/GYM-AS" rel="noreferrer">Code
+                  <a data-section="projects" data-value="code" target="_blank" href="https://github.com/Asilvazavala/GYM-AS" rel="noreferrer">Code
                     <i class="bi bi-github"></i>
                   </a>
-                  <a target="_blank" href="https://gym-as.vercel.app/" rel="noreferrer">Demo
+                  <a data-section="projects" data-value="demo" target="_blank" href="https://gym-as.vercel.app/" rel="noreferrer">Demo
                     <i class="bi bi-code-slash"></i>
                   </a>
                 </div>
@@ -298,8 +236,8 @@
               </div>
               <div class="pro_text">
                 <!-- Nombre y descripción -->
-                <h3>Pokemon World</h3>
-                <p>Focused on the people who loves pokemon, You can consult, modify, delete and create pokemon, which are consumed through an external API and, in turn, are stored in a database. Made by a lover of this wonderful world.</p>
+                <h3 data-section="projects" data-value="project3Name">Pokemon World</h3>
+                <p data-section="projects" data-value="project3Description">Focused on the people who loves pokemon, You can consult, modify, delete and create pokemon, which are consumed through an external API and, in turn, are stored in a database. Made by a lover of this wonderful world.</p>
                 <div class="stack">
                   <!-- Tecnologías Usadas -->
                   <img src="./imagenes/Technologys/javascript-original.svg" title="JavaScript" alt="JavaScript" width="40" height="40"/>&nbsp;
@@ -311,10 +249,10 @@
                 </div>
                 <!-- Código de github y página en vivo -->
                 <div class="links">
-                  <a target="_blank" href="https://github.com/Asilvazavala/deploy-pokemon" rel="noreferrer">Code
+                  <a data-section="projects" data-value="code" target="_blank" href="https://github.com/Asilvazavala/deploy-pokemon" rel="noreferrer">Code
                     <i class="bi bi-github"></i>
                   </a>
-                  <a target="_blank" href="https://pokemon-world-antonio-silva.vercel.app" rel="noreferrer">Demo
+                  <a data-section="projects" data-value="demo" target="_blank" href="https://pokemon-world-antonio-silva.vercel.app" rel="noreferrer">Demo
                     <i class="bi bi-code-slash"></i>
                   </a>
                 </div>
@@ -336,8 +274,8 @@
               </div>
               <div class="pro_text">
                 <!-- Nombre y descripción -->
-                <h3>Cine Club</h3>
-                <p>Focused on the people who loves movies, offers simplicity and clean design for the user experience, see any movie in any place.</p>
+                <h3 data-section="projects" data-value="project4Name">Cine Club</h3>
+                <p data-section="projects" data-value="project4Description">Focused on the people who loves movies, offers simplicity and clean design for the user experience, see any movie in any place.</p>
                 <div class="stack">
                   <!-- Tecnologías Usadas -->
                   <img src="./imagenes/Technologys/javascript-original.svg" title="JavaScript" alt="JavaScript" width="40" height="40"/>&nbsp;
@@ -349,10 +287,10 @@
                 </div>
                 <!-- Código de github y página en vivo -->
                 <div class="links">
-                  <a target="_blank" href="" rel="noreferrer">Code
+                  <a data-section="projects" data-value="code" target="_blank" href="" rel="noreferrer">Code
                     <i class="bi bi-github"></i>
                   </a>
-                  <a target="_blank" href="" rel="noreferrer">Demo
+                  <a data-section="projects" data-value="demo" target="_blank" href="" rel="noreferrer">Demo
                     <i class="bi bi-code-slash"></i>
                   </a>
                 </div>
@@ -362,20 +300,7 @@
           </div>
         </div>
       </div>
-    </section>
-   
-    <!-- Boton ir inicio -->
-    <a>
-      <img 
-        onclick="irInicio()"
-        src="imagenes/General/circle-up-solid.svg" 
-        id='botonArriba' 
-        class="hideBotonArriba"  
-        width='35px' 
-        height='35px' 
-        alt='BotonArriba'
-      />   
-    </a>       
+    </section>      
 
     <!-- Contacto -->
     <section class="contacto seccion-oscura">
@@ -383,11 +308,11 @@
         <div class="container text-center rectangulo d-flex justify-content-evenly">
           <div class="row">
             <!-- Columna 1 -->
-            <div class="col-12 col-md-4 seccion-titulo">
+            <div data-section="contact" data-value="title" class="col-12 col-md-4 seccion-titulo">
               Let's talk!
             </div>
             <!-- Columna 2 -->
-            <div class="col-12 col-md-4 descripcion">
+            <div data-section="contact" data-value="description" class="col-12 col-md-4 descripcion">
               Contact me to start your web development project
               asilvazavala@gmail.com
             </div>
@@ -409,19 +334,19 @@
     <!-- Footer -->
     <footer class="seccion-oscura d-flex flex-column align-items-center justify-content-center">
       <form id="contacto" action="https://formsubmit.co/asilvazavala@gmail.com" method="POST" class="d-flex flex-column formContact">
-        <label class="labelFormContact">Name
+        <label data-section="footer" data-value="formName" class="labelFormContact">Name
           <input type="text" name="name" id="name" class="m-3 p-2 inputFormContact" placeholder='Antonio silva...' />
         </label>
        
-        <label class="labelFormContact">Email
+        <label data-section="footer" data-value="formEmail" class="labelFormContact">Email
           <input type='email' name="email" id="email" class="m-3 p-2 inputFormContact" placeholder='youremail@email.com...' />
         </label>
         
-        <label class="labelFormContact">Message
+        <label data-section="footer" data-value="formMessage" class="labelFormContact">Message
           <textarea name="message" id="message" class="m-3 p-2 textAreaFormContact" placeholder='Your appreciate comment...' > </textarea>
         </label>
         
-        <div class="containerButtonForm">
+        <div data-section="footer" data-value="formButton" class="containerButtonForm">
           <input onclick="alert('Message submit succesfully, Thanks!')" type="submit" value="Submit" class="buttonFormContact"> />
         </div>
 
@@ -430,7 +355,7 @@
       </form>
 
       <img class="footer-logo" src="imagenes/General/yo-linkedin.jpg" alt="Logo del portafolio">
-      <p class="footer-texto text-center">I learn and create every day.<br>Let's create a project together.</p>
+      <p data-section="footer" data-value="phrase" class="footer-texto text-center">I learn and create every day.<br>Let's create a project together.</p>
       <div class="iconos-redes-sociales d-flex flex-wrap align-items-center justify-content-center">
         <a href="https://www.linkedin.com/in/antonio-silva-developer/" target="_blank" rel="noopener noreferrer">
           <i class="bi bi-linkedin"></i>
@@ -442,24 +367,15 @@
           <i class="bi bi-envelope"></i>
         </a>
       </div>
-      <div class="derechos-de-autor">
+      <div data-section="footer" data-value="copyright" class="derechos-de-autor">
         Created by Antonio Silva (2023) &#169;
       </div>
     </footer>
 
     <!-- Bootstrap JS-->
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js" integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN" crossorigin="anonymous">
-      // Enviar correo
-      const sendEmail = () => {
-
-        var emailAddress = "asilvazavala@gmail.com";
-        var subject = "Subject";
-        var body = "Hi, i want more information";
-
-        var mailtoLink = "mailto:" + emailAddress + "?subject=" + encodeURIComponent(subject) + "&body=" + encodeURIComponent(body);
-        window.location.href = mailtoLink;
-      }
-    </script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js" integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN" crossorigin="anonymous"></script>
+    <!-- JS -->
+    <script src="./script.js"></script>
   </body>
 </html>
 

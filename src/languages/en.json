@@ -1,0 +1,66 @@
+{
+  "navbar": {
+    "about": "About",
+    "skills": "Skills",
+    "projects": "Projects",
+    "contact": "Contact"
+  },
+  "hero": {
+    "alert": "Thanks for watching! ❤️",
+    "name": "Hi, I´m Antonio Silva",
+    "occupation": "Website developer"
+  },
+  "about": {
+    "title": "Meet Antonio Silva",
+    "description": "Hi I´m Antonio, I studied systems engineering at the Universidad de la Salle Bajío. In the last 8 years I have worked as a hardware and software support technician for my local government. Since I was a child people related me as the person who could give them references on any technologyc topic.<br><br>For this reason, I decided to be a fullstack web developer, I consider myself a person with a hunger for self-improvement and a passion for acquiring new knowledge. I am a reliable person, easy to deal with and eager to develop both professionally and personally. If you like my profile do´nt doubt to contact me."
+  },
+  "skills": {
+    "title": "My skills",
+    "project1Name": "Web Development",
+    "project1Description": "I have these knowledge as a developer:",
+    "project1Skill1": "Html",
+    "project1Skill2": "Css",
+    "project1Skill3": "Javascript",
+    "project1Skill4": "React",
+    "project1Skill5": "Redux",
+    "project1Skill6": "NodeJS",
+    "project1Skill7": "Express",
+    "project1Skill8": "PostgreSQL",
+    "project1Skill9": "Git",
+    "project2Name": "Additionals",
+    "project2Description": "It never hurts to know things like:",
+    "project2Skill1": "English Conversational B1",
+    "project2Skill2": "Adobe Photoshop",
+    "project2Skill3": "Microsoft Office package",
+    "project3Name": "Student",
+    "project3Description": "I have completed the following courses/degree:",
+    "project3Skill1": "TI Engineering Degree",
+    "project3Skill2": "Bootcamp SoyHenry",
+    "project3Skill3": "FreeCodeCamp Course"
+  },
+  "projects": {
+    "title": "My projects",
+    "project1Name": "Marketplace My seam",
+    "project1Description": "Focused on the people who perform sewing services and sell these items, My seam offers simplicity and clean design, this store prioritizes the user experience, making it easy for customers login with Auth0 and buy with Mercado pago.",
+    "project2Name": "Gym Fitness Club",
+    "project2Description": "Focused on the people who loves do excersice, this website offers simplicity and clean design, prioritizes the user experience with responsive design, join us to fit easily and completely your body, do you accept the challenge?",
+    "project3Name": "Pokemon World",
+    "project3Description": "Focused on the people who loves pokemon, You can consult, modify, delete and create pokemon, which are consumed through an external API and, in turn, are stored in a database. Made by a lover of this wonderful world.",
+    "project4Name": "Cine Club",
+    "project4Description": "Focused on the people who loves movies, offers simplicity and clean design for the user experience, see any movie in any place.",
+    "code": "Code <i class='bi bi-github'></i>",
+    "demo": "Demo <i class='bi bi-code-slash'></i>"
+  },
+  "contact": {
+    "title": "Let´s talk",
+    "description": "Contact me to start your web development project asilvazavala@gmail.com"
+  },
+  "footer": {
+    "formName": "Name <input type='text' name='name' id='name' class='m-3 p-2 inputFormContact' placeholder='Antonio silva...' />",
+    "formEmail": "Email <input type='email' name='email' id='email' class='m-3 p-2 inputFormContact' placeholder='youremail@email.com...' />",
+    "formMessage": "Message <textarea name='message' id='message' class='m-3 p-2 textAreaFormContact' placeholder='Your appreciate comment...' > </textarea>",
+    "formButton": "Submit <input onclick='alert('Message submit succesfully, Thanks!')' type='submit' value='Submit' class='buttonFormContact'> />",
+    "phrase": "I learn and create every day.<br>Let's create a project together.",
+    "copyright": "Created by Antonio Silva (2023) &#169;"
+  }
+}
