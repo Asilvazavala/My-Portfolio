@@ -17,6 +17,8 @@
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.3/font/bootstrap-icons.css">    
     <!-- CSS -->
     <link href="style.css" rel="stylesheet">
+    <!-- Box Icons -->
+   <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
     <!-- Google Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -27,11 +29,14 @@
     <!-- Barra de navegación -->
     <nav class="navbar navbar-expand-md" style="background-color: var(--bg-color-nav);">
       <div class="container-fluid">
+        <!-- Navbar Responsive -->
         <button class="navbar-toggler" style="background-color: #303082;" type="button" data-bs-toggle="collapse" data-bs-target="#navbarTogglerDemo01" aria-controls="navbarTogglerDemo01" aria-expanded="false" aria-label="Toggle navigation">
           <span class="navbar-toggler-icon"></span>
         </button>
+        <!-- Logo -->
         <img class="nav-link" id="logoAS" onclick="mostrarAlerta()" src="./imagenes/General/LogoAS.png" alt="LogoAS" width="60" height="50" title="Clic me">
-        <div class="collapse navbar-collapse" id="navbarTogglerDemo01">
+        <!-- Navbar -->
+        <div class="collapse navbar-collapse" id="navbarTogglerDemo01" >
           <ul id="ulNav" class="navbar-nav d-flex justify-content-sm-between align-items-center ulNav">
             <li class="nav-item">
               <a data-section="navbar" data-value="about" class="nav-link" href="#sobre-mi">About</a>
@@ -47,9 +52,11 @@
             </li>
           </ul> 
         </div>
+        <!-- Cambiar tema -->
         <div id="toggleTheme">
-          <img title="Cambiar Tema" id="toggleIcon" class="toggleThemeIcon" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACQAAAAkCAYAAADhAJiYAAAAAXNSR0IArs4c6QAAAeNJREFUWEftloFNAzEMRd1JgEmATWASYBLYBJgEmAT0qjMylhPb14JOqJFOapU7++f/b8c72djabQyP/EtA9yJytzD9ICL8X72OwdAJ0I2IPE006DBErBcReR/FyyR7FpErEZl5g30eFsl4omVjccAQ1AwQp3k0kQ8xrILRcLcj1jOGAASwNNBEUn8w2AFQuDJAfKSgkOI6iIJc58uj/vByaIwpGGJXAPEexvX9xZrZ40Re75OsOPYxqoBsQtjgxGrkEfuwhTTDioo+XAPIG5SEJP8QkUsHlD1kLoPqAvIykcyXOdJwlcAkq1WdXUCfhuYIjG574BdVljwgb1zb6Djx25IRCUgyW7yrLFlAtpHaA4Smtgx4ujtXhG0X/LaNMKrOb2I8QzNAtsGl/WRpE9FY0gI0kwyqqTDWqElaCa1k1m8tyRJb7D2kvhjeR0vpK/hWv+tWmac7AmWZ/PWyJ4FlSeV7FZGzhRllkL1KNf5QpcsQH5MQOWziSGp8RlMczUehPaqAoklP77MIWNSdj3a5ZpOeVo3eadG9VZk8w8boaSxPepPybE2enRG20gxHuCrVWWKoMulVh3wFNW2qFVNnZuzccVmsVROjl6UDKLsJToD+hKE0SeeFiqk78Q5+d3OAvgBANYYl1GOAsQAAAABJRU5ErkJggg=="/>
+        <i title="Cambiar Tema" id="toggleIcon" class='bx bxs-moon toggleThemeIcon'></i>
         </div>
+        <!-- Cambiar idioma -->
         <div id="flags" class="flags">
           <div data-language="es">
             <img title="Cambiar Idioma" id="toggleIconLanguage" class="idiom" src="./imagenes/General/spain.svg" alt="Idioma español" />
