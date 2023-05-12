@@ -146,6 +146,7 @@ h1 {
 }
 
 .toggler {
+  transition: all 1s ease-in-out 0s;
   background: var(--bg-color-about);
 }
 
