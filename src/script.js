@@ -2,7 +2,7 @@
 let previousTitle = document.title;
 window.addEventListener('blur', () => {
   previousTitle = document.title
-  document.title = `😱 ¡Come back!`
+  document.title = `😱 ¡No te vayas!`
 })
 
 window.addEventListener('focus', () => {
@@ -93,3 +93,16 @@ flagsElement.addEventListener('click', (e) => {
     }
 })
 
+// Obtener todos los enlaces de la navbar
+const navLinks = document.querySelectorAll('.nav-link');
+
+// Agregar evento "click" a cada enlace para cerrar la navbar
+navLinks.forEach(link => {
+  link.addEventListener('click', () => {
+    // Cerrar la navbar
+    const navbar = document.querySelector('.navbar-collapse');
+    if (navbar.classList.contains('show')) {
+      navbar.classList.remove('show');
+    }
+  });
+});

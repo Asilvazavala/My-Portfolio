@@ -145,6 +145,10 @@ h1 {
   transition: all 1s ease-in-out 0s;
 }
 
+.toggler {
+  background: var(--bg-color-about);
+}
+
 .navbar img {
   border-radius: 50%;
   cursor: pointer;
@@ -324,7 +328,7 @@ h1 {
   flex-direction: column;
   align-items: center;
   justify-content: space-between;
-  transition: all 0.2s ease-in;
+  transition: all 1s ease-in-out 0s;
   box-shadow: 0 15px 20px #3337;
 }
 
@@ -336,7 +340,6 @@ h1 {
   border-bottom-left-radius: 20%;
   border-top-left-radius: 0%;
   border-bottom-right-radius: 0%;
-
 }
 
 
