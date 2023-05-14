@@ -632,7 +632,7 @@ footer {
 
 .textAreaFormContact:focus + .labelFormContact,
 .textAreaFormContact:not(:placeholder-shown) + .labelFormContact {
-  transform: translateY(-22px) scale(.7);
+  transform: translateY(-28px) scale(.7);
   transform-origin: left top;
   color: var(--bg-color-nav);
 }
