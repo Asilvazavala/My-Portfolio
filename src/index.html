@@ -315,7 +315,7 @@
         <div class="container text-center rectangulo d-flex justify-content-evenly">
           <div class="row">
             <!-- Columna 1 -->
-            <div data-section="contact" data-value="title" class="col-12 col-md-4 seccion-titulo">
+            <div data-section="contact" data-value="title" class="col-12 col-md-4 seccion-titulo colorWhite">
               Let's talk!
             </div>
             <!-- Columna 2 -->
@@ -340,22 +340,29 @@
 
     <!-- Footer -->
     <footer class="seccion-oscura d-flex flex-column align-items-center justify-content-center">
-      <form id="contacto" action="https://formsubmit.co/asilvazavala@gmail.com" method="POST" class="d-flex flex-column formContact">
-        <label data-section="footer" data-value="formName" class="labelFormContact">Name
-          <input type="text" name="name" id="name" class="m-3 p-2 inputFormContact" placeholder='Antonio silva...' />
-        </label>
-       
-        <label data-section="footer" data-value="formEmail" class="labelFormContact">Email
-          <input type='email' name="email" id="email" class="m-3 p-2 inputFormContact" placeholder='youremail@email.com...' />
-        </label>
+      <h2 id="contacto" data-section="footer" data-value="title" class="seccion-titulo">Contact me</h2>
+      <form action="https://formsubmit.co/asilvazavala@gmail.com" method="POST" class="d-flex flex-column formContact">
         
-        <label data-section="footer" data-value="formMessage" class="labelFormContact">Message
-          <textarea name="message" id="message" class="m-3 p-2 textAreaFormContact" placeholder='Your appreciate comment...' > </textarea>
-        </label>
+        <div class="formGroup">
+          <input type="text" name="name" id="name" class="inputFormContact" placeholder=' ' />
+          <label for="name" data-section="footer" data-value="formName" class="labelFormContact">Name</label>
+          <span class="formLine"></span>
+        </div>
+
+        <div class="formGroup">
+          <input type="email" name="email" id="email" class="inputFormContact" placeholder=' ' />
+          <label for="email" data-section="footer" data-value="formEmail" class="labelFormContact">Email</label>
+          <span class="formLine"></span>
+        </div>
+
+        <div class="formGroup">
+          <textarea name="message" id="message" class="textAreaFormContact" placeholder=' ' ></textarea>
+          <label for="message" data-section="footer" data-value="formMessage" class="labelFormContact">Message</label>
+        </div>
         
         <div data-section="footer" data-value="formButton" class="containerButtonForm">
           <input onclick="alert('Message submit succesfully, Thanks!')" type="submit" value="Submit" class="buttonFormContact"> />
-        </div>
+        </div> 
 
         <input type="hidden" name="_next" value="https://antonio-silva-portfolio.onrender.com/#contacto">
         <input type="hidden" name="_captcha" value="false">

@@ -2,6 +2,7 @@
 :root {
   --text-color-primary: #000;
   --text-color-secondary: #000;
+  --text-semiBlack: #454545ad;
   --bg-color: rgb(232, 232, 232);
   --bg-color-nav: #024c81;
   --bg-color-about: #fff;
@@ -73,6 +74,10 @@ h1 {
   color: black;
 }
 
+.colorWhite {
+  color: white !important;
+}
+
 .show {
   display: block;
 }
@@ -82,6 +87,7 @@ h1 {
 }
 
 .seccion-titulo {
+  color: var(--text-color-primary);
   font-size: 2rem;
   padding: 15px 0;
   font-family: 'Rubik Dirt', cursive;
@@ -590,30 +596,82 @@ footer {
 .formContact {
   background: #f7f5f7;
   width: 50%;
-  padding: 70px;
+  padding: 40px 60px;
   margin-top: 60px;
   margin-bottom: 140px;
   border-radius: 20px;
+  font-family: 'Poppins', sans-serif;
+}
+
+.formGroup {
+  position: relative;
+  padding-bottom: 50px;
 }
 
 .labelFormContact {
-  display: flex;
-  flex-direction: column;
-  text-align: center;
-  font-size: 1.8rem;
+  font-size: 1.3rem;
   font-weight: 600;
-  color: var(--bg-color-nav);
-  transition: all 1s ease-in-out 0s;
+  color: var(--text-semiBlack);
+  cursor: pointer;
+  position: absolute;
+  top: 0;
+  left: 5px;
+  transform: translateY(10px);
+  transition: transform .5s, color .3s;
 }
 
 .inputFormContact {
   font-size: 1.2rem;
   padding: 15px;
+  background: transparent;
+  width: 100%;
+  border: none;
+  outline: none;
+  border-bottom: 1px solid var(--text-semiBlack);
+}
+
+.textAreaFormContact:focus + .labelFormContact,
+.textAreaFormContact:not(:placeholder-shown) + .labelFormContact {
+  transform: translateY(-22px) scale(.7);
+  transform-origin: left top;
+  color: var(--bg-color-nav);
+}
+
+.textAreaFormContact:focus,
+.textAreaFormContact:not(:placeholder-shown) {
+  outline: 3px solid var(--bg-color-nav);
+}
+
+.inputFormContact:focus + .labelFormContact,
+.inputFormContact:not(:placeholder-shown) + .labelFormContact {
+  transform: translateY(-12px) scale(.7);
+  transform-origin: left top;
+  color: var(--bg-color-nav);
 }
 
 .textAreaFormContact {
   height: 160px;
+  padding: 0 8px;
+  width: 100%;
   font-size: 1.2rem;
+  background: transparent;
+}
+
+.formLine {
+  position: absolute;
+  bottom: 45%;
+  left: 0;
+  width: 100%;
+  height: 3px;
+  background: var(--bg-color-nav);
+  transform: scale(0);
+  transform: left bottom;
+  transition: transform .4s;
+}
+
+.inputFormContact:focus ~ .formLine,
+.inputFormContact:not(:placeholder-shown) ~ .formLine {
+  transform: scale(1);
 }
 
 .containerButtonForm {

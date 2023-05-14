@@ -56,9 +56,10 @@
     "description": "Contáctame para empezar con el desarrollo de tu proyecto asilvazavala@gmail.com"
   },
   "footer": {
-    "formName": "Nombre <input type='text' name='name' id='name' class='m-3 p-2 inputFormContact' placeholder='Antonio silva...' />",
-    "formEmail": "Correo <input type='email' name='email' id='email' class='m-3 p-2 inputFormContact' placeholder='tucorreo@correo.com...' />",
-    "formMessage": "Mensaje <textarea name='message' id='message' class='m-3 p-2 textAreaFormContact' placeholder='Tu valioso comentario...' > </textarea>",
+    "title": "¡Contáctame!",
+    "formName": "<label for='name' data-section='footer' data-value='formName' class='labelFormContact'>Nombre</label>",
+    "formEmail": "<label for='email' data-section='footer' data-value='formEmail' class='labelFormContact'>Correo</label>",
+    "formMessage": "<label for='message' data-section='footer' data-value='formMessage' class='labelFormContact'>Mensaje</label>",
     "formButton": "Enviar <input onclick='alert('Mensaje enviado correctamente, Gracias!')' type='submit' value='Enviar' class='buttonFormContact'> />",
     "phrase": "Aprendo y creo todos los días.<br>Hagámos un proyecto juntos.",
     "copyright": "Creado por Antonio Silva (2023) &#169;"

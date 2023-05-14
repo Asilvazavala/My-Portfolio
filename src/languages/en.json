@@ -56,9 +56,10 @@
     "description": "Contact me to start your web development project asilvazavala@gmail.com"
   },
   "footer": {
-    "formName": "Name <input type='text' name='name' id='name' class='m-3 p-2 inputFormContact' placeholder='Antonio silva...' />",
-    "formEmail": "Email <input type='email' name='email' id='email' class='m-3 p-2 inputFormContact' placeholder='youremail@email.com...' />",
-    "formMessage": "Message <textarea name='message' id='message' class='m-3 p-2 textAreaFormContact' placeholder='Your appreciate comment...' > </textarea>",
+    "title": "Contact me!",
+    "formName": "<label for='name' data-section='footer' data-value='formName' class='labelFormContact'>Name</label>",
+    "formEmail": "<label for='email' data-section='footer' data-value='formEmail' class='labelFormContact'>Email</label>",
+    "formMessage": "<label for='message' data-section='footer' data-value='formMessage' class='labelFormContact'>Message</label>",
     "formButton": "Submit <input onclick='alert('Message submit succesfully, Thanks!')' type='submit' value='Submit' class='buttonFormContact'> />",
     "phrase": "I learn and create every day.<br>Let's create a project together.",
     "copyright": "Created by Antonio Silva (2023) &#169;"
