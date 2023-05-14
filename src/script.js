@@ -106,3 +106,45 @@ navLinks.forEach(link => {
     }
   });
 });
+
+// Efecto scroll izquierda a derecha
+window.addEventListener('scroll', function() {
+  let animacionProyecto1 = document.getElementById('pro1')
+  let animacionProyecto3 = document.getElementById('pro3')
+
+  let posicionProyecto1 = animacionProyecto1.getBoundingClientRect().top;
+  let posicionProyecto3 = animacionProyecto3.getBoundingClientRect().top;
+
+  let tamañoPantalla = window.innerHeight/1.3;
+
+  if (posicionProyecto1 < tamañoPantalla) {
+    animacionProyecto1.style.animation = 'slideInLeft 1s ease-out'
+    animacionProyecto1.style.opacity = 1
+  }
+
+  if (posicionProyecto3 < tamañoPantalla) {
+    animacionProyecto3.style.animation = 'slideInLeft 1s ease-out'
+    animacionProyecto3.style.opacity = 1
+  }
+})
+
+// Efecto scroll derecha a izquierda
+window.addEventListener('scroll', function() {
+  let animacionProyecto2 = document.getElementById('pro2')
+  let animacionProyecto4 = document.getElementById('pro4')
+
+  let posicionProyecto2 = animacionProyecto2.getBoundingClientRect().top;
+  let posicionProyecto4 = animacionProyecto4.getBoundingClientRect().top;
+
+  let tamañoPantalla = window.innerHeight/1.3;
+
+  if (posicionProyecto2 < tamañoPantalla) {
+    animacionProyecto2.style.animation = 'slideInRight 1s ease-out'
+    animacionProyecto2.style.opacity = 1
+  }
+
+  if (posicionProyecto4 < tamañoPantalla) {
+    animacionProyecto4.style.animation = 'slideInRight 1s ease-out'
+    animacionProyecto4.style.opacity = 1
+  }
+})
