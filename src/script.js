@@ -155,14 +155,11 @@ window.addEventListener('scroll', function() {
   const message = document.getElementById('message');
   const form = document.getElementById('form');
 
-  form.addEventListener("submit", e => {
-    e.preventDefault()
-    let regexEmail = /^[\w-\.]+@([\w-]+\.)+[\w-]{2,4}$/
-
+  const enviarMensaje = () => {
     if (nombre.value.length > 0 && regexEmail.test(email.value) && message.value.length > 0) {
-      alert("Mensaje enviado con éxito")
+      alert("Mensaje enviado con éxito!!")
       nombre.value = ""
       email.value = ""
       message.value = ""
     }
-  })   
+  }
