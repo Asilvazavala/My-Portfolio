@@ -115,7 +115,7 @@ window.addEventListener('scroll', function() {
   let posicionProyecto1 = animacionProyecto1.getBoundingClientRect().top;
   let posicionProyecto3 = animacionProyecto3.getBoundingClientRect().top;
 
-  let tamañoPantalla = window.innerHeight/1.3;
+  let tamañoPantalla = window.innerHeight/1.2;
 
   if (posicionProyecto1 < tamañoPantalla) {
     animacionProyecto1.style.animation = 'slideInLeft 1s ease-out'
@@ -132,11 +132,17 @@ window.addEventListener('scroll', function() {
 window.addEventListener('scroll', function() {
   let animacionProyecto2 = document.getElementById('pro2')
   let animacionProyecto4 = document.getElementById('pro4')
+  let descriptionSobreMi = document.getElementById('descriptionSobreMi')
+  let cardsHabilidades = document.getElementById('cardsHabilidades')
+  let form = document.getElementById('form')
 
   let posicionProyecto2 = animacionProyecto2.getBoundingClientRect().top;
   let posicionProyecto4 = animacionProyecto4.getBoundingClientRect().top;
+  let posiciondescriptionSobreMi = descriptionSobreMi.getBoundingClientRect().top;
+  let posicioncardsHabilidades = cardsHabilidades.getBoundingClientRect().top;
+  let posicionform = form.getBoundingClientRect().top;
 
-  let tamañoPantalla = window.innerHeight/1.3;
+  let tamañoPantalla = window.innerHeight/1.2;
 
   if (posicionProyecto2 < tamañoPantalla) {
     animacionProyecto2.style.animation = 'slideInRight 1s ease-out'
@@ -146,6 +152,21 @@ window.addEventListener('scroll', function() {
   if (posicionProyecto4 < tamañoPantalla) {
     animacionProyecto4.style.animation = 'slideInRight 1s ease-out'
     animacionProyecto4.style.opacity = 1
+  }
+
+  if (posiciondescriptionSobreMi < tamañoPantalla) {
+    descriptionSobreMi.style.animation = 'slideInRight 1s ease-out'
+    descriptionSobreMi.style.opacity = 1
+  }
+
+  if (posicioncardsHabilidades < tamañoPantalla) {
+    cardsHabilidades.style.animation = 'slideInRight 1s ease-out'
+    cardsHabilidades.style.opacity = 1
+  }
+
+  if (posicionform < tamañoPantalla) {
+    form.style.animation = 'slideInRight 1s ease-out'
+    form.style.opacity = 1
   }
 })
 

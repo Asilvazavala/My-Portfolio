@@ -176,59 +176,56 @@ h1 {
 /* Sección Hero */
 .hero {
   background-color: var(--bg-color);
-  transition: all 1s ease-in-out 0s;
+  transition: all 1s linear 0s !important;
   min-height: 450px;
   text-align: center;
-  padding-top: 100px;
+  padding-top: 70px;
 }
 
 .hero-principal {
   padding: 3rem;
 }
 
-.hero-principal h1, h2 {
+.hero-principal h1 {
   -webkit-animation: tracking-in-contract-bck-top 1.5s cubic-bezier(0.215, 0.610, 0.355, 1.000) 1s both;
 	        animation: tracking-in-contract-bck-top 1.5s cubic-bezier(0.215, 0.610, 0.355, 1.000) 1s both;
 }
 
-@-webkit-keyframes tracking-in-contract-bck-top {
-  0% {
-    letter-spacing: 1em;
-    -webkit-transform: translateZ(400px) translateY(-300px);
-            transform: translateZ(400px) translateY(-300px);
-    opacity: 0;
-  }
-  40% {
-    opacity: 0.6;
-  }
-  100% {
-    -webkit-transform: translateZ(0) translateY(0);
-            transform: translateZ(0) translateY(0);
-    opacity: 1;
-  }
-}
-@keyframes tracking-in-contract-bck-top {
-  0% {
-    letter-spacing: 1em;
-    -webkit-transform: translateZ(400px) translateY(-300px);
-            transform: translateZ(400px) translateY(-300px);
-    opacity: 0;
-  }
-  40% {
-    opacity: 0.6;
-  }
-  100% {
-    -webkit-transform: translateZ(0) translateY(0);
-            transform: translateZ(0) translateY(0);
-    opacity: 1;
-  }
+.hero-principal h1 {
+  font-size: 3.2rem;
 }
 
-.hero-principal h2 {
-  font-size: 1.5rem;
-  color: var(--text-color-primary);
-  font-weight: 500;
-  transition: all 1s ease-in-out 0s;
+.textAnimate {
+  position: relative;
+}
+
+.hero-principal .occupationAnimation {
+  font-size: 2.7rem;
+  font-weight: 700;
+  color: transparent;
+  -webkit-text-stroke: .7px var(--bg-color-black);
+  background-image: linear-gradient(var(--bg-color-black), var(--bg-color-black));
+  background-repeat: no-repeat;
+  -webkit-background-clip: text;
+  background-clip: text;
+  background-position: -33rem 0;
+  animation: tracking-in-contract-bck-top 1.5s cubic-bezier(0.215, 0.610, 0.355, 1.000) 1s both, homeBgText 6s linear infinite;
+  animation-delay: 2s;
+  transition: all 1s linear 0s !important;
+}
+
+.hero-principal .occupationAnimation::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 0;
+  height: 100%;
+  border-right: 2px solid var(--bg-color-black);
+  z-index: -1;
+  animation: tracking-in-contract-bck-top 1.5s cubic-bezier(0.215, 0.610, 0.355, 1.000) 1s both, homeCursorText 6s linear infinite;
+  animation-delay: 2s;
+  transition: all 1s linear 0s !important;
 }
 
 .hero-imagen-perfil {
@@ -288,7 +285,9 @@ h1 {
   color: var(--bg-color-about);
   transition: all 1s ease-in-out 0s;
   font-weight: 500;
+  opacity: 0;
 }
+
 .sobre-mi h2 {
   color: var(--bg-color-about);
   transition: all 1s ease-in-out 0s;
@@ -306,6 +305,10 @@ h1 {
   padding: 160px 40px 110px 40px;
   background-color: var(--bg-color);
   transition: all 1s ease-in-out 0s;
+}
+
+.experiencia .row {
+    opacity: 0;
 }
 
 .experienciaCard {
@@ -580,6 +583,10 @@ footer {
   transition: all 1s ease-in-out 0s;
 }
 
+footer form {
+  opacity: 0;
+}
+
 .footer-logo {
   height: 150px;
   width: 150px;
@@ -822,6 +829,75 @@ footer p {
   }
 }
 
+@-webkit-keyframes tracking-in-contract-bck-top {
+  0% {
+    letter-spacing: 1em;
+    -webkit-transform: translateZ(400px) translateY(-300px);
+            transform: translateZ(400px) translateY(-300px);
+    opacity: 0;
+  }
+  40% {
+    opacity: 0.6;
+  }
+  100% {
+    -webkit-transform: translateZ(0) translateY(0);
+            transform: translateZ(0) translateY(0);
+    opacity: 1;
+  }
+}
+@keyframes tracking-in-contract-bck-top {
+  0% {
+    letter-spacing: 1em;
+    -webkit-transform: translateZ(400px) translateY(-300px);
+            transform: translateZ(400px) translateY(-300px);
+    opacity: 0;
+  }
+  40% {
+    opacity: 0.6;
+  }
+  100% {
+    -webkit-transform: translateZ(0) translateY(0);
+            transform: translateZ(0) translateY(0);
+    opacity: 1;
+  }
+}
+
+/* Cursor Website titulo website developer */
+@keyframes homeCursorText {
+  0%,
+  10%,
+  100% {
+    width: 0;
+  }
+
+  65%,
+  78%,
+  85% {
+    width: 100%;
+    opacity: 1;
+  }
+
+  75%,
+  81% {
+    opacity: 0;
+  }
+}
+
+@keyframes homeBgText {
+  0% {
+    background-position: -33rem 0;
+  }
+
+  10%,
+  100% {
+    background-position: -24rem 0;
+  }
+
+  65%,
+  85% {
+    background-position: 0 0;
+  }
+}
 
 /* Adaptable responsivo */
 @media screen and (max-width: 767px) {
@@ -849,6 +925,35 @@ footer p {
   .idiom {
     margin-left: 0;
    }
+}
+
+@media screen and (max-width: 473px) {
+  @keyframes homeBgText {
+    0% {
+      background-position: -33rem 0;
+    }
+  
+    10%,
+    100% {
+      background-position: -13rem 0;
+    }
+  
+    65%,
+    85% {
+      background-position: 0 0;
+    }
+  }
+
+  .hero-principal .occupationAnimation {
+    background-position: -33rem 0;
+  } 
+  
+  .hero-principal .textAnimate {
+    display: flex;
+    justify-content: center;
+    width: 65%;
+  }
+  
 }
 
 @media screen and (max-width: 420px){

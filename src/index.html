@@ -74,7 +74,9 @@
         </div>
         <div class="hero-imagen-perfil"></div> 
         <h1 data-section="hero" data-value="name">Hi, I´m Antonio Silva</h1>
-        <h2 data-section="hero" data-value="occupation">Website developer</h2>
+        <div class="textAnimate">
+          <h2 class="occupationAnimation" data-section="hero" data-value="occupation">Website developer</h2>
+        </div>
       </div>
       <div class="hero-inferior">
         <img class="hero-imagen-inferior img-fluid" src="imagenes/General/Sin-fondo-HTML-CSS-JS-React-removebg-preview.png" alt="Monitor laptop y logos de HTML, CSS, JavaScript y React">
@@ -84,8 +86,8 @@
     <!-- Sobre mi -->
     <section id="sobre-mi" class="sobre-mi seccion-oscura">
       <div class="contenedor d-flex flex-column ">
-        <h2 data-section="about" data-value="title" class="seccion-titulo">Meet Antonio Silva</h2>
-        <p data-section="about" data-value="description" class="seccion-texto">Hi, I'm Antonio, I live in the state of Guanajuato in Mexico, I have an engineering degree in information technology from the Universidad de la Salle Bajío. In the last 8 years I have worked as a hardware and software support technician for my local government.<br><br>
+        <h2 id="titleSobreMi" data-section="about" data-value="title" class="seccion-titulo">Meet Antonio Silva</h2>
+        <p id="descriptionSobreMi" data-section="about" data-value="description" class="seccion-texto">Hi, I'm Antonio, I live in the state of Guanajuato in Mexico, I have an engineering degree in information technology from the Universidad de la Salle Bajío. In the last 8 years I have worked as a hardware and software support technician for my local government.<br><br>
           I tell you that I have worked in teams for the development of pages for: e-commerce, information consultation website, etc. Using technologies like: Javascript, HTML, CSS, React, Redux, NodeJS, PostgreSQL, Git, Github.<br><br>    
           <a href="#contacto">Contact me</a> to understand your needs and thus be able to help you.</p>
       </div>
@@ -94,8 +96,8 @@
     <!-- Experiencia -->
     <section id="experiencia" class="experiencia seccion-semiClara">
       <div class="container text-center">
-        <div class="row">
-          <h2 data-section="skills" data-value="title" class="seccion-titulo texto-negro">My skills</h2>
+        <h2 id="titleHabilidades" data-section="skills" data-value="title" class="seccion-titulo texto-negro">My skills</h2>
+        <div id="cardsHabilidades" class="row">
 
           <!-- Desarrollo web -->
           <div class="col-12 col-md-4 columna experienciaCard">
