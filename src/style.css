@@ -704,6 +704,7 @@ footer form {
   background: var(--bg-color-nav);
   transition: all 1s ease-in-out 0s;
   color: white;
+  border-radius: 20px;
 }
 
 .buttonFormContact:hover {

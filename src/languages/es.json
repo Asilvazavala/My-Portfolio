@@ -41,7 +41,7 @@
   "projects": {
     "title": "Mis proyectos",
     "project1Name": "Tienda Mi costura",
-    "project1Description": "Enfocada en las personas que realizan servicios de costura y venden estos artículos, Mi Costura ofrece sencillez y diseño limpio, esta tienda prioriza la experiencia del usuario, facilitando que los clientes inicien sesión con Auth0 y compren con Mercado pago.",
+    "project1Description": "Venta de servicios/productos de costura, cuenta con autenticación de usuario con Auth0, pasarela de pago con mercadoPago, modo claro/oscuro, filtros acumulativos, búsquedas, Local Storage, Reseñas/puntuación, panel de administrador.",
     "project2Name": "Gimnasio Club",
     "project2Description": "Enfocada a las personas que aman hacer ejercicio, esta web ofrece sencillez y diseño limpio, prioriza la experiencia del usuario con un diseño responsivo, únete a nosotros para que se ajuste fácil y completamente a tu cuerpo, ¿aceptas el reto?",
     "project3Name": "Mundo Pokemon",
