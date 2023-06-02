@@ -37,6 +37,11 @@ const effectProject3 = () => {
   project3.className = "project3Effect"     
 };
 
+const effectProject4 = () => {
+  const project4 = document.getElementById('project4');
+  project4.className = "project4Effect"     
+};
+
 // Regresar a la imagen original proyectos
 const normalProject = () => {
   const project1 = document.getElementById('project1');
@@ -45,6 +50,8 @@ const normalProject = () => {
   project2.className = "project2"     
   const project3 = document.getElementById('project3');
   project3.className = "project3"     
+  const project4 = document.getElementById('project4');
+  project4.className = "project4"     
 };
 
 // Cambiar entre dark/light mode

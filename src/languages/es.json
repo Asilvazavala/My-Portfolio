@@ -12,7 +12,8 @@
   },
   "about": {
     "title": "Conoce a Antonio Silva",
-    "description": "Hola, soy Antonio, vivo en el estado de Guanajuato en México, soy ingeniero en tecnologías de la información de la Universidad de la Salle Bajío. En los últimos 8 años he trabajado como técnico de soporte de hardware y software para el gobierno de mi localidad. También tengo conocimiento del idioma inglés a nivel: B1.<br><br> Les cuento que he trabajado en equipos para el desarrollo de páginas como: comercio electrónico, sitio web de consulta de información, etc Utilizando tecnologías como: Javascript, HTML, CSS, React, Redux, NodeJS, PostgreSQL, Git, Github.<br><br><a href='#contacto'>Contáctame</a> para entender tus necesidades y así poder ayudarte."
+    "description": "Hola, vivo en el estado de Guanajuato en México, soy ingeniero en tecnologías de la información, estuié en la Universidad de la Salle Bajío. En los últimos 8 años he trabajado como técnico de soporte de hardware y software para el gobierno de mi localidad. También tengo conocimiento del idioma inglés en el nivel B1.<br><br> He trabajado en el desarrollo de páginas como: comercio electrónico, blog, página de negocio, sitio web de consulta de información, etc. Utilizando tecnologías como: Javascript, React, Redux, NodeJS, PostgreSQL, Git, Github.",
+    "buttonCV": "Descargar CV"
   },
   "skills": {
     "title": "Mis conocimientos",
@@ -40,14 +41,14 @@
   },
   "projects": {
     "title": "Mis proyectos",
-    "project1Name": "Tienda Mi costura",
-    "project1Description": "Venta de servicios/productos de costura, cuenta con autenticación de usuario con Auth0, pasarela de pago con mercadoPago, modo claro/oscuro, filtros acumulativos, búsquedas, Local Storage, Reseñas/puntuación, panel de administrador.",
+    "project1Name": "Blog Culemania",
+    "project1Description": "Blog de noticias del FC Barcelona y el fútbol mundial, cuenta con autenticación de usuario, CRUD de comentarios con la posibilidad de dar (like/dislike), guardado de información en base de datos, filtrado por categoría/ID, renderizado condicional, paginado, formulario de contacto, diseño responsivo.",
     "project2Name": "Gimnasio Club",
-    "project2Description": "Enfocada a las personas que aman hacer ejercicio, esta web ofrece sencillez y diseño limpio, prioriza la experiencia del usuario con un diseño responsivo, únete a nosotros para que se ajuste fácil y completamente a tu cuerpo, ¿aceptas el reto?",
-    "project3Name": "Mundo Pokemon",
-    "project3Description": "Enfocado a las personas amantes de los pokemon, se pueden consultar, modificar, eliminar y crear pokemon, los cuales son consumidos a través de una API externa y, a su vez, son almacenados en una base de datos. Hecho por un amante de este maravilloso mundo.",
-    "project4Name": "Cine Club",
-    "project4Description": "Enfocado a las personas que aman las películas, ofrece simplicidad y un diseño limpio para la experiencia del usuario, vea cualquier película en cualquier lugar.",
+    "project2Description": "Planea tus clases de ejercicio aquí, esta web ofrece sencillez y diseño limpio, prioriza la experiencia del usuario con un diseño responsivo, únete a nosotros para que se ajuste fácil y completamente a tu cuerpo, ¿aceptas el reto?",
+    "project3Name": "Mi costura",
+    "project3Description": "Enfocado en vender servicios/productos de costura, cuenta con autenticación de usuario con Auth0, pasarela de pago con mercadoPago, modo oscuro/claro, filtros combinados, diseño minimalista, búsqueda por nombre, almacenamiento local, Dashboard admin, Reviews/score.",
+    "project4Name": "Mundo Pokemon",
+    "project4Description": "Regresa al mundo pokemon, se pueden consultar, modificar, eliminar y crear pokemon, los cuales son consumidos a través de una API externa y, a su vez, son almacenados en una base de datos. Hecho por un amante de este maravilloso mundo.",
     "code": "Código <i class='bi bi-github'></i>",
     "demo": "En vivo <i class='bi bi-code-slash'></i>"
   },

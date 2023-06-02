@@ -175,12 +175,11 @@ h1 {
   color: var(--bg-color-about);
   margin: 0 20px;
   font-weight: 600;
-  transition: all 1s ease-in-out 0s;
+  transition: all 0.3s ease-in-out 0s;
 }
 
 .navbar a:hover {
   color: var(--bg-color-black);
-  transition: all 1s ease-in-out 0s;
 }
 
 /* Sección Hero */
@@ -287,7 +286,7 @@ h1 {
 /* Sobre mi */
 .sobre-mi {
   height: 550px;
-  padding: 100px 0 100px 0;
+  padding: 50px 0 50px 0;
   transition: all 1s ease-in-out 0s;
 }
 
@@ -308,11 +307,31 @@ h1 {
   text-align: center;
 }
 
+.btnAbout {
+  padding: 6px 12px;
+  color: var(--text-color-primary);
+  border: 2px solid var(--text-color-primary);
+  letter-spacing: 2px;
+  width: auto;
+  border-radius: 20px;
+  font-size: 1.4rem;
+  overflow: hidden;
+  background: transparent;
+  cursor: pointer;
+  transition: all .5s ease;
+  text-decoration: none;
+}
+
+.btnAbout:hover {
+  background: var(--text-color-primary);
+  color: var(--bg-color-nav);
+}
+
 
 
 /* Experiencia */
 .experiencia {
-  padding: 160px 40px 110px 40px;
+  padding: 90px 40px 40px 40px;
   background-color: var(--bg-color);
   transition: all 1s ease-in-out 0s;
 }
@@ -348,21 +367,18 @@ h1 {
   flex-direction: column;
   align-items: center;
   justify-content: space-between;
-  transition: all 1s ease-in-out 0s;
+  transition: all .5s ease-in-out 0s;
   box-shadow: 0 15px 20px #3337;
 }
 
 .experiencia .columna:hover {
   color: white;
   background-color: var(--bg-color-nav);
-  transition: all 1s ease-in-out 0s;
   border-top-right-radius: 20%;
   border-bottom-left-radius: 20%;
   border-top-left-radius: 0%;
   border-bottom-right-radius: 0%;
 }
-
-
 
 .experiencia-titulo {
   font-size: 25px;
@@ -403,7 +419,7 @@ h1 {
 }
 
 .pro_text h3 {
-  color: var(--text-color-primary);
+  color: black;
   transition: all 1s ease-in-out 0s;
   font-weight: 600;
 }
@@ -435,7 +451,7 @@ h1 {
   padding: 1rem;
 }
 
-.project_img, .project2_img, .project3_img {
+.project_img, .project2_img, .project3_img, .project4_img {
   height: auto;
   width: 40rem;
   border-radius: 5%;
@@ -454,7 +470,8 @@ h1 {
   opacity: 0;
 }
 
-.project3 {
+.project4,
+.project1 {
   height: auto;
   width: 100%;
   transform: translateY(0%); 
@@ -462,7 +479,7 @@ h1 {
 }
 
 .project2,
-.project1 {
+.project3 {
   height: auto;
   width: 100%;
   transform: translateY(0%); 
@@ -470,13 +487,13 @@ h1 {
 }
 
 .project2Effect,
-.project1Effect {
+.project3Effect {
   height: auto;
   width: 100%;
   transition: transform 20s ease-in-out 0s;
 }
 
-.project1Effect {
+.project3Effect {
   transform: translateY(-86%); 
 }
 
@@ -484,11 +501,18 @@ h1 {
   transform: translateY(-84%); 
 }
 
-.project3Effect {
+.project4Effect {
   height: auto;
   width: 100%;
   transition: transform 10s ease-in-out 0s;
   transform: translateY(-47%); 
+}
+
+.project1Effect {
+  height: auto;
+  width: 100%;
+  transition: transform 10s ease-in-out 0s;
+  transform: translateY(-69%); 
 }
 
 .projects-grid .pro_text {
@@ -513,12 +537,12 @@ h1 {
 }
 
 .links a:hover {
-  color: rgb(12, 110, 253);
+  color: #00abf0;
 }
 
 .links a {
-  color: var(--text-color-primary);
-  transition: all 1s ease-in-out 0s;
+  color: black;
+  transition: all .3s ease-in-out ;
   font-size: 1.4rem;
   font-weight: 500;
   margin-right: 45px; 
@@ -701,15 +725,16 @@ footer form {
   margin-top: 10px;
   font-size: 1.6rem;
   padding: 7px 15px;
-  background: var(--bg-color-nav);
-  transition: all 1s ease-in-out 0s;
-  color: white;
+  background: transparent;
+  transition: all .3s ease;
+  color: var(--text-semiBlack);
   border-radius: 20px;
+  border: 2px solid var(--text-semiBlack);
 }
 
 .buttonFormContact:hover {
-  color: #0a0a23;
-  background: white;
+  background: var(--bg-color-nav);
+  color: var(--bg-color-black);
 }
 
 .iconos-redes-sociales a {
@@ -977,13 +1002,13 @@ footer p {
   }
 
   .sobre-mi {
-    min-height: 1200px;
+    min-height: 1050px;
   }
 }
 
 @media screen and (max-width: 320px) {
   .sobre-mi {
-    height: 1500px;
+    height: 1350px;
   }
   .hero-imagen-perfil {
     width: 250px;
@@ -1018,7 +1043,7 @@ footer p {
     width: auto;
   }
 
-  .project_img, .project2_img, .project3_img {
+  .project_img, .project2_img, .project3_img, .project4_img {
     height: 28rem;
     width: auto;
     padding: 10px 10px;
@@ -1042,19 +1067,19 @@ footer p {
 }
 
 @media screen and (max-width: 650px) {
-  .project_img, .project2_img, .project3_img {
+  .project_img, .project2_img, .project3_img, .project4_img {
     max-height: 22rem;
   }
 }
 
 @media screen and (max-width: 550px) {
-  .project_img, .project2_img, .project3_img {
+  .project_img, .project2_img, .project3_img, .project4_img {
     max-height: 17rem;
   }
 }
 
 @media screen and (max-width: 450px) {
-  .project_img, .project2_img, .project3_img {
+  .project_img, .project2_img, .project3_img, .project4_img {
     max-height: 13rem;
   }
   .links a {
@@ -1066,7 +1091,7 @@ footer p {
 }
 
 @media screen and (max-width: 380px) {
-  .project_img, .project2_img, .project3_img {
+  .project_img, .project2_img, .project3_img, .project4_img {
     max-height: 10rem;
   }
 }

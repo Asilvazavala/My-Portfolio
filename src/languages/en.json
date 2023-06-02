@@ -12,7 +12,8 @@
   },
   "about": {
     "title": "Meet Antonio Silva",
-    "description": "Hi, I'm Antonio, I live in the state of Guanajuato in Mexico, I have an engineering degree in information technology from the Universidad de la Salle Bajío. In the last 8 years I have worked as a hardware and software support technician for my local government. I also have knowledge of the English language at level: B1.<br><br>  I tell you that I have worked in teams for the development of pages for: e-commerce, information consultation website, etc. Using technologies like: Javascript, HTML, CSS, React, Redux, NodeJS, PostgreSQL, Git, Github.<br><br><a href='#contacto'>Contact me</a> to understand your needs and thus be able to help you."
+    "description": "Hi, I live in the state of Guanajuato in Mexico, I have an engineering degree in information technology from Universidad de la Salle Bajío. In the last 8 years I have worked as a hardware and software support technician for my local government. I also have knowledge of the English language at level B1.<br><br> I have worked in development of pages for: e-commerce, blog, landing pages, information consultation website, etc. Using technologies like: Javascript, React, Redux, NodeJS, PostgreSQL, Git, Github.",
+    "buttonCV": "Downolad CV"
   },
   "skills": {
     "title": "My skills",
@@ -40,14 +41,14 @@
   },
   "projects": {
     "title": "My projects",
-    "project1Name": "Marketplace My seam",
-    "project1Description": "Focused sell sewing services/products, has user authentication with Auth0, payment gateway with mercadoPago, dark/light mode, combined filters, minimalist design, search by name, Local Storage, Dashboard admin, Reviews/score.",
+    "project1Name": "Blog Culemania",
+    "project1Description": "FC Barcelona and world football news blog, has user authentication, CRUD of comments with the possibility of giving (like/dislike), saving information in the database, filtering by category/ID, conditional rendering, pagination, contact form, responsive design.",
     "project2Name": "Gym Fitness Club",
-    "project2Description": "Focused on the people who loves do excersice, this website offers simplicity and clean design, prioritizes the user experience with responsive design, join us to fit easily and completely your body, do you accept the challenge?",
-    "project3Name": "Pokemon World",
-    "project3Description": "Focused on the people who loves pokemon, You can consult, modify, delete and create pokemon, which are consumed through an external API and, in turn, are stored in a database. Made by a lover of this wonderful world.",
-    "project4Name": "Cine Club",
-    "project4Description": "Focused on the people who loves movies, offers simplicity and clean design for the user experience, see any movie in any place.",
+    "project2Description": "Plan your exercise classes here, this website offers simplicity and clean design, prioritizes the user experience with responsive design, join us to fit easily and completely your body, do you accept the challenge?",
+    "project3Name": "Marketplace My seam",
+    "project3Description": "Focused sell sewing services/products, has user authentication with Auth0, payment gateway with mercadoPago, dark/light mode, combined filters, minimalist design, search by name, Local Storage, Dashboard admin, Reviews/score.",
+    "project4Name": "Pokemon World",
+    "project4Description": "Return to pokemon world, You can consult, modify, delete and create pokemon, which are consumed through an external API and, in turn, are stored in a database. Made by a lover of this wonderful world.",
     "code": "Code <i class='bi bi-github'></i>",
     "demo": "Demo <i class='bi bi-code-slash'></i>"
   },
