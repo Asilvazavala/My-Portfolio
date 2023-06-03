@@ -11,6 +11,7 @@
 
 :root {
   --text-color-primary: #000;
+  --text-color-CV: #fff;
   --text-color-secondary: #000;
   --text-semiBlack: #454545ad;
   --bg-color: rgb(232, 232, 232);
@@ -26,6 +27,7 @@ body {
 
 body.dark {
   --text-color-primary: #00abf0;
+  --text-color-CV: #00abf0;
   --text-color-secondary: #081b29;
   --bg-color: #192e3c;
   --bg-color-nav: #081b29;
@@ -294,7 +296,7 @@ h1 {
   color: var(--bg-color-about);
   transition: all 1s ease-in-out 0s;
   font-weight: 500;
-  opacity: 0;
+  
 }
 
 .sobre-mi h2 {
@@ -309,8 +311,8 @@ h1 {
 
 .btnAbout {
   padding: 6px 12px;
-  color: var(--text-color-primary);
-  border: 2px solid var(--text-color-primary);
+  color: var(--text-color-CV);
+  border: 2px solid var(--text-color-CV);
   letter-spacing: 2px;
   width: auto;
   border-radius: 20px;
@@ -323,8 +325,70 @@ h1 {
 }
 
 .btnAbout:hover {
-  background: var(--text-color-primary);
+  background: var(--text-color-CV);
   color: var(--bg-color-nav);
+}
+
+.boton4 {
+  font-size: 1.25rem;
+  background: transparent;
+  color: var(--text-color-CV);
+  border: 2px solid var(--text-color-CV);
+  padding: 0.7rem 1em;
+  padding-left: 0.9em;
+  text-decoration: none;
+  display: flex;
+  align-items: center;
+  border-radius: 16px;
+  overflow: hidden;
+  transition: all .5s ease;
+}
+
+.boton4 span {
+  display: block;
+  margin-left: 0.3em;
+  transition: all 0.5s ease-in-out;
+}
+
+.buttonFormContact i,
+.boton4 i {
+  display: block;
+  transform-origin: center center;
+  transition: transform 0.3s ease-in-out;
+  transform: rotate(-45deg);
+}
+
+.buttonFormContact:hover .wrapper,
+.boton4:hover .wrapper {
+  animation: fly 0.6s ease-in-out infinite alternate;
+}
+
+.boton4:hover {
+  background: var(--text-color-CV);
+  color: var(--bg-color-nav);
+}
+
+.boton4:hover i {
+  transform: translateX(3em) rotate(0deg) scale(1.7);
+}
+
+.buttonFormContact:hover i {
+  transform: translateX(1.7em) rotate(0deg) scale(1.7);
+}
+
+.buttonFormContact:hover span,
+.boton4:hover span {
+  transform: translateX(10em);
+}
+
+.buttonFormContact:active,
+.boton4:active {
+  transform: scale(0.95);
+}
+
+@keyframes fly {
+  from { transform: translateY(0.1em);}
+  to { transform: translateY(-0.1em);}
 }
 
 
@@ -334,10 +398,6 @@ h1 {
   padding: 90px 40px 40px 40px;
   background-color: var(--bg-color);
   transition: all 1s ease-in-out 0s;
-}
-
-.experiencia .row {
-    opacity: 0;
 }
 
 .experienciaCard {
@@ -471,26 +531,26 @@ h1 {
 }
 
 .project4,
-.project1 {
+.project2 {
   height: auto;
   width: 100%;
   transform: translateY(0%); 
   transition: transform 10s ease-in-out 0s;
 }
 
-.project2,
+.project1,
 .project3 {
   height: auto;
   width: 100%;
   transform: translateY(0%); 
-  transition: transform 20s ease-in-out 0s;
+  transition: transform 15s ease-in-out 0s;
 }
 
 .project2Effect,
 .project3Effect {
   height: auto;
   width: 100%;
-  transition: transform 20s ease-in-out 0s;
+  transition: transform 15s ease-in-out 0s;
 }
 
 .project3Effect {
@@ -498,7 +558,7 @@ h1 {
 }
 
 .project2Effect {
-  transform: translateY(-84%); 
+  transform: translateY(-69%); 
 }
 
 .project4Effect {
@@ -511,8 +571,8 @@ h1 {
 .project1Effect {
   height: auto;
   width: 100%;
-  transition: transform 10s ease-in-out 0s;
-  transform: translateY(-69%); 
+  transition: transform 20s ease-in-out 0s;
+  transform: translateY(-84%); 
 }
 
 .projects-grid .pro_text {
@@ -617,10 +677,6 @@ footer {
   transition: all 1s ease-in-out 0s;
 }
 
-footer form {
-  opacity: 0;
-}
-
 .footer-logo {
   height: 150px;
   width: 150px;
@@ -719,16 +775,20 @@ footer form {
 .containerButtonForm {
   display: flex;
   justify-content: center;
+  align-items: center;
 }
 
 .buttonFormContact {
-  margin-top: 10px;
-  font-size: 1.6rem;
-  padding: 7px 15px;
+  font-size: 1.25rem;
+  padding: 0.7rem 1em;
+  padding-left: 0.9em;
+  display: flex;
+  align-items: center;
+  border-radius: 16px;
+  overflow: hidden;
+  transition: all .5s ease;
   background: transparent;
-  transition: all .3s ease;
   color: var(--text-semiBlack);
-  border-radius: 20px;
   border: 2px solid var(--text-semiBlack);
 }
 

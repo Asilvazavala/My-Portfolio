@@ -12,7 +12,7 @@
   },
   "about": {
     "title": "Conoce a Antonio Silva",
-    "description": "Hola, vivo en el estado de Guanajuato en México, soy ingeniero en tecnologías de la información, estuié en la Universidad de la Salle Bajío. En los últimos 8 años he trabajado como técnico de soporte de hardware y software para el gobierno de mi localidad. También tengo conocimiento del idioma inglés en el nivel B1.<br><br> He trabajado en el desarrollo de páginas como: comercio electrónico, blog, página de negocio, sitio web de consulta de información, etc. Utilizando tecnologías como: Javascript, React, Redux, NodeJS, PostgreSQL, Git, Github.",
+    "description": "Hola, vivo en el estado de Guanajuato en México, soy ingeniero en tecnologías de la información, estudié en la Universidad de la Salle Bajío. En los últimos 8 años he trabajado como técnico de soporte de hardware y software para el gobierno de mi localidad. También tengo conocimiento del idioma inglés en el nivel B1.<br><br> He trabajado en el desarrollo de páginas como: comercio electrónico, blog, página de negocio, sitio web de consulta de información, etc. Utilizando tecnologías como: JavaScript, React, Redux, NodeJS, PostgreSQL, Git, Github.",
     "buttonCV": "Descargar CV"
   },
   "skills": {
@@ -21,7 +21,7 @@
     "project1Description": "Tengo estos conocimientos como desarrollador:",
     "project1Skill1": "Html",
     "project1Skill2": "Css",
-    "project1Skill3": "Javascript",
+    "project1Skill3": "JavaScript",
     "project1Skill4": "React",
     "project1Skill5": "Redux",
     "project1Skill6": "NodeJS",
@@ -42,7 +42,7 @@
   "projects": {
     "title": "Mis proyectos",
     "project1Name": "Gimnasio Club",
-    "project1Description": "Planea tus clases de ejercicio aquí, esta web ofrece sencillez y diseño limpio, prioriza la experiencia del usuario con un diseño responsivo, únete a nosotros para que se ajuste fácil y completamente a tu cuerpo, ¿aceptas el reto?",
+    "project1Description": "Planea tus clases de ejercicio aquí, esta web ofrece sencillez y diseño limpio, prioriza la experiencia del usuario con un diseño responsivo, únete a nosotros para transformar por completo tu cuerpo, ¿aceptas el reto?",
     "project2Name": "Blog Culemania",
     "project2Description": "Blog de noticias del FC Barcelona y el fútbol mundial, cuenta con autenticación de usuario, CRUD de comentarios con la posibilidad de dar (like/dislike), guardado de información en base de datos, filtrado por categoría/ID, renderizado condicional, paginado, formulario de contacto, diseño responsivo.",
     "project3Name": "Mi costura",
@@ -61,7 +61,7 @@
     "formName": "<label for='name' data-section='footer' data-value='formName' class='labelFormContact'>Nombre</label>",
     "formEmail": "<label for='email' data-section='footer' data-value='formEmail' class='labelFormContact'>Correo</label>",
     "formMessage": "<label for='message' data-section='footer' data-value='formMessage' class='labelFormContact'>Mensaje</label>",
-    "formButton": "Enviar <input onclick='alert('Mensaje enviado correctamente, Gracias!')' type='submit' value='Enviar' class='buttonFormContact'> />",
+    "formButton": "Enviar",
     "phrase": "Aprendo y creo todos los días.<br>Hagámos un proyecto juntos.",
     "copyright": "Creado por Antonio Silva (2023) &#169;"
   }

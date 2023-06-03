@@ -139,15 +139,9 @@ window.addEventListener('scroll', function() {
 window.addEventListener('scroll', function() {
   let animacionProyecto2 = document.getElementById('pro2')
   let animacionProyecto4 = document.getElementById('pro4')
-  let descriptionSobreMi = document.getElementById('descriptionSobreMi')
-  let cardsHabilidades = document.getElementById('cardsHabilidades')
-  let form = document.getElementById('form')
 
   let posicionProyecto2 = animacionProyecto2.getBoundingClientRect().top;
   let posicionProyecto4 = animacionProyecto4.getBoundingClientRect().top;
-  let posiciondescriptionSobreMi = descriptionSobreMi.getBoundingClientRect().top;
-  let posicioncardsHabilidades = cardsHabilidades.getBoundingClientRect().top;
-  let posicionform = form.getBoundingClientRect().top;
 
   let tamañoPantalla = window.innerHeight/1.2;
 
@@ -161,20 +155,6 @@ window.addEventListener('scroll', function() {
     animacionProyecto4.style.opacity = 1
   }
 
-  if (posiciondescriptionSobreMi < tamañoPantalla) {
-    descriptionSobreMi.style.animation = 'slideInRight 1s ease-out'
-    descriptionSobreMi.style.opacity = 1
-  }
-
-  if (posicioncardsHabilidades < tamañoPantalla) {
-    cardsHabilidades.style.animation = 'slideInRight 1s ease-out'
-    cardsHabilidades.style.opacity = 1
-  }
-
-  if (posicionform < tamañoPantalla) {
-    form.style.animation = 'slideInRight 1s ease-out'
-    form.style.opacity = 1
-  }
 })
 
 // Validación formulario de contacto

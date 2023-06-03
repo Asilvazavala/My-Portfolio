@@ -91,8 +91,11 @@
         <p id="descriptionSobreMi" data-section="about" data-value="description" class="seccion-texto">Hi, I live in the state of Guanajuato in Mexico, I have an engineering degree in information technology from Universidad de la Salle Bajío. In the last 8 years I have worked as a hardware and software support technician for my local government. I also have knowledge of the English language at level B1.<br><br>
           I have worked in development of pages for: e-commerce, blog, landing pages, information consultation website, etc. Using technologies like: Javascript, React, Redux, NodeJS, PostgreSQL, Git, Github.<br><br>    
         <div class="d-flex justify-content-center align-items-center">
-          <a class='btnAbout' data-section="about" data-value="buttonCV" href="./documents/CV Eng Jose Antonio Silva Zavala.pdf" target="_blank" rel="noopener noreferrer">
-            Downolad CV
+          <a class='boton4' href="./documents/CV Eng Jose Antonio Silva Zavala.pdf" target="_blank" rel="noopener noreferrer">
+            <div class='wrapper'>
+              <i class='bx bx-download'></i>
+              </div>
+              <span data-section="about" data-value="buttonCV">Downolad CV</span>
           </a>  
         </div>
       </div>
@@ -365,8 +368,13 @@
           <label for="message" data-section="footer" data-value="formMessage" class="labelFormContact">Message</label>
         </div>
         
-        <div data-section="footer" data-value="formButton" class="containerButtonForm">
-          <input type="submit" value="Submit" class="buttonFormContact"> />
+        <div class="containerButtonForm">
+          <button type="submit" value="Submit" class="buttonFormContact"> 
+            <div class='wrapper'>
+              <i class='bx bx-send'></i>
+            </div>
+            <span data-section="footer" data-value="formButton">Submit</span>
+          </button>
         </div> 
 
         <!-- Redirigir al enviar mensaje -->
@@ -384,9 +392,6 @@
         </a>
         <a href="https://github.com/Asilvazavala?tab=repositories" target="_blank" rel="noopener noreferrer">
           <i class="bi bi-github"></i>
-        </a>
-        <a href="#contacto">
-          <i class="bi bi-envelope"></i>
         </a>
       </div>
       <div data-section="footer" data-value="copyright" class="derechos-de-autor">
