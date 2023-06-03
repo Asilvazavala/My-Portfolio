@@ -344,6 +344,7 @@ h1 {
   transition: all .5s ease;
 }
 
+.buttonFormContact span,
 .boton4 span {
   display: block;
   margin-left: 0.3em;
