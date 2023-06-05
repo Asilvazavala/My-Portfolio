@@ -74,11 +74,10 @@ const toggleIconLanguage = document.getElementById('toggleIconLanguage')
 
 const changeLanguage = async () => {
   let language = ""
-  if (toggleIconLanguage.src.includes("english")) {
-     language = 'en'
-  } else {
-      language = 'es'
-    }
+  toggleIconLanguage.src.includes("english")
+  ? language = 'en'
+  : language = 'es'
+
   const requestJson = await fetch(`./languages/${language}.json`)
   const texts = await requestJson.json()
 

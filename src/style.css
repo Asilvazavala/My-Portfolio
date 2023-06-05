@@ -309,26 +309,6 @@ h1 {
   text-align: center;
 }
 
-.btnAbout {
-  padding: 6px 12px;
-  color: var(--text-color-CV);
-  border: 2px solid var(--text-color-CV);
-  letter-spacing: 2px;
-  width: auto;
-  border-radius: 20px;
-  font-size: 1.4rem;
-  overflow: hidden;
-  background: transparent;
-  cursor: pointer;
-  transition: all .5s ease;
-  text-decoration: none;
-}
-
-.btnAbout:hover {
-  background: var(--text-color-CV);
-  color: var(--bg-color-nav);
-}
-
 .boton4 {
   font-size: 1.25rem;
   background: transparent;
@@ -364,10 +344,10 @@ h1 {
   animation: fly 0.6s ease-in-out infinite alternate;
 }
 
-.boton4:hover {
+/* .boton4:hover {
   background: var(--text-color-CV);
   color: var(--bg-color-nav);
-}
+} */
 
 .boton4:hover i {
   transform: translateX(3em) rotate(0deg) scale(1.7);
@@ -791,11 +771,6 @@ footer {
   background: transparent;
   color: var(--text-semiBlack);
   border: 2px solid var(--text-semiBlack);
-}
-
-.buttonFormContact:hover {
-  background: var(--bg-color-nav);
-  color: var(--bg-color-black);
 }
 
 .iconos-redes-sociales a {
