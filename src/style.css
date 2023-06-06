@@ -795,42 +795,14 @@ footer p {
 
 .iconos-redes-sociales i {
   color: var(--bg-color-about);
-  transition: all 1s ease-in-out 0s;
   font-size: 1.5rem;
-  transition: all 0.2s ease-in; 
+  transition: transform 0.2s ease-in; 
 }
 
 .iconos-redes-sociales a:hover {
-  background-color: white;
-  border: 2px solid rgb(13, 110, 253);
-  -webkit-animation: rotate-center 1s ease-in-out both;
-	        animation: rotate-center 1s ease-in-out both;
+  transform: scale(1.15)
 }
 
-@-webkit-keyframes rotate-center {
-  0% {
-    -webkit-transform: rotate(0);
-            transform: rotate(0);
-  }
-  100% {
-    -webkit-transform: rotate(360deg);
-            transform: rotate(360deg);
-  }
-}
-@keyframes rotate-center {
-  0% {
-    -webkit-transform: rotate(0);
-            transform: rotate(0);
-  }
-  100% {
-    -webkit-transform: rotate(360deg);
-            transform: rotate(360deg);
-  }
-}
-
-.iconos-redes-sociales a:hover i {
-  color: black;
-}
 
 .derechos-de-autor {
   font-size: 18px;

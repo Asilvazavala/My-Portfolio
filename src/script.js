@@ -15,11 +15,12 @@ const irInicio = () => {
 }
 
 // Mostrar alerta al hacer clic en el logo AS
-const mostrarAlerta = () => {
+const logoAS = document.getElementById('logoAS')
+logoAS.addEventListener('click', () => {
   const alert = document.getElementById('alert')
   alert.className = "alert alert-success alert-dismissible show" 
   document.documentElement.scrollTo(0, 0)
-}
+})
 
 // Iniciar efecto imagen proyectos
 const effectProject1 = () => {
@@ -74,7 +75,7 @@ const toggleIconLanguage = document.getElementById('toggleIconLanguage')
 
 const changeLanguage = async () => {
   let language = ""
-  toggleIconLanguage.src.includes("english")
+  !toggleIconLanguage.src.includes("english")
   ? language = 'en'
   : language = 'es'
 
