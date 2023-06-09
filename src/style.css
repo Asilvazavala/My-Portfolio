@@ -171,17 +171,35 @@ h1 {
 .navbar img {
   border-radius: 50%;
   cursor: pointer;
+  margin-right: 20px;
+}
+
+.navbar ul {
+  display: flex;
 }
 
 .navbar a {
   color: var(--bg-color-about);
-  margin: 0 20px;
   font-weight: 600;
   transition: all 0.3s ease-in-out 0s;
+  padding: 0.5rem 1.5rem !important;
 }
 
 .navbar a:hover {
-  color: var(--bg-color-black);
+  color: white;
+}
+
+.menuBackdrop {
+  position: absolute;
+  background: rgba(0, 0, 0, 0.4);
+  border-radius: 10px;
+  left: var(--left);
+  top: var(--top);
+  width: var(--width);
+  height: var(--height);
+  transition: all 0.3s ease-in-out;
+  opacity: 0;
+  z-index: -10;
 }
 
 /* Sección Hero */
