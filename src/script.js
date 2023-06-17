@@ -202,15 +202,24 @@ window.addEventListener('scroll', function() {
 
   buttonOtherProjects.addEventListener('click', () => {
     otherProjects.classList.toggle('hide')
-    if (isMarginSmall) {
+    if (isMarginSmall && toggleIconLanguage.src.includes("english")) {
       buttonOtherProjects.style.marginBottom = '5px';
-      spanOtherProjects.textContent = 'Hide all projects';
+      spanOtherProjects.textContent = 'Hide other projects';
       isMarginSmall = false;
-    } else {
-      buttonOtherProjects.style.marginBottom = '200px';
-      spanOtherProjects.textContent = 'See more projects';
-      isMarginSmall = true;
-    }
+    } else if (!isMarginSmall && toggleIconLanguage.src.includes("english")) {
+        buttonOtherProjects.style.marginBottom = '200px';
+        spanOtherProjects.textContent = 'See more projects';
+        isMarginSmall = true;
+      } else if (isMarginSmall && !toggleIconLanguage.src.includes("english")) {
+          buttonOtherProjects.style.marginBottom = '5px';
+          spanOtherProjects.textContent = 'Ocultar proyectos';
+          isMarginSmall = false;
+        } else {
+            buttonOtherProjects.style.marginBottom = '200px';
+            spanOtherProjects.textContent = 'Ver más proyectos';
+            isMarginSmall = true;
+          }
+
   })
 
 /*   Descargar todas las imágenes de una página web
