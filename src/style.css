@@ -777,6 +777,10 @@ footer {
   transition: all 1s ease-in-out 0s;
 }
 
+.titulo-footer {
+  color: var(--bg-color-about);
+}
+
 .footer-logo {
   height: 150px;
   width: 150px;
