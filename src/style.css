@@ -553,7 +553,7 @@ h1 {
 }
 
 .overlay i {
-  color: black;
+  color: var(--bg-color-black);
   font-size: 60px;
   margin: 10px;
 }
@@ -1133,11 +1133,11 @@ footer p {
 
 @media screen and (max-width: 420px){
   .overlay p {
-    font-size: 18px;
+    font-size: 23px;
   }
 
   .overlay i {
-    font-size: 40px;
+    font-size: 50px;
   }
 
   .sobre-mi {
