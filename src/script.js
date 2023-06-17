@@ -162,15 +162,18 @@ window.addEventListener('scroll', function() {
   const email = document.getElementById('email');
   const message = document.getElementById('message');
   const form = document.getElementById('form');
+  const btnSubmit = document.getElementById('btnSubmit');
 
-  const enviarMensaje = () => {
-    if (nombre.value.length > 0 && regexEmail.test(email.value) && message.value.length > 0) {
-      alert("Mensaje enviado con éxito!!")
-      nombre.value = ""
-      email.value = ""
-      message.value = ""
-    }
-  }
+  btnSubmit.addEventListener('click', () => {            
+    if (nombre.value.trim() === '' || !regexEmail.test(email.value) || message.value.trim() === '') {
+      swal('Registro vacío', 'Complete todos los campos por favor', 'error');
+    } else {
+        swal('Gracias', '¡Mensaje enviado con éxito!', 'success');
+        nombre.value = ""
+        email.value = ""
+        message.value = ""
+      }
+  });
 
   // Hover li items Navbar
   const listItem = document.querySelectorAll('nav ul li');
@@ -219,7 +222,6 @@ window.addEventListener('scroll', function() {
             spanOtherProjects.textContent = 'Ver más proyectos';
             isMarginSmall = true;
           }
-
   })
 
 /*   Descargar todas las imágenes de una página web
