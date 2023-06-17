@@ -49,8 +49,12 @@
     "project3Description": "Focused sell sewing services/products, has user authentication with Auth0, payment gateway with mercadoPago, dark/light mode, combined filters, minimalist design, search by name, Local Storage, Dashboard admin, Reviews/score.",
     "project4Name": "Pokemon World",
     "project4Description": "Return to pokemon world, You can consult, modify, delete and create pokemon, which are consumed through an external API and, in turn, are stored in a database. Made by a lover of this wonderful world.",
+    "project5Name": "Music Player",
+    "project6Name": "Tic Tac Toe",
+    "project7Name": "Calculator",
     "code": "Code <i class='bi bi-github'></i>",
-    "demo": "Demo <i class='bi bi-code-slash'></i>"
+    "demo": "Demo <i class='bi bi-code-slash'></i>",
+    "buttonProyectos": "See more projects"
   },
   "contact": {
     "title": "Let´s talk!",

@@ -194,6 +194,25 @@ window.addEventListener('scroll', function() {
     })
   })
 
+  // Ver otros proyectos
+  const buttonOtherProjects = document.getElementById('buttonOtherProjects');
+  const otherProjects = document.getElementById('otherProjects');
+  const spanOtherProjects = document.getElementById('spanOtherProjects');
+  let isMarginSmall = true;
+
+  buttonOtherProjects.addEventListener('click', () => {
+    otherProjects.classList.toggle('hide')
+    if (isMarginSmall) {
+      buttonOtherProjects.style.marginBottom = '5px';
+      spanOtherProjects.textContent = 'Hide all projects';
+      isMarginSmall = false;
+    } else {
+      buttonOtherProjects.style.marginBottom = '200px';
+      spanOtherProjects.textContent = 'See more projects';
+      isMarginSmall = true;
+    }
+  })
+
 /*   Descargar todas las imágenes de una página web
   $$('img').forEach(img => {
     const src = img.src

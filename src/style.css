@@ -342,6 +342,7 @@ h1 {
   transition: all .5s ease;
 }
 
+.boton-otros-proyectos span,
 .buttonFormContact span,
 .boton4 span {
   display: block;
@@ -349,6 +350,7 @@ h1 {
   transition: all 0.5s ease-in-out;
 }
 
+.boton-otros-proyectos i,
 .buttonFormContact i,
 .boton4 i {
   display: block;
@@ -357,15 +359,11 @@ h1 {
   transform: rotate(-45deg);
 }
 
+.boton-otros-proyectos:hover .wrapper,
 .buttonFormContact:hover .wrapper,
 .boton4:hover .wrapper {
   animation: fly 0.6s ease-in-out infinite alternate;
 }
-
-/* .boton4:hover {
-  background: var(--text-color-CV);
-  color: var(--bg-color-nav);
-} */
 
 .boton4:hover i {
   transform: translateX(3em) rotate(0deg) scale(1.7);
@@ -375,11 +373,17 @@ h1 {
   transform: translateX(1.7em) rotate(0deg) scale(1.7);
 }
 
+.boton-otros-proyectos:hover i {
+  transform: translateX(4em) rotate(45deg) scale(1.7);
+}
+
+.boton-otros-proyectos:hover span,
 .buttonFormContact:hover span,
 .boton4:hover span {
   transform: translateX(10em);
 }
 
+.boton-otros-proyectos:active,
 .buttonFormContact:active,
 .boton4:active {
   transform: scale(0.95);
@@ -470,12 +474,88 @@ h1 {
 
 
 
-/* Proyectos */
+/* Otros Proyectos */
+.boton-otros-proyectos {
+  font-size: 1.25rem;
+  background: transparent;
+  color: var(--text-color-primary);
+  border: 2px solid var(--text-color-primary);
+  padding: 0.7rem 1em;
+  padding-left: 0.9em;
+  text-decoration: none;
+  display: flex;
+  align-items: center;
+  border-radius: 16px;
+  overflow: hidden;
+  transition: color, border .3s ease;
+  margin-top: 70px;
+  margin-bottom: 200px;
+}
+
 .proyectos-recientes {
-  padding: 70px 40px 140px 40px;
+  padding: 70px 40px 0px 40px;
   background-color: var(--bg-color);
   transition: all 1s ease-in-out 0s;
 }
+
+.otros-proyectos {
+  padding: 40px;
+}
+
+.otros-proyectos img {
+  height: 100%;
+  width: 100%;
+  padding: 10px;
+  border-radius: 20px;
+  display: block;
+  transition: opacity 0.2s ease;
+}
+
+.proyectos-contenedor {
+  padding-top: 60px;
+}
+
+.overlay {
+  transition: transform 0.2s ease;
+  position: absolute;
+  opacity: 0;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+}
+
+.overlay p {
+  font-size: 25px;
+  font-weight: bold;
+  margin-bottom: 0;
+  color: var(--bg-color-black);
+}
+
+.proyecto {
+  position: relative;
+}
+
+.proyecto:hover .overlay {
+  opacity: 1;
+}
+
+.proyecto:hover img {
+  opacity: 0.2;
+}
+
+.overlay .iconos-contenedor {
+  display: flex;
+}
+
+.overlay i {
+  color: black;
+  font-size: 60px;
+  margin: 10px;
+}
+
+
+/* Proyectos */
 
 .pro_text h3 {
   color: black;
@@ -977,6 +1057,14 @@ footer p {
 @media screen and (max-width: 650px) {
   .seccion-texto {
     padding: 50px;
+  }
+
+  .overlay {
+    opacity: 1;
+  }
+  
+  .proyecto img {
+    opacity: 0.2;
   }
 }
 
