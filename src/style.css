@@ -556,6 +556,11 @@ h1 {
   color: var(--bg-color-black);
   font-size: 60px;
   margin: 10px;
+  transition: color .2s ease;
+}
+
+.overlay i:hover {
+  color: var(--bg-color-about);
 }
 
 /* Otros proyectos responsive*/

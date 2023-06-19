@@ -12,7 +12,7 @@
   },
   "about": {
     "title": "Conoce a Antonio Silva",
-    "description": "Hola, vivo en el estado de Guanajuato en México, soy ingeniero en tecnologías de la información, estudié en la Universidad de la Salle Bajío. En los últimos 8 años he trabajado como técnico de soporte de hardware y software para el gobierno de mi localidad. También tengo conocimiento del idioma inglés en el nivel B1.<br><br> He trabajado en el desarrollo de páginas como: comercio electrónico, blog, página de negocio, sitio web de consulta de información, etc. Utilizando tecnologías como: JavaScript, React, Redux, NodeJS, PostgreSQL, Git, Github.",
+    "description": "Hola, vivo en el estado de Guanajuato en México, soy ingeniero en tecnologías de la información, estudié en la Universidad de la Salle Bajío. También tengo conocimiento del idioma inglés en un nivel intermedio.<br><br> He trabajado en el desarrollo de páginas como: comercio electrónico, blog, landing page, etc. Utilizando tecnologías como: JavaScript, React, Redux, NodeJS, PostgreSQL, Git, Github.",
     "buttonCV": "Descargar CV"
   },
   "skills": {
@@ -53,7 +53,7 @@
     "project6Name": "3 en raya",
     "project7Name": "Calculadora",
     "code": "Código <i class='bi bi-github'></i>",
-    "demo": "En vivo <i class='bi bi-code-slash'></i>",
+    "demo": "En vivo <i class='bi bi-laptop'></i>",
     "buttonProyectos": "Ver más proyectos"
   },
   "contact": {
