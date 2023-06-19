@@ -224,6 +224,18 @@ window.addEventListener('scroll', function() {
           }
   })
 
+  // Descargar CV en inglés/español
+  const btnCV = document.getElementById('btnCV')
+
+  btnCV.addEventListener('click', () => {    
+    if (toggleIconLanguage.src.includes("english")) {
+      btnCV.setAttribute('href', './documents/CV Eng Jose Antonio Silva Zavala.pdf')
+    } else {
+        btnCV.setAttribute('href', './documents/CV Esp Jose Antonio Silva Zavala.pdf')
+      }
+  })
+
+
 /*   Descargar todas las imágenes de una página web
   $$('img').forEach(img => {
     const src = img.src
