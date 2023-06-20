@@ -527,12 +527,15 @@ h1 {
   left: 50%;
   transform: translate(-50%, -50%);
   text-align: center;
+  display: flex;
+  flex-direction: column;
 }
 
 .overlay p {
   font-size: 25px;
   font-weight: bold;
   margin-bottom: 0;
+  margin-top: 10px;
   color: var(--bg-color-black);
 }
 
@@ -554,13 +557,27 @@ h1 {
 
 .overlay i {
   color: var(--bg-color-black);
-  font-size: 60px;
-  margin: 10px;
+  font-size: 50px;
+  margin: 5px 10px;
   transition: color .2s ease;
 }
 
 .overlay i:hover {
   color: var(--bg-color-about);
+}
+
+.stacks {
+  display: flex;
+  position: relative;
+  justify-content: flex-end;
+}
+
+.stacks img {
+  width: 50px;
+  height: 50px;
+  margin-bottom: 10px;
+  opacity: 1 !important;
+  border-radius: 0 !important;
 }
 
 /* Otros proyectos responsive*/
@@ -700,6 +717,7 @@ h1 {
 .stack {
   margin: 10px 0 20px 0;
 }
+
 
 .links a:hover {
   color: #00abf0;
@@ -1072,19 +1090,7 @@ footer p {
 }
 
 /* Adaptable responsivo */
-@media screen and (max-width: 767px) {
-  .navbar-brand {
-    display: none;
-  }
-}
-
-@media screen and (min-width: 700px) {
-  .hero-imagen-inferior {
-    max-width: 600px;
-  }
-}
-
-@media screen and (max-width: 650px) {
+@media screen and (max-width: 850px) {
   .seccion-texto {
     padding: 50px;
   }
@@ -1095,6 +1101,18 @@ footer p {
   
   .proyecto img {
     opacity: 0.2;
+  }
+}
+
+@media screen and (max-width: 767px) {
+  .navbar-brand {
+    display: none;
+  }
+}
+
+@media screen and (min-width: 700px) {
+  .hero-imagen-inferior {
+    max-width: 600px;
   }
 }
 
