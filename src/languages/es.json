@@ -49,7 +49,7 @@
     "project3Description": "Enfocado en vender servicios/productos de costura, cuenta con autenticación de usuario con Auth0, pasarela de pago con mercadoPago, modo oscuro/claro, filtros combinados, diseño minimalista, búsqueda por nombre, almacenamiento local, Dashboard admin, Reviews/score.",
     "project4Name": "Mundo Pokemon",
     "project4Description": "Regresa al mundo pokemon, se pueden consultar, modificar, eliminar y crear pokemon, los cuales son consumidos a través de una API externa y, a su vez, son almacenados en una base de datos. Hecho por un amante de este maravilloso mundo.",
-    "project5Name": "Reproductor de música",
+    "project5Name": "Reproductor",
     "project6Name": "3 en raya",
     "project7Name": "Calculadora",
     "code": "Código <i class='bi bi-github'></i>",
