@@ -158,44 +158,47 @@ window.addEventListener('scroll', function() {
 })
 
 // Validación formulario de contacto
-  const nombre = document.getElementById('name');
-  const email = document.getElementById('email');
-  const message = document.getElementById('message');
-  const form = document.getElementById('form');
-  const btnSubmit = document.getElementById('btnSubmit');
+const nombre = document.getElementById('name');
+const email = document.getElementById('email');
+const message = document.getElementById('message');
+const form = document.getElementById('form');
+const btnSubmit = document.getElementById('btnSubmit');
 
-  btnSubmit.addEventListener('click', () => {            
-    if (nombre.value.trim() === '' || !regexEmail.test(email.value) || message.value.trim() === '') {
-      swal('Registro vacío', 'Complete todos los campos por favor', 'error');
-    } else {
-        swal('Gracias', '¡Mensaje enviado con éxito!', 'success');
-        nombre.value = ""
-        email.value = ""
-        message.value = ""
-      }
-  });
+btnSubmit.addEventListener('click', () => {            
+  if (nombre.value.trim() === '' || !regexEmail.test(email.value) || message.value.trim() === '') {
+    swal('Registro vacío', 'Complete todos los campos por favor', 'error');
+  } else {
+      swal('Gracias', '¡Mensaje enviado con éxito!', 'success');
+      nombre.value = ""
+      email.value = ""
+      message.value = ""
+    }
+});
 
-  // Hover li items Navbar
-  const listItem = document.querySelectorAll('nav ul li');
-  const menuBackDrop = document.querySelector('#menu-backdrop');
+// Hover li items Navbar
+const listItem = document.querySelectorAll('nav ul li');
+const menuBackDrop = document.querySelector('#menu-backdrop');
+const screenWidth = window.innerWidth;  
 
-  listItem.forEach((item) => {
-    item.addEventListener('mouseenter', () => {
-      const { left, top, width, height } = item.getBoundingClientRect()
-            
-      menuBackDrop.style.setProperty('--left', `${left}px`)
-      menuBackDrop.style.setProperty('--top', `${top}px`)
-      menuBackDrop.style.setProperty('--width', `${width}px`)
-      menuBackDrop.style.setProperty('--height', `${height}px`)
-      menuBackDrop.style.opacity = '1'
-      menuBackDrop.style.visibility = 'visible'
+  if (screenWidth > 770) {
+    listItem.forEach((item) => {
+      item.addEventListener('mouseenter', () => {
+        const { left, top, width, height } = item.getBoundingClientRect()
+              
+        menuBackDrop.style.setProperty('--left', `${left}px`)
+        menuBackDrop.style.setProperty('--top', `${top}px`)
+        menuBackDrop.style.setProperty('--width', `${width}px`)
+        menuBackDrop.style.setProperty('--height', `${height}px`)
+        menuBackDrop.style.opacity = '1'
+        menuBackDrop.style.visibility = 'visible'
+      })
+
+      item.addEventListener('mouseleave', () => {
+        menuBackDrop.style.opacity = '0'
+        menuBackDrop.style.visibility = 'hidden'
+      })
     })
-
-    item.addEventListener('mouseleave', () => {
-      menuBackDrop.style.opacity = '0'
-      menuBackDrop.style.visibility = 'hidden'
-    })
-  })
+  }
 
   // Ver otros proyectos
   const buttonOtherProjects = document.getElementById('buttonOtherProjects');
@@ -234,7 +237,6 @@ window.addEventListener('scroll', function() {
         btnCV.setAttribute('href', './documents/CV Esp Jose Antonio Silva Zavala.pdf')
       }
   })
-
 
 /*   Descargar todas las imágenes de una página web
   $$('img').forEach(img => {

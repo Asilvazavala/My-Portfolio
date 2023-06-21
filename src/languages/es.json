@@ -8,7 +8,7 @@
   "hero": {
     "alert": "¡Gracias por tu visita! ❤️",
     "name": "Hola, soy Antonio Silva",
-    "occupation": "Desarrollador Web"
+    "occupation": "FullStack developer"
   },
   "about": {
     "title": "Conoce a Antonio Silva",
@@ -43,7 +43,7 @@
     "title": "Mis proyectos",
     "project1Name": "Gimnasio Club",
     "project1Description": "Planea tus clases de ejercicio aquí, esta web ofrece sencillez y diseño limpio, prioriza la experiencia del usuario con un diseño responsivo, únete a nosotros para transformar por completo tu cuerpo ¿Aceptas el reto?",
-    "project2Name": "Blog Culemania",
+    "project2Name": "Blog 'Culemania'",
     "project2Description": "Blog de noticias del FC Barcelona y el fútbol mundial, cuenta con autenticación de usuario, CRUD de comentarios con la posibilidad de dar (like/dislike), guardado de información en base de datos, filtrado por categoría/ID, renderizado condicional, paginado, formulario de contacto, diseño responsivo.",
     "project3Name": "Tienda 'Mi costura'",
     "project3Description": "Enfocado en vender servicios/productos de costura, cuenta con autenticación de usuario con Auth0, pasarela de pago con Mercado pago, modo oscuro/claro, filtros combinados, diseño minimalista, búsqueda por nombre, almacenamiento local, panel de administrador, reseñas/puntuaciones.",
