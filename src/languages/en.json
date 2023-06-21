@@ -13,7 +13,7 @@
   "about": {
     "title": "Meet Antonio Silva",
     "description": "Hi, I live in the state of Guanajuato in Mexico, I have an engineering degree in information technology from Universidad de la Salle Bajío. I also have knowledge of the English language at intermediate level.<br><br> I have worked in development of pages: e-commerce, blog, landing page, etc. Using technologies like: JavaScript, React, Redux, NodeJS, PostgreSQL, Git, Github.",
-    "buttonCV": "Downolad CV"
+    "buttonCV": "Download CV"
   },
   "skills": {
     "title": "My skills",
@@ -45,8 +45,8 @@
     "project1Description": "Plan your exercise classes here, this website offers simplicity and clean design, prioritizes the user experience with responsive design, join us to fit easily and completely your body, do you accept the challenge?",
     "project2Name": "Blog Culemania",
     "project2Description": "FC Barcelona and world football news blog, has user authentication, CRUD of comments with the possibility of giving (like/dislike), saving information in the database, filtering by category/ID, conditional rendering, pagination, contact form, responsive design.",
-    "project3Name": "Marketplace My seam",
-    "project3Description": "Focused sell sewing services/products, has user authentication with Auth0, payment gateway with mercadoPago, dark/light mode, combined filters, minimalist design, search by name, Local Storage, Dashboard admin, Reviews/score.",
+    "project3Name": "Marketplace 'My seam'",
+    "project3Description": "Focused sell sewing services/products, has user authentication with Auth0, payment gateway with Mercado pago, dark/light mode, combined filters, minimalist design, search by name, local Storage, dashboard admin, reviews/score.",
     "project4Name": "Pokemon World",
     "project4Description": "Return to pokemon world, You can consult, modify, delete and create pokemon, which are consumed through an external API and, in turn, are stored in a database. Made by a lover of this wonderful world.",
     "project5Name": "Music Player",
