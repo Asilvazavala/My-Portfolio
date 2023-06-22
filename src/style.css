@@ -199,7 +199,6 @@ h1 {
   top: var(--top);
   width: var(--width);
   height: var(--height);
-  transition: color 1s ease-in-out 0s, background 1s ease-in-out 0s;
   opacity: 0;
   z-index: -10;
 }
@@ -503,7 +502,9 @@ h1 {
   border: 2px solid #8080804d;
   display: flex;
   color: var(--bg-color-nav);
-  transition: color 1s ease-in-out 0s, background 1s ease-in-out 0s;
+  transition: color 0.5s ease-in-out 0s, background-color 0.5s ease-in-out 0s,
+  border-top-right-radius 0.5s ease-in-out 0s, border-bottom-left-radius 0.5s ease-in-out 0s, 
+  border-top-left-radius 0.5s ease-in-out 0s, border-bottom-right-radius 0.5s ease-in-out 0s;
   flex-direction: column;
   align-items: center;
   justify-content: space-between;
