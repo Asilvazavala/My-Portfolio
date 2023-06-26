@@ -1,3 +1,37 @@
+const alert = document.getElementById('alert');
+const logoAS = document.getElementById('logoAS');
+const project1 = document.getElementById('project1');
+const project2 = document.getElementById('project2');
+const project3 = document.getElementById('project3');
+const project4 = document.getElementById('project4');
+const toggleTheme = document.getElementById('toggleTheme');
+const toggleIcon = document.getElementById('toggleIcon');
+const flagsElement = document.getElementById("flags");
+const textsToChange = document.querySelectorAll("[data-section]");
+const toggleIconLanguage = document.getElementById('toggleIconLanguage');
+const navLinks = document.querySelectorAll('.nav-link');
+const navbarResponsive = document.querySelector('.navbar-collapse');
+const openMenuResponsive = document.getElementById('openMenuResponsive');
+const closeMenuResponsive = document.getElementById('closeMenuResponsive');
+const nombre = document.getElementById('name');
+const email = document.getElementById('email');
+const message = document.getElementById('message');
+const form = document.getElementById('form');
+const btnSubmit = document.getElementById('btnSubmit');
+let animacionProyecto1 = document.getElementById('pro1');
+let animacionProyecto2 = document.getElementById('pro2');
+let animacionProyecto3 = document.getElementById('pro3');
+let animacionProyecto4 = document.getElementById('pro4');
+const screenWidth = window.innerWidth;  
+const halfScreenWidth = window.innerHeight/1.2;
+const listItem = document.querySelectorAll('nav ul li');
+const menuBackDrop = document.querySelector('#menu-backdrop');
+const buttonOtherProjects = document.getElementById('buttonOtherProjects');
+const otherProjects = document.getElementById('otherProjects');
+const spanOtherProjects = document.getElementById('spanOtherProjects');
+const btnCV = document.getElementById('btnCV')
+
+
 // Cambiar el título de la pestaña
 let previousTitle = document.title;
 window.addEventListener('blur', () => {
@@ -15,50 +49,37 @@ const irInicio = () => {
 }
 
 // Mostrar alerta al hacer clic en el logo AS
-const logoAS = document.getElementById('logoAS')
 logoAS.addEventListener('click', () => {
-  const alert = document.getElementById('alert')
   alert.className = "alert alert-success alert-dismissible show" 
   document.documentElement.scrollTo(0, 0)
 })
 
 // Iniciar efecto imagen proyectos
 const effectProject1 = () => {
-  const project1 = document.getElementById('project1');
   project1.className = "project1Effect"     
 };
 
 const effectProject2 = () => {
-  const project2 = document.getElementById('project2');
   project2.className = "project2Effect"     
 };
 
 const effectProject3 = () => {
-  const project3 = document.getElementById('project3');
   project3.className = "project3Effect"     
 };
 
 const effectProject4 = () => {
-  const project4 = document.getElementById('project4');
   project4.className = "project4Effect"     
 };
 
 // Regresar a la imagen original proyectos
 const normalProject = () => {
-  const project1 = document.getElementById('project1');
   project1.className = "project1"     
-  const project2 = document.getElementById('project2');
   project2.className = "project2"     
-  const project3 = document.getElementById('project3');
   project3.className = "project3"     
-  const project4 = document.getElementById('project4');
   project4.className = "project4"     
 };
 
 // Cambiar entre dark/light mode
-const toggleTheme = document.getElementById('toggleTheme')
-const toggleIcon = document.getElementById('toggleIcon')
-
 toggleTheme.addEventListener('click', () => {
   document.body.classList.toggle('dark')
   if (toggleIcon.classList.value.includes("moon")) {
@@ -69,10 +90,6 @@ toggleTheme.addEventListener('click', () => {
 })
 
 // Cambiar idioma inglés/español
-const flagsElement = document.getElementById("flags")
-const textsToChange = document.querySelectorAll("[data-section]")
-const toggleIconLanguage = document.getElementById('toggleIconLanguage')
-
 const changeLanguage = async () => {
   let language = ""
   !toggleIconLanguage.src.includes("english")
@@ -100,16 +117,11 @@ flagsElement.addEventListener('click', (e) => {
     }
 })
 
-// Obtener todos los enlaces de la navbar
-const navLinks = document.querySelectorAll('.nav-link');
-
-// Agregar evento "click" a cada enlace para cerrar la navbar
+// Evento "click" a cada enlace para cerrar la navbar
 navLinks.forEach(link => {
   link.addEventListener('click', () => {
-    // Cerrar la navbar
-    const navbar = document.querySelector('.navbar-collapse');
-    if (navbar.classList.contains('show')) {
-      navbar.classList.remove('show');
+    if (navbarResponsive.classList.contains('show')) {
+      navbarResponsive.classList.remove('show');
       closeMenuResponsive.classList.toggle('hide');
       openMenuResponsive.classList.toggle('hide');
       toggleTheme.style.display = 'none'
@@ -119,9 +131,6 @@ navLinks.forEach(link => {
 });
 
 // Comportamiento botón menú responsive
-const openMenuResponsive = document.getElementById('openMenuResponsive');
-const closeMenuResponsive = document.getElementById('closeMenuResponsive');
-
 openMenuResponsive.addEventListener('click' , () => {
   closeMenuResponsive.classList.toggle('hide');
   openMenuResponsive.classList.toggle('hide');
@@ -139,20 +148,15 @@ closeMenuResponsive.addEventListener('click' , () => {
 
 // Efecto scroll izquierda a derecha
 window.addEventListener('scroll', function() {
-  let animacionProyecto1 = document.getElementById('pro1')
-  let animacionProyecto3 = document.getElementById('pro3')
-
   let posicionProyecto1 = animacionProyecto1.getBoundingClientRect().top;
   let posicionProyecto3 = animacionProyecto3.getBoundingClientRect().top;
 
-  let tamañoPantalla = window.innerHeight/1.2;
-
-  if (posicionProyecto1 < tamañoPantalla) {
+  if (posicionProyecto1 < halfScreenWidth) {
     animacionProyecto1.style.animation = 'slideInLeft 1s ease-out'
     animacionProyecto1.style.opacity = 1
   }
 
-  if (posicionProyecto3 < tamañoPantalla) {
+  if (posicionProyecto3 < halfScreenWidth) {
     animacionProyecto3.style.animation = 'slideInLeft 1s ease-out'
     animacionProyecto3.style.opacity = 1
   }
@@ -160,33 +164,21 @@ window.addEventListener('scroll', function() {
 
 // Efecto scroll derecha a izquierda
 window.addEventListener('scroll', function() {
-  let animacionProyecto2 = document.getElementById('pro2')
-  let animacionProyecto4 = document.getElementById('pro4')
-
   let posicionProyecto2 = animacionProyecto2.getBoundingClientRect().top;
   let posicionProyecto4 = animacionProyecto4.getBoundingClientRect().top;
 
-  let tamañoPantalla = window.innerHeight/1.2;
-
-  if (posicionProyecto2 < tamañoPantalla) {
+  if (posicionProyecto2 < halfScreenWidth) {
     animacionProyecto2.style.animation = 'slideInRight 1s ease-out'
     animacionProyecto2.style.opacity = 1
   }
 
-  if (posicionProyecto4 < tamañoPantalla) {
+  if (posicionProyecto4 < halfScreenWidth) {
     animacionProyecto4.style.animation = 'slideInRight 1s ease-out'
     animacionProyecto4.style.opacity = 1
   }
-
 })
 
 // Validación formulario de contacto
-const nombre = document.getElementById('name');
-const email = document.getElementById('email');
-const message = document.getElementById('message');
-const form = document.getElementById('form');
-const btnSubmit = document.getElementById('btnSubmit');
-
 btnSubmit.addEventListener('click', () => {            
   if (nombre.value.trim() === '' || !regexEmail.test(email.value) || message.value.trim() === '') {
     swal('Registro vacío', 'Complete todos los campos por favor', 'error');
@@ -199,10 +191,6 @@ btnSubmit.addEventListener('click', () => {
 });
 
 // Hover li items Navbar
-const listItem = document.querySelectorAll('nav ul li');
-const menuBackDrop = document.querySelector('#menu-backdrop');
-const screenWidth = window.innerWidth;  
-
   if (screenWidth > 770) {
     listItem.forEach((item) => {
       item.addEventListener('mouseenter', () => {
@@ -224,9 +212,6 @@ const screenWidth = window.innerWidth;
   }
 
   // Ver otros proyectos
-  const buttonOtherProjects = document.getElementById('buttonOtherProjects');
-  const otherProjects = document.getElementById('otherProjects');
-  const spanOtherProjects = document.getElementById('spanOtherProjects');
   let isMarginSmall = true;
 
   buttonOtherProjects.addEventListener('click', () => {
@@ -251,8 +236,6 @@ const screenWidth = window.innerWidth;
   })
 
   // Descargar CV en inglés/español
-  const btnCV = document.getElementById('btnCV')
-
   btnCV.addEventListener('click', () => {    
     if (toggleIconLanguage.src.includes("english")) {
       btnCV.setAttribute('href', './documents/CV Eng Jose Antonio Silva Zavala.pdf')
