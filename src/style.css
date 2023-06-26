@@ -164,6 +164,9 @@ h1 {
 }
 
 .toggler {
+  position: absolute;
+  top: 15px;
+  right: 30px;
   transition: color 1s ease-in-out 0s, background 1s ease-in-out 0s;
   background: var(--bg-color-about);
 }
@@ -201,6 +204,11 @@ h1 {
   height: var(--height);
   opacity: 0;
   z-index: -10;
+}
+
+#closeMenuResponsive {
+  text-align: center;  
+  font-size: 30px;
 }
 
 /* Sección Hero */
@@ -658,7 +666,7 @@ h1 {
 }
 
 /* Otros proyectos responsive*/
-@media screen and (max-width: 760px) {
+@media screen and (max-width: 768px) {
   .otros-proyectos {
     padding: 40px 0 120px 0;
   }
@@ -847,57 +855,32 @@ h1 {
   font-size: 1.2rem;
 }
 
-.contacto button {
+.contacto .contactButton {
   color: white;
   font-weight: bold;
   background-color: transparent;
   border: 2px solid white;
   padding: 1.25em 2em;
-  margin: 10px;
   border-radius: 100px;
+  margin: 10px;
   transition: all 0.2s ease-in-out;
 }
 
-.contacto button i {
+.contacto .contactButton i {
   color: white;
   font-size: 1.3rem;
   transition: all 0.2s ease-in-out;
 }
 
-.contacto button:hover {
+.contacto .contactButton:hover {
   color: black;
   background-color: white;
 }
 
-.contacto button:hover i {
+.contacto .contactButton:hover i {
   color: black;
 }
 
-
-
-/* Footer */
-footer {
-  min-height: 500px;
-  transition: color 1s ease-in-out 0s, background 1s ease-in-out 0s;
-}
-
-.titulo-footer {
-  color: var(--bg-color-about);
-}
-
-.footer-logo {
-  height: 150px;
-  width: 150px;
-  margin: 10px;
-  border-radius: 50%;
-} 
-
-.footer-texto {
-  font-size: 1.5rem;
-  padding: 20px;
-  margin-bottom: 30px;
-  font-family: 'Quicksand', sans-serif;
-}
 
 .formContact {
   background: #f7f5f7;
@@ -990,14 +973,40 @@ footer {
   font-size: 1.25rem;
   padding: 0.7rem 1em;
   padding-left: 0.9em;
+  border-radius: 16px;
   display: flex;
   align-items: center;
-  border-radius: 16px;
   overflow: hidden;
   transition: color 1s ease-in-out 0s, background 1s ease-in-out 0s, border-color 1s ease-in-out 0s;
   background: transparent;
   color: var(--text-semiBlack);
   border: 2px solid var(--text-semiBlack);
+}
+
+
+
+/* Footer */
+footer {
+  min-height: 500px;
+  transition: color 1s ease-in-out 0s, background 1s ease-in-out 0s;
+}
+
+.titulo-footer {
+  color: var(--bg-color-about);
+}
+
+.footer-logo {
+  height: 150px;
+  width: 150px;
+  margin: 10px;
+  border-radius: 50%;
+} 
+
+.footer-texto {
+  font-size: 1.5rem;
+  padding: 20px;
+  margin-bottom: 30px;
+  font-family: 'Quicksand', sans-serif;
 }
 
 .iconos-redes-sociales a {
@@ -1119,6 +1128,11 @@ footer p {
 
 @media screen and (max-width: 767px) {
   .navbar-brand {
+    display: none;
+  }
+
+  #toggleTheme,
+  .idiom {
     display: none;
   }
 }

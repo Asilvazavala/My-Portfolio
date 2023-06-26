@@ -110,9 +110,32 @@ navLinks.forEach(link => {
     const navbar = document.querySelector('.navbar-collapse');
     if (navbar.classList.contains('show')) {
       navbar.classList.remove('show');
+      closeMenuResponsive.classList.toggle('hide');
+      openMenuResponsive.classList.toggle('hide');
+      toggleTheme.style.display = 'none'
+      toggleIconLanguage.style.display = 'none'    
     }
   });
 });
+
+// Comportamiento botón menú responsive
+const openMenuResponsive = document.getElementById('openMenuResponsive');
+const closeMenuResponsive = document.getElementById('closeMenuResponsive');
+
+openMenuResponsive.addEventListener('click' , () => {
+  closeMenuResponsive.classList.toggle('hide');
+  openMenuResponsive.classList.toggle('hide');
+  toggleTheme.style.display = 'block'
+  toggleIconLanguage.style.display = 'block'
+});
+
+closeMenuResponsive.addEventListener('click' , () => {
+  closeMenuResponsive.classList.toggle('hide');
+  openMenuResponsive.classList.toggle('hide');
+  toggleTheme.style.display = 'none'
+  toggleIconLanguage.style.display = 'none'
+});
+
 
 // Efecto scroll izquierda a derecha
 window.addEventListener('scroll', function() {

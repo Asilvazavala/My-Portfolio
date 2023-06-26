@@ -33,7 +33,8 @@
       <div class="container-fluid">
         <!-- Navbar Responsive -->
         <button class="navbar-toggler toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarTogglerDemo01" aria-controls="navbarTogglerDemo01" aria-expanded="false" aria-label="Toggle navigation">
-          <span class="navbar-toggler-icon"></span>
+          <span id="openMenuResponsive" class="navbar-toggler-icon"></span>
+          <span id="closeMenuResponsive" class="hide"><i class='bx bx-x'></i></span>
         </button>
         <!-- Logo -->
         <img class="nav-link" id="logoAS" src="./imagenes/General/LogoAS.png" alt="LogoAS" width="60" height="50" title="Clic me">
@@ -56,7 +57,7 @@
         </div>
         <!-- Cambiar tema -->
         <div id="toggleTheme">
-        <i title="Cambiar Tema" id="toggleIcon" class='bx bxs-moon toggleThemeIcon'></i>
+          <i title="Cambiar Tema" id="toggleIcon" class='bx bxs-moon toggleThemeIcon'></i>
         </div>
         <!-- Cambiar idioma -->
         <div id="flags" class="flags">
@@ -428,7 +429,7 @@
             <!-- Columna 3 -->
             <div class="col-12 col-md-4">
               <a  href="#contacto">
-                <button type="button">
+                <button class="contactButton" type="button">
                   Contact
                   <i class="bi bi-envelope"></i>
                 </button>
@@ -438,10 +439,6 @@
           </div>
         </div>
       </div>
-    </section>
-
-    <!-- Footer -->
-    <footer class="seccion-oscura d-flex flex-column align-items-center justify-content-center">
       <h2 id="contacto" data-section="footer" data-value="title" class="seccion-titulo titulo-footer">Contact me</h2>
       <form id="form" action="https://formsubmit.co/asilvazavala@gmail.com" method="POST" class="d-flex flex-column formContact">
         
@@ -478,6 +475,10 @@
         <input type="hidden" name="_autoresponse" value="Gracias por tu mensaje, te reponderé en breve.">
       </form>
 
+    </section>
+
+    <!-- Footer -->
+    <footer class="seccion-oscura d-flex flex-column align-items-center justify-content-center">
       <img class="footer-logo" src="imagenes/General/yo-linkedin.webp" alt="Logo del portafolio">
       <p data-section="footer" data-value="phrase" class="footer-texto text-center">I learn and create every day.<br>Let's create a project together.</p>
       <div class="iconos-redes-sociales d-flex flex-wrap align-items-center justify-content-center">
