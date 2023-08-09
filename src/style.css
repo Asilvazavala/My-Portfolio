@@ -10,37 +10,36 @@
 }
 
 :root {
-  --text-color-primary: #000;
-  --text-color-CV: #fff;
-  --text-color-secondary: #000;
-  --text-semiBlack: #454545ad;
-  --bg-color: rgb(232, 232, 232);
-  --bg-color-nav: #024c81;
-  --bg-color-about: #fff;
-  --bg-color-black: #081b29;
+  --semiBlack: #454545ad;
+
+  --blueLight-black: #000;
+  --blueLight-white: #fff;
+  --blueMedium-whiteLight: rgb(232, 232, 232);
+
+  --blueStrong-blueLight: #024c81;
+  --blueStrong-black: #000;
+  --white-blueStrong: #081b29;
 }
 
 body {
-  background-color: var(--bg-color);
-  color: var(--text-color-primary);
+  background-color: var(--blueMedium-whiteLight);
+  color: var(--blueLight-black);
 }
 
 body.dark {
-  --text-color-primary: #00abf0;
-  --text-color-CV: #00abf0;
-  --text-color-secondary: #081b29;
-  --bg-color: #192e3c;
-  --bg-color-nav: #081b29;
-  --bg-color-about: #00abf0;
-  --bg-color-black: #fff;
+  --blueLight-black: #00abf0;
+  --blueLight-white: #00abf0;
+  --blueMedium-whiteLight: #192e3c;
+
+  --blueStrong-blueLight: #081b29;
+  --blueStrong-black: #081b29;
+  --white-blueStrong: #fff;
 }
 
 /* Estilos generales */
 * {
   box-sizing: border-box;
 }
-
-
 
 section {
   display: flex;
@@ -55,7 +54,7 @@ h1 {
 }
 
 .seccion-oscura {
-  background-color: var(--bg-color-nav);
+  background-color: var(--blueStrong-blueLight);
   color: white;
 }
 
@@ -77,7 +76,7 @@ h1 {
 }
 
 .seccion-titulo {
-  color: var(--text-color-primary);
+  color: var(--blueLight-black);
   font-size: 2rem;
   padding: 15px 0;
   font-family: 'Rubik Dirt', cursive;
@@ -139,6 +138,7 @@ h1 {
   overflow: hidden;
   z-index: 1000;
   transition: color 1s ease-in-out 0s, background 1s ease-in-out 0s;
+  background: var(--blueStrong-blueLight) !important;
 }
 
 .toggler {
@@ -146,7 +146,7 @@ h1 {
   top: 15px;
   right: 30px;
   transition: color 1s ease-in-out 0s, background 1s ease-in-out 0s;
-  background: var(--bg-color-about);
+  background: var(--blueLight-white);
 }
 
 .navbar img {
@@ -162,7 +162,7 @@ h1 {
 }
 
 .navbar a {
-  color: var(--bg-color-about);
+  color: var(--blueLight-white);
   font-weight: 600;
   transition: color 1s ease-in-out 0s, background 1s ease-in-out 0s;
   padding: 0.5rem 1.5rem !important;
@@ -191,7 +191,7 @@ h1 {
 
 .toggleThemeIcon {
   width: 30px;
-  color: var(--bg-color-about);
+  color: var(--blueLight-white);
   font-size: 43px;
   margin-top: 5px;
   border-radius: 50%;
@@ -214,7 +214,7 @@ h1 {
 
 /* Sección Hero */
 .hero {
-  background-color: var(--bg-color);
+  background-color: var(--blueMedium-whiteLight);
   transition: color 1s ease-in-out 0s, background 1s ease-in-out 0s;
   min-height: 450px;
   text-align: center;
@@ -275,8 +275,8 @@ h1 {
   font-size: 2.7rem;
   font-weight: 700;
   color: transparent;
-  -webkit-text-stroke: .7px var(--bg-color-black);
-  background-image: linear-gradient(var(--bg-color-black), var(--bg-color-black));
+  -webkit-text-stroke: .7px var(--white-blueStrong);
+  background-image: linear-gradient(var(--white-blueStrong), var(--white-blueStrong));
   background-repeat: no-repeat;
   -webkit-background-clip: text;
   background-clip: text;
@@ -296,7 +296,7 @@ h1 {
   left: 0;
   width: 0;
   height: 100%;
-  border-right: 2px solid var(--bg-color-black);
+  border-right: 2px solid var(--white-blueStrong);
   z-index: -1;
   animation: tracking-in-contract-bck-top 1.5s cubic-bezier(0.215, 0.610, 0.355, 1.000) 1s both, homeCursorText 6s linear infinite;
   animation-delay: 2s;
@@ -350,7 +350,7 @@ h1 {
   background-position: 50% center;
   background-repeat: no-repeat;
   border-width: 3px;
-  border-color: var(--text-color-primary);
+  border-color: var(--blueLight-black);
   border-style: solid;
   border-image: initial;
   border-radius: 60% 40% 30% 70% / 60% 30% 70% 40%;
@@ -395,14 +395,14 @@ h1 {
 }
 
 .sobre-mi p {
-  color: var(--bg-color-about);
+  color: var(--blueLight-white);
   transition: color 1s ease-in-out 0s;
   font-weight: 500;
   line-height: 2.1rem;
 }
 
 .sobre-mi h2 {
-  color: var(--bg-color-about);
+  color: var(--blueLight-white);
   transition: color 1s ease-in-out 0s;
 }
 
@@ -414,8 +414,8 @@ h1 {
 .boton4 {
   font-size: 1.25rem;
   background: transparent;
-  color: var(--text-color-CV);
-  border: 2px solid var(--text-color-CV);
+  color: var(--blueLight-white);
+  border: 2px solid var(--blueLight-white);
   padding: 0.7rem 1em;
   padding-left: 0.9em;
   text-decoration: none;
@@ -483,7 +483,7 @@ h1 {
 /* Experiencia */
 .experiencia {
   padding: 90px 40px 40px 40px;
-  background-color: var(--bg-color);
+  background-color: var(--blueMedium-whiteLight);
   transition: color 1s ease-in-out 0s, background 1s ease-in-out 0s;
 }
 
@@ -509,7 +509,7 @@ h1 {
   padding: 20px;
   border: 2px solid #8080804d;
   display: flex;
-  color: var(--bg-color-nav);
+  color: var(--blueStrong-blueLight);
   transition: color 0.5s ease-in-out 0s, background-color 0.5s ease-in-out 0s,
   border-top-right-radius 0.5s ease-in-out 0s, border-bottom-left-radius 0.5s ease-in-out 0s, 
   border-top-left-radius 0.5s ease-in-out 0s, border-bottom-right-radius 0.5s ease-in-out 0s;
@@ -521,7 +521,7 @@ h1 {
 
 .experiencia .columna:hover {
   color: white;
-  background-color: var(--bg-color-nav);
+  background-color: var(--blueStrong-blueLight);
   border-top-right-radius: 20%;
   border-bottom-left-radius: 20%;
   border-top-left-radius: 0%;
@@ -553,7 +553,7 @@ h1 {
 }
 
 .experiencia h2 {
-  color: var(--text-color-primary);
+  color: var(--blueLight-black);
   transition: color 1s ease-in-out 0s;
 }
 
@@ -563,8 +563,8 @@ h1 {
 .boton-otros-proyectos {
   font-size: 1.25rem;
   background: transparent;
-  color: var(--text-color-primary);
-  border: 2px solid var(--text-color-primary);
+  color: var(--blueLight-black);
+  border: 2px solid var(--blueLight-black);
   padding: 0.7rem 1em;
   padding-left: 0.9em;
   text-decoration: none;
@@ -579,7 +579,7 @@ h1 {
 
 .proyectos-recientes {
   padding: 70px 40px 0px 40px;
-  background-color: var(--bg-color);
+  background-color: var(--blueMedium-whiteLight);
   transition: color 1s ease-in-out 0s, background 1s ease-in-out 0s;
 }
 
@@ -621,7 +621,7 @@ h1 {
   font-weight: bold;
   margin-bottom: 0;
   margin-top: 10px;
-  color: var(--bg-color-black);
+  color: var(--white-blueStrong);
 }
 
 .proyecto {
@@ -641,14 +641,14 @@ h1 {
 }
 
 .overlay i {
-  color: var(--bg-color-black);
+  color: var(--white-blueStrong);
   font-size: 50px;
   margin: 5px 10px;
   transition: color .3s ease-in-out;
 }
 
 .overlay i:hover {
-  color: var(--bg-color-about);
+  color: var(--blueLight-white);
 }
 
 .stacks {
@@ -765,14 +765,14 @@ h1 {
 }
 
 .project2Effect {
-  transform: translateY(-69%); 
+  transform: translateY(-67%); 
 }
 
 .project4Effect {
   height: auto;
   width: 100%;
   transition: transform 10s ease-in-out 0s;
-  transform: translateY(-47%); 
+  transform: translateY(-48%); 
 }
 
 .project1Effect {
@@ -822,7 +822,7 @@ h1 {
 }
 
 .proyectos-recientes h2 {
-  color: var(--text-color-primary);
+  color: var(--blueLight-black);
   transition: all 1s ease-in-out 0s;
 }
 
@@ -900,7 +900,7 @@ h1 {
 .labelFormContact {
   font-size: 1.3rem;
   font-weight: 600;
-  color: var(--text-semiBlack);
+  color: var(--semiBlack);
   cursor: pointer;
   position: absolute;
   top: 0;
@@ -916,26 +916,26 @@ h1 {
   width: 100%;
   border: none;
   outline: none;
-  border-bottom: 1px solid var(--text-semiBlack);
+  border-bottom: 1px solid var(--semiBlack);
 }
 
 .textAreaFormContact:focus + .labelFormContact,
 .textAreaFormContact:not(:placeholder-shown) + .labelFormContact {
   transform: translateY(-28px) scale(.7);
   transform-origin: left top;
-  color: var(--bg-color-nav);
+  color: var(--blueStrong-blueLight);
 }
 
 .textAreaFormContact:focus,
 .textAreaFormContact:not(:placeholder-shown) {
-  outline: 3px solid var(--bg-color-nav);
+  outline: 3px solid var(--blueStrong-blueLight);
 }
 
 .inputFormContact:focus + .labelFormContact,
 .inputFormContact:not(:placeholder-shown) + .labelFormContact {
   transform: translateY(-12px) scale(.7);
   transform-origin: left top;
-  color: var(--bg-color-nav);
+  color: var(--blueStrong-blueLight);
 }
 
 .textAreaFormContact {
@@ -952,7 +952,7 @@ h1 {
   left: 0;
   width: 100%;
   height: 3px;
-  background: var(--bg-color-nav);
+  background: var(--blueStrong-blueLight);
   transform: scale(0);
   transform: left bottom;
   transition: transform .4s;
@@ -979,8 +979,8 @@ h1 {
   overflow: hidden;
   transition: color 1s ease-in-out 0s, background 1s ease-in-out 0s, border-color 1s ease-in-out 0s;
   background: transparent;
-  color: var(--text-semiBlack);
-  border: 2px solid var(--text-semiBlack);
+  color: var(--semiBlack);
+  border: 2px solid var(--semiBlack);
 }
 
 
@@ -992,7 +992,7 @@ footer {
 }
 
 .titulo-footer {
-  color: var(--bg-color-about);
+  color: var(--blueLight-white);
 }
 
 .footer-logo {
@@ -1010,17 +1010,17 @@ footer {
 }
 
 footer p {
-  color: var(--bg-color-about);
+  color: var(--blueLight-white);
   transition: all 1s ease-in-out 0s;
   font-weight: 600;
 }
 
 .iconos-redes-sociales a {
-  border: 2px solid var(--bg-color-about);
+  border: 2px solid var(--blueLight-white);
 }
 
 .iconos-redes-sociales-hero a {
-  border: 2px solid var(--text-color-primary);
+  border: 2px solid var(--blueLight-black);
 }
 
 .iconos-redes-sociales-hero a, 
@@ -1038,11 +1038,11 @@ footer p {
 }
 
 .iconos-redes-sociales-hero i {
-  color: var(--text-color-primary);
+  color: var(--blueLight-black);
 }
 
 .iconos-redes-sociales i {
-  color: var(--bg-color-about);
+  color: var(--blueLight-white);
 }
 
 .iconos-redes-sociales-hero i,
@@ -1059,7 +1059,7 @@ footer p {
 
 .derechos-de-autor {
   font-size: 18px;
-  color: var(--bg-color-about);
+  color: var(--blueLight-white);
   transition: color 1s ease-in-out 0s, background 1s ease-in-out 0s;
   padding: 20px ;
 }
