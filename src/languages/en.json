@@ -13,7 +13,10 @@
   "about": {
     "title": "Meet Antonio Silva",
     "description": "+8 years experience working as hardware and software maintenance technician. I live in the state of Guanajuato in Mexico, have an engineering degree in information technology.<br><br> Some words that describe me, proactive, persevering, decisive, adaptable, teamplayer. I´m always in training, currently learning Amazon web services and TypeScript.",
-    "buttonCV": "Download CV"
+    "buttonCV": "Download CV",
+    "textAbout1": "Years Old",
+    "textAbout2": "Projects",
+    "textAbout3": "Certifications"
   },
   "skills": {
     "title": "My skills",
@@ -45,10 +48,10 @@
     "project1Description": "Plan your exercise classes here, this website offers simplicity and clean design, prioritizes the user experience with responsive design, join us to fit easily and completely your body, do you accept the challenge?",
     "project2Name": "Blog Culemania",
     "project2Description": "FC Barcelona news, has user authentication, CRUD of comments with the possibility of giving (like/dislike), saving information in the database, filtering by category/ID, conditional rendering, pagination, contact form, responsive design.",
-    "project3Name": "Marketplace 'My seam'",
+    "project3Name": "Marketplace My seam",
     "project3Description": "Focused sell sewing services/products, has user authentication with Auth0, payment gateway with Mercado pago, dark/light mode, combined filters, minimalist design, search by name, local storage, dashboard admin, reviews/score.",
     "project4Name": "Pokemon World",
-    "project4Description": "Return to pokemon world, You can consult, modify, delete and create pokemon, which are consumed through an external API and, in turn, are stored in a database. Made by a lover of this wonderful world.",
+    "project4Description": "Return to pokemon world, you can search, filter, modify, delete and create pokemon, which are consumed through an external API and, in turn, are stored in a database. Made by a lover of this wonderful world.",
     "project5Name": "Music Player",
     "project6Name": "Tic Tac Toe",
     "project7Name": "Calculator",
