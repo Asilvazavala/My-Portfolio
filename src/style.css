@@ -1246,6 +1246,7 @@ footer p {
   }
 
   .hero-principal .occupationAnimation {
+    margin: 1rem 0;
     background-position: -33rem 0;
   } 
   
