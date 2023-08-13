@@ -530,12 +530,13 @@ h1 {
   justify-content: space-between;
 }
 
-.experienciaCard .experiencia-description {
-  font-weight: 500;
+.experienciaCard i {
+  margin-top: 1rem;
 }
 
 .experienciaCard .experiencia-titulo {
   font-weight: 700;
+  margin-bottom: 2rem;
 }
 
 .experiencia .columna {
@@ -659,6 +660,13 @@ h1 {
 
 .proyecto {
   position: relative;
+  margin-bottom: 1.5rem;
+}
+
+.proyecto8,
+.proyecto9,
+.proyecto10 {
+  margin-bottom: 9rem;
 }
 
 .proyecto:hover .overlay {
@@ -1190,6 +1198,10 @@ footer p {
   .sobre-mi {
     height: 850px;
   }
+
+  .proyecto8 {
+    margin-bottom: 0;
+  }
 }
 
 @media screen and (max-width: 767px) {
@@ -1253,6 +1265,10 @@ footer p {
     display: flex;
     justify-content: center;
     width: 65%;
+  }
+
+  .proyecto8 {
+    margin-bottom: 2rem;
   }
   
 }

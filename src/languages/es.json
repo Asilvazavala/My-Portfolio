@@ -20,7 +20,6 @@
   "skills": {
     "title": "Mis conocimientos",
     "project1Name": "Desarrollador Web",
-    "project1Description": "Tengo estos conocimientos como desarrollador:",
     "project1Skill1": "HTML",
     "project1Skill2": "CSS",
     "project1Skill3": "JavaScript",
@@ -31,12 +30,10 @@
     "project1Skill8": "PostgreSQL",
     "project1Skill9": "Git",
     "project2Name": "Extras",
-    "project2Description": "Nunca estorba saber cosas como:",
     "project2Skill1": "Inglés Conversacional B1",
     "project2Skill2": "Adobe Photoshop",
     "project2Skill3": "Microsoft Office paquetería",
     "project3Name": "Estudiante",
-    "project3Description": "He completado los siguientes cursos/carrera:",
     "project3Skill1": "Licenciatura en Ingeniería en TI",
     "project3Skill2": "Bootcamp SoyHenry",
     "project3Skill3": "Curso de FreeCodeCamp"
@@ -54,6 +51,9 @@
     "project5Name": "Reproductor",
     "project6Name": "3 en raya",
     "project7Name": "Calculadora",
+    "project8Name": "Resultados",
+    "project9Name": "Producto",
+    "project10Name": "Puntaje",
     "code": "Código <i class='bi bi-github'></i>",
     "demo": "En vivo <i class='bi bi-laptop'></i>",
     "buttonProyectos": "Ver más proyectos"

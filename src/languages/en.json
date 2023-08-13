@@ -20,7 +20,6 @@
   "skills": {
     "title": "My skills",
     "project1Name": "Web Development",
-    "project1Description": "I have these knowledge as a developer:",
     "project1Skill1": "HTML",
     "project1Skill2": "CSS",
     "project1Skill3": "JavaScript",
@@ -31,12 +30,10 @@
     "project1Skill8": "PostgreSQL",
     "project1Skill9": "Git",
     "project2Name": "Additionals",
-    "project2Description": "It never hurts to know things like:",
     "project2Skill1": "English Conversational B1",
     "project2Skill2": "Adobe Photoshop",
     "project2Skill3": "Microsoft Office package",
     "project3Name": "Student",
-    "project3Description": "I have completed the following courses/degree:",
     "project3Skill1": "TI Engineering Degree",
     "project3Skill2": "Bootcamp SoyHenry",
     "project3Skill3": "FreeCodeCamp Course"
@@ -54,6 +51,9 @@
     "project5Name": "Music Player",
     "project6Name": "Tic Tac Toe",
     "project7Name": "Calculator",
+    "project8Name": "Results Card",
+    "project9Name": "Product Card",
+    "project10Name": "Rating Card",
     "code": "Code <i class='bi bi-github'></i>",
     "demo": "Demo <i class='bi bi-laptop'></i>",
     "buttonProyectos": "See more projects"
