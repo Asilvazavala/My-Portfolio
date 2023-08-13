@@ -1216,8 +1216,8 @@ footer p {
 
   .datosImportantes {
     flex-wrap: wrap;
-    margin-left: 25vw;
     justify-content: start;
+    padding-left: 15%;
     align-items: center;
     gap: 2rem;
   }
@@ -1268,9 +1268,13 @@ footer p {
 
 }
 
-@media screen and (max-width: 320px) {
+@media screen and (max-width: 340px) {
   .hero-imagen-perfil {
     width: 250px;
+  }
+
+  .datosImportantes {
+    padding-left: 5%;
   }
 }
 
