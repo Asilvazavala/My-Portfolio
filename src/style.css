@@ -1355,12 +1355,14 @@ footer p {
   .project_img, .project2_img, .project3_img, .project4_img {
     max-height: 13rem;
   }
+
   .links a {
-    font-size: 1.2rem;
-  }
-  .links a i {
     font-size: 1.6rem;
   }
+
+  .links a i {
+    font-size: 2rem;
+  }  
 }
 
 
