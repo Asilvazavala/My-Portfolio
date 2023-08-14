@@ -1069,11 +1069,11 @@ footer p {
 }
 
 .iconos-redes-sociales a {
-  border: 2px solid var(--blueLight-white);
+  border: 2px solid var(--white-blueStrong);
 }
 
 .iconos-redes-sociales-hero a {
-  border: 2px solid var(--blueLight-black);
+  border: 2px solid var(--white-blueStrong);
 }
 
 .iconos-redes-sociales-hero a, 
@@ -1091,11 +1091,11 @@ footer p {
 }
 
 .iconos-redes-sociales-hero i {
-  color: var(--blueLight-black);
+  color: var(--white-blueStrong);
 }
 
 .iconos-redes-sociales i {
-  color: var(--blueLight-white);
+  color: var(--white-blueStrong);
 }
 
 .iconos-redes-sociales-hero i,
