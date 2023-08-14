@@ -855,6 +855,20 @@ h1 {
   opacity: 1;
 }
 
+.stacks {
+  display: flex;
+  position: relative;
+  justify-content: flex-end;
+}
+
+.stacks img {
+  width: 50px;
+  height: 50px;
+  margin-bottom: 10px;
+  opacity: 1 !important;
+  border-radius: 0 !important;
+}
+
 .links i,
 .links a {
   background-clip: text;
@@ -1447,8 +1461,3 @@ footer p {
     padding: 5px 10px;
   }
 }
-
-
-
-
-
