@@ -788,14 +788,14 @@ h1 {
 .project3Effect {
   height: auto;
   width: 100%;
-  transition: transform 12s ease-in-out 0s;
+  transition: transform 14s ease-in-out 0s;
 }
 
 .project1Effect {
   height: auto;
   width: 100%;
   transition: transform 10s ease-in-out 0s;
-  transform: translateY(-67%); 
+  transform: translateY(-69%); 
 }
 
 .project2Effect {
@@ -810,7 +810,7 @@ h1 {
   height: auto;
   width: 100%;
   transition: transform 5s ease-in-out 0s;
-  transform: translateY(-50%); 
+  transform: translateY(-52%); 
 }
 
 .projects-grid .pro_text {
