@@ -6,7 +6,7 @@ const project3 = document.getElementById('project3');
 const project4 = document.getElementById('project4');
 const toggleTheme = document.getElementById('toggleTheme');
 const toggleIcon = document.getElementById('toggleIcon');
-const flagsElement = document.getElementById("flags");
+const flags = document.getElementById("flags");
 const textsToChange = document.querySelectorAll("[data-section]");
 const toggleIconLanguage = document.getElementById('toggleIconLanguage');
 const navLinks = document.querySelectorAll('.nav-link');
@@ -108,7 +108,7 @@ const changeLanguage = async () => {
 }
 
 // Cambiar icono español/inglés
-flagsElement.addEventListener('click', (e) => {
+flags.addEventListener('click', (e) => {
   changeLanguage(e.target.parentElement.dataset.language);
   if (toggleIconLanguage.src.includes("english")) {
     toggleIconLanguage.src = "./imagenes/General/spain.svg"

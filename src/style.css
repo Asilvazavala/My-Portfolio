@@ -232,6 +232,7 @@ h1 {
 }
 
 .hero-principal h1 {
+  font-size: 3.2rem;
   -webkit-animation: tracking-in-contract-bck-top 1.5s cubic-bezier(0.215, 0.610, 0.355, 1.000) 1s both;
 	        animation: tracking-in-contract-bck-top 1.5s cubic-bezier(0.215, 0.610, 0.355, 1.000) 1s both;
 }
@@ -267,10 +268,6 @@ h1 {
             transform: translateZ(0) translateY(0);
     opacity: 1;
   }
-}
-
-.hero-principal h1 {
-  font-size: 3.2rem;
 }
 
 .textAnimate {
@@ -745,7 +742,7 @@ h1 {
 .projects-grid .pro_1 {
   flex-direction: row;
   height: 20rem;
-  gap: 8rem;
+  gap: 6rem;
   padding: 1rem;
 }
 
@@ -784,7 +781,7 @@ h1 {
   transition: transform 7s ease-in-out 0s;
 }
 
-.project2Effect,
+.project4Effect,
 .project3Effect {
   height: auto;
   width: 100%;
@@ -798,7 +795,7 @@ h1 {
   transform: translateY(-69%); 
 }
 
-.project2Effect {
+.project4Effect {
   transform: translateY(-84%); 
 }
 
@@ -806,7 +803,7 @@ h1 {
   transform: translateY(-82%); 
 }
 
-.project4Effect {
+.project2Effect {
   height: auto;
   width: 100%;
   transition: transform 5s ease-in-out 0s;
@@ -818,8 +815,8 @@ h1 {
   flex-direction: column;
   height: auto;
   justify-content: center;
-  max-width: 25rem;
-  margin-right: 50px;
+  max-width: 28rem;
+  margin-right: 10px;
 }
 
 .projects-grid .pro_text p {
@@ -833,7 +830,7 @@ h1 {
 .stack {
   display: flex;
   justify-content: flex-start;
-  margin: 10px 0 20px 0;
+  margin: 25px 0;
   position: relative;
 }
 
@@ -1310,7 +1307,10 @@ footer p {
   .proyecto8 {
     margin-bottom: 2rem;
   }
-  
+
+  .stack {
+    margin: 10px 0 15px 0;
+  }
 }
 
 @media screen and (max-width: 420px){
