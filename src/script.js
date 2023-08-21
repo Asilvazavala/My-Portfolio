@@ -13,11 +13,6 @@ const navLinks = document.querySelectorAll('.nav-link');
 const navbarResponsive = document.querySelector('.navbar-collapse');
 const openMenuResponsive = document.getElementById('openMenuResponsive');
 const closeMenuResponsive = document.getElementById('closeMenuResponsive');
-const nombre = document.getElementById('name');
-const email = document.getElementById('email');
-const message = document.getElementById('message');
-const form = document.getElementById('form');
-const btnSubmit = document.getElementById('btnSubmit');
 let animacionProyecto1 = document.getElementById('pro1');
 let animacionProyecto2 = document.getElementById('pro2');
 let animacionProyecto3 = document.getElementById('pro3');
@@ -178,18 +173,6 @@ window.addEventListener('scroll', function() {
   }
 })
 
-// Validación formulario de contacto
-btnSubmit.addEventListener('click', () => {            
-  if (nombre.value.trim() === '' || !regexEmail.test(email.value) || message.value.trim() === '') {
-    swal('Registro vacío', 'Complete todos los campos por favor', 'error');
-  } else {
-      swal('Gracias', '¡Mensaje enviado con éxito!', 'success');
-      nombre.value = ""
-      email.value = ""
-      message.value = ""
-    }
-});
-
 // Hover li items Navbar
   if (screenWidth > 770) {
     listItem.forEach((item) => {
@@ -243,6 +226,9 @@ btnSubmit.addEventListener('click', () => {
         btnCV.setAttribute('href', './documents/CV Esp Jose Antonio Silva Zavala.pdf')
       }
   })
+
+
+
 
 /*   Descargar todas las imágenes de una página web
   $$('img').forEach(img => {
