@@ -505,8 +505,7 @@ h1 {
 
 /* Experiencia */
 .slider {
-  width: 75vw;
-  margin-top: 30rem 0 2rem 0;
+  width: 80vw;
   height: auto;
   overflow: hidden;
   -webkit-box-reflect: below 0 linear-gradient(180deg,transparent,rgba(0,0,0,.2));
@@ -613,7 +612,7 @@ h1 {
 }
 
 .experiencia {
-  padding: 90px 40px 40px 40px;
+  padding: 90px 0 40px 0;
   margin-bottom: 3rem;
   background-color: var(--blueMedium-whiteLight);
   transition: color 1s ease-in-out 0s, background 1s ease-in-out 0s;
@@ -622,7 +621,7 @@ h1 {
 .experiencia h2 {
   color: var(--blueLight-black);
   transition: color 1s ease-in-out 0s;
-  margin-bottom: 1rem;
+  margin-bottom: 2rem;
 }
 
 
@@ -1284,6 +1283,7 @@ footer p {
     85% {
       background-position: 0 0;
     }
+
   }
 
   .hero-principal .occupationAnimation {
@@ -1321,6 +1321,10 @@ footer p {
     padding: .7em 2em;
     margin: 20px 0 2px 0;  
   }
+
+  .slider {
+    width: 90vw;
+  }
 }
 
 @media screen and (max-width: 420px){
@@ -1341,14 +1345,6 @@ footer p {
     margin-bottom: 0;
   }
   
-  .badges-contenedor {
-    padding-top: 0;
-    font-size: 19px;
-  }
-  
-  .experiencia i {
-    font-size: 2.2rem;
-  }
 
   .sobre-mi {
     height: 1150px;
