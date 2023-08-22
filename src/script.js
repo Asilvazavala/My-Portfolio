@@ -13,12 +13,7 @@ const navLinks = document.querySelectorAll('.nav-link');
 const navbarResponsive = document.querySelector('.navbar-collapse');
 const openMenuResponsive = document.getElementById('openMenuResponsive');
 const closeMenuResponsive = document.getElementById('closeMenuResponsive');
-let animacionProyecto1 = document.getElementById('pro1');
-let animacionProyecto2 = document.getElementById('pro2');
-let animacionProyecto3 = document.getElementById('pro3');
-let animacionProyecto4 = document.getElementById('pro4');
 const screenWidth = window.innerWidth;  
-const halfScreenWidth = window.innerHeight/1.2;
 const listItem = document.querySelectorAll('nav ul li');
 const menuBackDrop = document.querySelector('#menu-backdrop');
 const buttonOtherProjects = document.getElementById('buttonOtherProjects');
@@ -139,39 +134,6 @@ closeMenuResponsive.addEventListener('click' , () => {
   toggleTheme.style.display = 'none'
   toggleIconLanguage.style.display = 'none'
 });
-
-
-// Efecto scroll izquierda a derecha
-window.addEventListener('scroll', function() {
-  let posicionProyecto1 = animacionProyecto1.getBoundingClientRect().top;
-  let posicionProyecto3 = animacionProyecto3.getBoundingClientRect().top;
-
-  if (posicionProyecto1 < halfScreenWidth) {
-    animacionProyecto1.style.animation = 'slideInLeft 1s ease-out'
-    animacionProyecto1.style.opacity = 1
-  }
-
-  if (posicionProyecto3 < halfScreenWidth) {
-    animacionProyecto3.style.animation = 'slideInLeft 1s ease-out'
-    animacionProyecto3.style.opacity = 1
-  }
-})
-
-// Efecto scroll derecha a izquierda
-window.addEventListener('scroll', function() {
-  let posicionProyecto2 = animacionProyecto2.getBoundingClientRect().top;
-  let posicionProyecto4 = animacionProyecto4.getBoundingClientRect().top;
-
-  if (posicionProyecto2 < halfScreenWidth) {
-    animacionProyecto2.style.animation = 'slideInRight 1s ease-out'
-    animacionProyecto2.style.opacity = 1
-  }
-
-  if (posicionProyecto4 < halfScreenWidth) {
-    animacionProyecto4.style.animation = 'slideInRight 1s ease-out'
-    animacionProyecto4.style.opacity = 1
-  }
-})
 
 // Hover li items Navbar
   if (screenWidth > 770) {

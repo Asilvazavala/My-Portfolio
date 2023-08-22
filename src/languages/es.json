@@ -18,25 +18,7 @@
     "textAbout3": "Certificaciones"
   },
   "skills": {
-    "title": "Mis conocimientos",
-    "project1Name": "Desarrollador Web",
-    "project1Skill1": "HTML",
-    "project1Skill2": "CSS",
-    "project1Skill3": "JavaScript",
-    "project1Skill4": "React",
-    "project1Skill5": "Redux",
-    "project1Skill6": "NodeJS",
-    "project1Skill7": "Tailwind",
-    "project1Skill8": "PostgreSQL",
-    "project1Skill9": "Git",
-    "project2Name": "Extras",
-    "project2Skill1": "Inglés Conversacional B1",
-    "project2Skill2": "Adobe Photoshop",
-    "project2Skill3": "Microsoft Office paquetería",
-    "project3Name": "Estudiante",
-    "project3Skill1": "Licenciatura en Ingeniería en TI",
-    "project3Skill2": "Bootcamp SoyHenry",
-    "project3Skill3": "Curso de FreeCodeCamp"
+    "title": "Mis conocimientos"
   },
   "projects": {
     "title": "Mis proyectos",
@@ -54,8 +36,8 @@
     "project8Name": "Resultados",
     "project9Name": "Producto",
     "project10Name": "Puntaje",
-    "code": "Código <i class='bi bi-github'></i>",
-    "demo": "En vivo <i class='bi bi-laptop'></i>",
+    "code": "Código",
+    "demo": "En vivo",
     "buttonProyectos": "Ver más proyectos"
   },
   "contact": {
@@ -64,10 +46,6 @@
   },
   "footer": {
     "title": "¡Contáctame!",
-    "formName": "<label for='name' data-section='footer' data-value='formName' class='labelFormContact'>Nombre</label>",
-    "formEmail": "<label for='email' data-section='footer' data-value='formEmail' class='labelFormContact'>Correo</label>",
-    "formMessage": "<label for='message' data-section='footer' data-value='formMessage' class='labelFormContact'>Mensaje</label>",
-    "formButton": "Enviar",
     "phrase": "Aprendo y creo todos los días.<br>Hagámos un proyecto juntos.",
     "copyright": "Creado por Antonio Silva (2023) &#169;"
   }

@@ -416,25 +416,54 @@ h1 {
   text-align: center;
 }
 
+.boton-code {
+  font-size: 1.5rem;
+  padding: 0.3rem 0;
+  width: 35%;
+  color: #00abf0;
+  border: 2px solid #00abf0;
+}
+
+.boton-demo {
+  font-size: 1.7rem;
+  padding: 0.3rem 0;
+  width: 55%;
+  color: #00abf0;
+  border: 2px solid #00abf0;
+}
+
+.boton-demo,
+.boton-code,
 .boton4 {
-  font-size: 1.25rem;
   background: transparent;
-  color: var(--blueLight-white);
-  border: 2px solid var(--blueLight-white);
-  padding: 0.7rem 1em;
-  padding-left: 0.9em;
   text-decoration: none;
   display: flex;
+  justify-content: center;
   align-items: center;
-  border-radius: 16px;
+  border-radius: 1.5rem;
   overflow: hidden;
   transition: all .5s ease;
 }
 
+.boton4 {
+  color: var(--blueLight-white);
+  border: 2px solid var(--blueLight-white);
+  font-size: 1.25rem;
+  padding: 0.7rem 1em;
+}
+
+.boton-demo span,
+.boton-code span,
 .boton-otros-proyectos span,
 .boton4 span {
   display: block;
   margin-left: 0.3em;
+  transition: color 1s ease-in-out 0s, background 1s ease-in-out 0s, transform .3s ease-in-out;
+}
+
+.boton-demo i,
+.boton-code i {
+  display: block;
   transition: color 1s ease-in-out 0s, background 1s ease-in-out 0s, transform .3s ease-in-out;
 }
 
@@ -446,6 +475,8 @@ h1 {
   transition: color 1s ease-in-out 0s, background 1s ease-in-out 0s, transform .3s ease-in-out;
 }
 
+.boton-demo:hover .wrapper,
+.boton-code:hover .wrapper,
 .boton-otros-proyectos:hover .wrapper,
 .boton4:hover .wrapper {
   animation: fly 0.6s ease-in-out infinite alternate;
@@ -455,15 +486,27 @@ h1 {
   transform: translateX(3em) rotate(0deg) scale(1.7);
 }
 
+.boton-demo:hover i {
+  transform: translateX(1.5em) scale(1.6);
+}
+
+.boton-code:hover i {
+  transform: translateX(1.3em) scale(1.6);
+}
+
 .boton-otros-proyectos:hover i {
   transform: translateX(4.2em) rotate(45deg) scale(1.7);
 }
 
+.boton-demo:hover span,
+.boton-code:hover span,
 .boton-otros-proyectos:hover span,
 .boton4:hover span {
   transform: translateX(10em);
 }
 
+.boton-demo:active,
+.boton-code:active,
 .boton-otros-proyectos:active,
 .boton4:active {
   transform: scale(0.95);
@@ -511,7 +554,7 @@ h1 {
   overflow: hidden;
   -webkit-box-reflect: below 0 linear-gradient(180deg,transparent,rgba(0,0,0,.2));
   position: relative;
-  transition: color 1s ease-in-out 0s, background 1s ease-in-out 0s, -webkit-box-reflect 1s ease-in-out 0s;
+  transition: color 1s ease-in-out, background 1s ease-in-out, -webkit-box-reflect 1s ease-in-out !important;
 }
 
 .slider2 {
@@ -530,7 +573,7 @@ h1 {
 }
 
 .slider:after, .slider:before {
-  transition: color 1s ease-in-out 0s, background 1s ease-in-out 0s;
+  transition: color 1s ease-in-out, background 1s ease-in-out !important;
   position: absolute;
   content: "";
   height: 100px;
@@ -580,6 +623,7 @@ h1 {
   color: white;
 }
 
+.expressText,
 .nextjsText {
   background-color: black;
   color: white;
@@ -600,6 +644,11 @@ h1 {
   color: white;
 }
 
+.cssText {
+  background-color: #1572B6;
+  color: white;
+}
+
 
 @keyframes scroll {
   0% {
@@ -615,8 +664,8 @@ h1 {
 .experiencia {
   padding: 90px 0 40px 0;
   margin-bottom: 3rem;
-  background-color: var(--blueMedium-whiteLight);
-  transition: color 1s ease-in-out 0s, background 1s ease-in-out 0s;
+  background: var(--blueMedium-whiteLight);
+  transition: color 1s ease-in-out, background 1s ease-in-out !important;
 }
 
 .experiencia h2 {
@@ -632,12 +681,12 @@ h1 {
   background: transparent;
   color: var(--blueLight-black);
   border: 2px solid var(--blueLight-black);
-  padding: 0.7rem 1em;
+  padding: 0.8rem 1em;
   padding-left: 0.9em;
   text-decoration: none;
   display: flex;
   align-items: center;
-  border-radius: 16px;
+  border-radius: 1.5rem;
   overflow: hidden;
   transition: color 0.2s ease-in-out 0s, border-color 1s ease-in-out 0s;
   margin-top: 70px;
@@ -726,24 +775,6 @@ h1 {
 }
 
 
-/* Otros proyectos responsive*/
-@media screen and (max-width: 768px) {
-  .otros-proyectos {
-    padding: 40px 0 120px 0;
-  }
-
-  .proyectos-recientes {
-    padding: 70px 0 0 0;
-  }
-}
-
-@media screen and (max-width: 670px) {
-  .proyecto {
-    margin-bottom: 30px;
-  }
-}
-
-
 /* Proyectos */
 
 .pro_text h3 {
@@ -798,7 +829,7 @@ h1 {
   box-shadow: rgba(0, 0, 0, 0.1) 0px 0px 10px;
   display: flex;
   border-radius: 1.7rem;
-  opacity: 0;
+  opacity: 1;
 }
 
 .project4,
@@ -866,15 +897,13 @@ h1 {
 .stack {
   display: flex;
   justify-content: flex-start;
-  margin: 17px 0 22px;
+  margin: 8px 0 32px;
   position: relative;
 }
 
 .stack h5 {
   position: absolute;
   margin-top: .2rem;
-  background-color: var(--blueStrong-blueLight);
-  color: var(--blueLight-white);
   border-radius: 1rem;
   padding: .2rem .6rem;
   font-size: 1rem;
@@ -902,30 +931,11 @@ h1 {
   border-radius: 0 !important;
 }
 
-.links i,
-.links a {
-  background-clip: text;
-  -webkit-background-clip: text;
-  color: transparent;
-  background-image: var(--linear-grad);
-}
-
-.links a:hover,
-.links a:hover i {
- color: #081b29;
-}
-
-.links a {
-  transition:color .3s ease-in-out ;
-  font-size: 1.8rem;
-  font-weight: 600;
-  margin-right: 45px; 
-  text-decoration: none;
-}
-
-.links a i {
-  font-size: 2.1rem;
-  transition: color .3s ease-in-out ;
+.links {
+  display: flex;
+  cursor: pointer;
+  column-gap: 2rem;
+  row-gap: 1rem;
 }
 
 .proyectos-recientes h2 {
@@ -988,8 +998,6 @@ h1 {
 .contacto .contactButton:hover i {
   color: black;
 }
-
-
 
 .mailContact {
   font-weight: 700;
@@ -1222,19 +1230,35 @@ footer p {
   .idiom {
     display: none;
   }
-}
-
+    .otros-proyectos {
+      padding: 40px 0 120px 0;
+    }
+  
+    .proyectos-recientes {
+      padding: 70px 0 0 0;
+    }
+  }
+  
 @media screen and (max-width: 680px) {
   .hero-imagen-inferior {
     max-width: 600px;
   }
 
+  .proyecto {
+    margin-bottom: 30px;
+  }
+
   .datosImportantes {
+    margin: 0 0 2rem 0;
     flex-wrap: wrap;
     justify-content: start;
-    padding: 0 0 0 15%;
+    padding: 0 0 0 10%;
     align-items: center;
-    gap: 2rem;
+    gap: 3rem;
+  }
+
+  .textoAbout {
+    font-size: 1.3rem;
   }
   
   .project_img, .project2_img, .project3_img, .project4_img {
@@ -1267,6 +1291,17 @@ footer p {
   .seccion-texto {
     padding: 0 40px;
   }
+
+  .footer-logo {
+    margin-top: 3rem;
+  } 
+
+  .boton-demo,
+  .boton-code {
+    width: 45%;
+    margin-bottom: 1rem;
+  }
+  
 }
 
 @media screen and (max-width: 473px) {
@@ -1337,6 +1372,15 @@ footer p {
     font-size: 50px;
   }
 
+  .boton-code {
+    width: 100%;
+    margin-bottom: 0;
+  }
+
+  .boton-demo {
+    width: 100%;
+  }
+
 }
 
 @media screen and (max-width: 400px){
@@ -1346,10 +1390,10 @@ footer p {
     margin-bottom: 0;
   }
   
-
   .sobre-mi {
     height: 1150px;
   }
+
 }
 
 @media screen and (max-width: 340px) {
