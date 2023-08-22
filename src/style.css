@@ -394,7 +394,7 @@ h1 {
 
 /* Sobre mi */
 .sobre-mi {
-  height: 570px;
+  height: auto;
   padding: 50px 0;
   transition: color 1s ease-in-out 0s, background 1s ease-in-out 0s;
 }
@@ -487,11 +487,11 @@ h1 {
 }
 
 .boton-demo:hover i {
-  transform: translateX(1.7em) scale(1.6);
+  transform: translateX(1.6em) scale(1.6);
 }
 
 .boton-code:hover i {
-  transform: translateX(1.6em) scale(1.6);
+  transform: translateX(1.5em) scale(1.6);
 }
 
 .boton-otros-proyectos:hover i {
@@ -557,10 +557,6 @@ h1 {
   transition: color 1s ease-in-out, background 1s ease-in-out, -webkit-box-reflect 1s ease-in-out !important;
 }
 
-.slider2 {
-  margin-top: 5rem;
-}
-
 .slider:before {
   left: 0;
   top: 0;
@@ -584,6 +580,7 @@ h1 {
 
 .sliderList {
   display: flex;
+  width: 100%;
   animation: scroll 20s linear infinite;
   -webkit-animation: scroll 20s linear infinite;
   width: calc(150px * 16);
@@ -1196,6 +1193,10 @@ footer p {
     display: flex;
     flex-wrap: wrap;
   }
+
+  .slider {
+    width: 92vw;
+  }
 }
 
 @media screen and (max-width: 850px) {
@@ -1210,10 +1211,6 @@ footer p {
   
   .proyecto img {
     opacity: 0.2;
-  }
-
-  .sobre-mi {
-    height: 850px;
   }
 
   .proyecto8 {
@@ -1276,10 +1273,6 @@ footer p {
 }
 
 @media screen and (max-width: 585px) {
-  .sobre-mi {
-    height: 1000px;
-  }
-
   .idiom {
     margin-left: 0;
    }
@@ -1358,9 +1351,6 @@ footer p {
     margin: 20px 0 2px 0;  
   }
 
-  .slider {
-    width: 90vw;
-  }
 }
 
 @media screen and (max-width: 420px){
@@ -1388,10 +1378,6 @@ footer p {
     font-size: 22px;
     padding-bottom: 0;
     margin-bottom: 0;
-  }
-  
-  .sobre-mi {
-    height: 1150px;
   }
 
 }
