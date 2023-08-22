@@ -487,11 +487,11 @@ h1 {
 }
 
 .boton-demo:hover i {
-  transform: translateX(1.5em) scale(1.6);
+  transform: translateX(1.7em) scale(1.6);
 }
 
 .boton-code:hover i {
-  transform: translateX(1.3em) scale(1.6);
+  transform: translateX(1.6em) scale(1.6);
 }
 
 .boton-otros-proyectos:hover i {
