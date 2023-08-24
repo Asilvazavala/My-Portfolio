@@ -5,10 +5,9 @@ const project2 = document.getElementById('project2');
 const project3 = document.getElementById('project3');
 const project4 = document.getElementById('project4');
 const toggleTheme = document.getElementById('toggleTheme');
-const toggleIcon = document.getElementById('toggleIcon');
-const flags = document.getElementById("flags");
-const textsToChange = document.querySelectorAll("[data-section]");
 const toggleIconLanguage = document.getElementById('toggleIconLanguage');
+const toggleIcon = document.getElementById('toggleIcon');
+const textsToChange = document.querySelectorAll("[data-section]");
 const navLinks = document.querySelectorAll('.nav-link');
 const navbarResponsive = document.querySelector('.navbar-collapse');
 const openMenuResponsive = document.getElementById('openMenuResponsive');
@@ -98,8 +97,8 @@ const changeLanguage = async () => {
 }
 
 // Cambiar icono español/inglés
-flags.addEventListener('click', (e) => {
-  changeLanguage(e.target.parentElement.dataset.language);
+toggleIconLanguage.addEventListener('click', (e) => {
+  changeLanguage();
   if (toggleIconLanguage.src.includes("english")) {
     toggleIconLanguage.src = "./imagenes/General/spain.svg"
   } else {
