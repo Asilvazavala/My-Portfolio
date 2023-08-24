@@ -388,6 +388,7 @@ h1 {
 
 .hero-imagen-inferior {
   margin-bottom: 50px;
+  filter: drop-shadow(8px 8px 4px #081b29);
 }
 
 
@@ -1246,10 +1247,10 @@ footer p {
   }
 
   .datosImportantes {
-    margin: 0 0 2rem 0;
+    margin-bottom: 2rem;
     flex-wrap: wrap;
     justify-content: start;
-    padding: 0 0 0 10%;
+    padding: 0 0 0 17vw;
     align-items: center;
     gap: 3rem;
   }
