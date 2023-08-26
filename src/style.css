@@ -647,6 +647,11 @@ h1 {
   color: white;
 }
 
+.htmlText {
+  background-color: #E44D26;
+  color: white;
+}
+
 .auth0Text {
   background-color: #EB5424;
   color: white;
@@ -909,6 +914,7 @@ h1 {
   position: relative;
 }
 
+.stacks h5,
 .stack h5 {
   position: absolute;
   margin-top: .2rem;
@@ -921,6 +927,11 @@ h1 {
   font-size: 1rem;
 }
 
+.stacks h5 {
+  margin-top: -1rem;
+}
+
+.stacks img:hover+ h5,
 .stack img:hover+ h5 {
   opacity: 1;
 }
