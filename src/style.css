@@ -647,6 +647,16 @@ h1 {
   color: white;
 }
 
+.auth0Text {
+  background-color: #EB5424;
+  color: white;
+}
+
+.mercadopagoText {
+  background-color: #4FC3F7;
+  color: black;
+}
+
 
 @keyframes scroll {
   0% {
@@ -1250,7 +1260,7 @@ footer p {
     margin-bottom: 2rem;
     flex-wrap: wrap;
     justify-content: start;
-    padding: 0 0 0 17vw;
+    padding: 0 0 0 18vw;
     align-items: center;
     gap: 3rem;
   }
