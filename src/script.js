@@ -39,7 +39,7 @@ const irInicio = () => {
 
 // Mostrar alerta al hacer clic en el logo AS
 logoAS.addEventListener('click', () => {
-  alert.className = "alert alert-success alert-dismissible show" 
+  alert.className = "alert alert-primary alert-dismissible show" 
   document.documentElement.scrollTo(0, 0)
 })
 
