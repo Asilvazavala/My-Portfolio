@@ -387,6 +387,7 @@ h1 {
 }
 
 .hero-imagen-inferior {
+  margin-top: -50px;
   margin-bottom: 50px;
   filter: drop-shadow(8px 8px 4px #081b29);
 }
@@ -520,13 +521,19 @@ h1 {
 
 .datosImportantes {
   display: flex;
-  justify-content: space-between;
+  justify-content: center;
   width: 100%;
   margin: .7rem 0 2rem 0;
   font-weight: 700;
+  column-gap: 2rem;
 }
 
-.datosImportantes article {
+.datosImportantes aside {
+  display: flex;
+  column-gap: 2rem;
+}
+
+.datosImportantes aside article {
   display: flex;
   flex-direction: column;
 }
@@ -1195,9 +1202,9 @@ footer p {
   }
 
   .project_img, .project2_img, .project3_img, .project4_img {
-    height: 28rem;
     width: auto;
     padding: 10px 10px;
+    max-height: 20rem;
   }
   
   .projects-grid .pro_text {
@@ -1222,7 +1229,6 @@ footer p {
 }
 
 @media screen and (max-width: 850px) {
-  .datosImportantes,
   .seccion-texto {
     padding: 0 30px;
     flex-wrap: wrap;
@@ -1259,6 +1265,11 @@ footer p {
     .proyectos-recientes {
       padding: 70px 0 0 0;
     }
+
+    .project_img, .project2_img, .project3_img, .project4_img {
+      max-height: 15rem;
+    }
+
   }
   
 @media screen and (max-width: 680px) {
@@ -1270,19 +1281,9 @@ footer p {
     margin-bottom: 30px;
   }
 
-  .datosImportantes {
-    margin-bottom: 2rem;
-    padding: 0 0 0 13vw;
-    align-items: center;
-    gap: 3rem;
-  }
 
   .textoAbout {
     font-size: 1.3rem;
-  }
-  
-  .project_img, .project2_img, .project3_img, .project4_img {
-    max-height: 22rem;
   }
 
   .projects-grid .pro_1 {
@@ -1299,10 +1300,6 @@ footer p {
   .idiom {
     margin-left: 0;
    }
-
-   .project_img, .project2_img, .project3_img, .project4_img {
-    max-height: 17rem;
-  }
 
   .seccion-texto {
     padding: 0 40px;
@@ -1325,6 +1322,12 @@ footer p {
   .hero-principal h1 {
     margin-top: 1rem;
   }
+
+  .datosImportantes aside {
+    flex-direction: column;
+    row-gap: 2rem;
+  }
+  
 }
 
 @media screen and (max-width: 473px) {
@@ -1417,16 +1420,22 @@ footer p {
     width: 250px;
   }
 
-  .datosImportantes {
-    padding-left: 5%;
-  }
-
   .pro {
     max-width: 95%;
   }
 
   .stack h5 {
     display: none;
+  }
+
+  .datosImportantes {
+    column-gap: 1.5rem;
+  }
+
+  .datosImportantes aside {
+    flex-direction: column;
+    row-gap: 1.5rem;
+    column-gap: 1.5rem;
   }
   
 }
