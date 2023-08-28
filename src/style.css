@@ -1266,10 +1266,6 @@ footer p {
       padding: 70px 0 0 0;
     }
 
-    .project_img, .project2_img, .project3_img, .project4_img {
-      max-height: 15rem;
-    }
-
   }
   
 @media screen and (max-width: 680px) {
@@ -1293,6 +1289,10 @@ footer p {
   .pro {
     margin: 0;
     padding: 0;
+  }
+
+  .project_img, .project2_img, .project3_img, .project4_img {
+    max-height: 15rem;
   }
 }
 
