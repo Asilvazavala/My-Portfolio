@@ -308,6 +308,7 @@ h1 {
   transition: border-right 1s ease-in-out 0s;
 }
 
+
 /* Cursor Website titulo website developer */
 @keyframes homeCursorText {
   0%,
@@ -336,7 +337,7 @@ h1 {
 
   10%,
   100% {
-    background-position: -25rem 0;
+    background-position: -26rem 0;
   }
 
   65%,
@@ -392,8 +393,6 @@ h1 {
   filter: drop-shadow(8px 8px 4px #081b29);
 }
 
-
-
 /* Sobre mi */
 .sobre-mi {
   height: auto;
@@ -414,7 +413,7 @@ h1 {
 }
 
 .sobre-mi .contenedor {
-  max-width: 660px;
+  max-width: 680px;
   text-align: center;
 }
 
@@ -1230,7 +1229,7 @@ footer p {
 
 @media screen and (max-width: 850px) {
   .seccion-texto {
-    padding: 0 30px;
+    padding: 0 20px;
     flex-wrap: wrap;
     justify-content: start;
     column-gap: 1rem;
@@ -1257,14 +1256,15 @@ footer p {
   #toggleTheme,
   .idiom {
     display: none;
-  }
-    .otros-proyectos {
-      padding: 40px 0 120px 0;
-    }
   
-    .proyectos-recientes {
-      padding: 70px 0 0 0;
-    }
+  }
+  .otros-proyectos {
+    padding: 40px 0 120px 0;
+  }
+
+  .proyectos-recientes {
+    padding: 70px 0 0 0;
+  }
 
   }
   
@@ -1302,7 +1302,7 @@ footer p {
    }
 
   .seccion-texto {
-    padding: 0 40px;
+    padding: 0 35px;
   }
 
   .footer-logo {
