@@ -1418,8 +1418,12 @@ footer p {
   }
 
   .hero-imagen-perfil {
-    height: 15rem;
-    width: 15rem;
+    height: 18rem;
+    width: 18rem;
+  }
+
+  .hero-principal {
+    padding: 2.2rem;
   }
 
   .hero-principal h1 {
@@ -1428,6 +1432,7 @@ footer p {
 
   .hero-principal .occupationAnimation {
     font-size: 2.2rem;
+    background-position: -33rem 0;
   }
 
   @keyframes homeBgText {
@@ -1437,12 +1442,32 @@ footer p {
   
     10%,
     100% {
-      background-position: -11rem 0;
+      background-position: -11.5rem 0;
     }
   
     65%,
     85% {
       background-position: 0 0;
+    }
+  }
+
+  @keyframes homeCursorText {
+    0%,
+    10%,
+    100% {
+      width: 5%;
+    }
+  
+    65%,
+    78%,
+    85% {
+      width: 95%;
+      opacity: 1;
+    }
+  
+    75%,
+    81% {
+      opacity: 0;
     }
   }
 
