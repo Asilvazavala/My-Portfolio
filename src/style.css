@@ -753,7 +753,7 @@ h1 {
 
 /* Otros Proyectos */
 .proyectos-recientes {
-  padding: 70px 40px 0px 40px;
+  padding: 70px 10px 0px 10px;
   background-color: var(--blueMedium-whiteLight);
   transition: color 1s ease-in-out 0s, background 1s ease-in-out 0s;
 }
@@ -763,7 +763,7 @@ h1 {
 }
 
 .otros-proyectos {
-  padding: 40px;
+  padding: 40px 10px;
 }
 
 .otros-proyectos img {
@@ -792,7 +792,7 @@ h1 {
 }
 
 .overlay p {
-  font-size: 25px;
+  font-size: 20px;
   font-weight: bold;
   margin-bottom: 0;
   margin-top: 10px;
