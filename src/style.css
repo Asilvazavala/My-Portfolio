@@ -1350,7 +1350,6 @@ footer p {
     85% {
       background-position: 0 0;
     }
-
   }
 
   .hero-principal .occupationAnimation {
@@ -1418,13 +1417,38 @@ footer p {
     margin-bottom: 0;
   }
 
+  .hero-imagen-perfil {
+    height: 15rem;
+    width: 15rem;
+  }
+
+  .hero-principal h1 {
+    font-size: 2.5rem;
+  }
+
+  .hero-principal .occupationAnimation {
+    font-size: 2.2rem;
+  }
+
+  @keyframes homeBgText {
+    0% {
+      background-position: -33rem 0;
+    }
+  
+    10%,
+    100% {
+      background-position: -11rem 0;
+    }
+  
+    65%,
+    85% {
+      background-position: 0 0;
+    }
+  }
+
 }
 
 @media screen and (max-width: 340px) {
-  .hero-imagen-perfil {
-    width: 250px;
-  }
-
   .pro {
     max-width: 95%;
   }
