@@ -42,7 +42,8 @@
   },
   "contact": {
     "title": "¡Hablémos!",
-    "description": "Contáctame para empezar con el desarrollo de tu proyecto <b>asilvazavala@gmail.com</b>"
+    "description": "Contáctame para empezar con el desarrollo de tu proyecto <b>asilvazavala@gmail.com</b>",
+    "contact": "Contacto"
   },
   "footer": {
     "title": "¡Contáctame!",

@@ -42,7 +42,8 @@
   },
   "contact": {
     "title": "Let´s talk!",
-    "description": "Contact me to start your web development project <b>asilvazavala@gmail.com</b>"
+    "description": "Contact me to start your web development project <b>asilvazavala@gmail.com</b>",
+    "contact": "Contact"
   },
   "footer": {
     "title": "Contact me!",
