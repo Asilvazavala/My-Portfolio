@@ -189,8 +189,6 @@ closeMenuResponsive.addEventListener('click' , () => {
   })
 
 
-
-
 /*   Descargar todas las imágenes de una página web
   $$('img').forEach(img => {
     const src = img.src

@@ -1,22 +1,11 @@
 /* Modo Dark/Light */
-@font-face {
-  font-family: 'Pacifico';
-  font-style: normal;
-  font-weight: 400;
-  src: local('Pacifico Regular'), local('Pacifico-Regular'),
-    url(https://fonts.gstatic.com/s/pacifico/v12/FwZY7-Qmy14u9lezJ-6H6MmBp0u-.woff2)
-      format('woff2');
-  font-display: swap;
-}
-
 :root {
   --semiBlack: #454545ad;
 
   --blueLight-black: #000;
   --blueLight-white: #fff;
-  --blueLight-blueStrong: #081b29;
+  --blueLight-blueStrong: #058aff;
   --blueMedium-whiteLight: rgb(232, 232, 232);
-  --boxShadow-blueLight-blueStrong: #081b29;
 
   --blueStrong-blueLight: #024c81;
   --blueStrong-black: #000;
@@ -24,8 +13,7 @@
   --linear-grad: linear-gradient(160deg, #0093E9 0%, #80D0C7 100%);
   --linear-grad-exp: linear-gradient(90deg, rgb(232, 232, 232) 0,transparent);
 
-  --font-main: 'Quicksand', sans-serif;
-  --font-special-titles: 'Alfa Slab One', sans-serif;
+  --numberAbout: 'Alfa Slab One', sans-serif;
 }
 
 body {
@@ -36,15 +24,14 @@ body {
 body.dark {
   --blueLight-black: #00abf0;
   --blueLight-white: #00abf0;
-  --blueLight-blueStrong: #00abf0;
-  --blueMedium-whiteLight: #192e3c;
-  --boxShadow-blueLight-blueStrong: #0093E9;
+  --blueLight-blueStrong: #0093E9;
+  --blueMedium-whiteLight: #122939;
 
   --blueStrong-blueLight: #081b29;
   --blueStrong-black: #081b29;
   --white-blueStrong: #fff;
   --linear-grad: linear-gradient(160deg, #0093E9 0%, #80D0C7 100%);
-  --linear-grad-exp: linear-gradient(90deg, rgb(25, 46, 60) 0,transparent);
+  --linear-grad-exp: linear-gradient(90deg, #122939 0,transparent);
 }
 
 /* Estilos generales */
@@ -86,13 +73,16 @@ h1 {
   display: none;
 }
 
-.seccion-titulo {
-  color: var(--blueLight-black);
-  font-size: 2.5rem;
-  padding: 15px 0;
-  font-family: 'Rubik Dirt', cursive;
+.titulo-creciendo {
   -webkit-animation: scale-up-center 6s cubic-bezier(0.390, 0.575, 0.565, 1.000) infinite both;
 	        animation: scale-up-center 6s cubic-bezier(0.390, 0.575, 0.565, 1.000) infinite both;
+}
+
+.seccion-titulo {
+  font-family: 'Rubik Dirt', cursive;
+  color: var(--blueLight-black);
+  font-size: 3rem;
+  padding: 15px 0;
 }
 
 @-webkit-keyframes scale-up-center {
@@ -124,6 +114,7 @@ h1 {
 .seccion-texto {
   font-size: 1.2rem;
   text-align: left;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
 }
 
 .btn-info {
@@ -239,8 +230,6 @@ h1 {
 
 .hero-principal h1 {
   font-size: 3.2rem;
-  -webkit-animation: tracking-in-contract-bck-top 1.5s cubic-bezier(0.215, 0.610, 0.355, 1.000) 1s both;
-	        animation: tracking-in-contract-bck-top 1.5s cubic-bezier(0.215, 0.610, 0.355, 1.000) 1s both;
 }
 
 @-webkit-keyframes tracking-in-contract-bck-top {
@@ -290,7 +279,7 @@ h1 {
   -webkit-background-clip: text;
   background-clip: text;
   background-position: -33rem 0;
-  animation-delay: 2s;
+  animation-delay: 1s;
   transition: -webkit-text-stroke 1s ease-in-out 0s,  background-image 1s ease-in-out 0s;
 }
 
@@ -308,7 +297,7 @@ h1 {
   border-right: 2px solid var(--white-blueStrong);
   z-index: -1;
   animation: tracking-in-contract-bck-top 1.5s cubic-bezier(0.215, 0.610, 0.355, 1.000) 1s both, homeCursorText 6s linear infinite;
-  animation-delay: 2s;
+  animation-delay: 1s;
   transition: border-right 1s ease-in-out 0s;
 }
 
@@ -467,7 +456,7 @@ h1 {
   color: white;
   font-size: 1.25rem;
   padding: 0.7rem 1em;
-  box-shadow: 0 0 25px #0093E9;
+  box-shadow: 0 0 25px var(--blueLight-blueStrong);
   background: transparent;
 }
 
@@ -491,10 +480,10 @@ h1 {
 
 .boton-otros-proyectos:hover,
 .boton-CV:hover {
-  box-shadow: 0 0 5px #0093E9,
-              0 0 25px #0093E9,
-              0 0 50px #0093E9,
-              0 0 100px #0093E9;
+  box-shadow: 0 0 5px var(--blueLight-blueStrong),
+              0 0 25px var(--blueLight-blueStrong),
+              0 0 50px var(--blueLight-blueStrong),
+              0 0 100px var(--blueLight-blueStrong);
 }
 
 .contactButton span,
@@ -604,7 +593,7 @@ h1 {
   color: transparent;
   background-image: var(--linear-grad);
   font-size: 2.8rem;
-  font-family: var(--font-special-titles);
+  font-family: var(--numberAbout);
   letter-spacing: .2rem;
   margin-bottom: -.7rem;
 }
@@ -837,11 +826,11 @@ h1 {
 /* Proyectos */
 
 .pro_text h3 {
-  font-family:  var(--font-special-titles);
+  font-family:  var(--numberAbout);
   letter-spacing: .1rem;
   color: black;
   transition: color 1s ease-in-out 0s, background 1s ease-in-out 0s;
-  font-weight: 400;
+  font-weight:lighter;
   font-size: 1.8rem;
 }
 
@@ -1093,7 +1082,7 @@ footer {
   font-size: 1.5rem;
   padding: 20px;
   margin-bottom: 30px;
-  font-family: 'Quicksand', sans-serif;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
 }
 
 footer p {
@@ -1514,6 +1503,11 @@ footer p {
     81% {
       opacity: 0;
     }
+  }
+
+  .boton-code,
+  .boton-demo {
+    box-shadow: 0 0 10px #0093E9;
   }
 
 }
