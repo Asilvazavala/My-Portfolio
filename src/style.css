@@ -13,6 +13,7 @@
   --linear-grad: linear-gradient(160deg, #0093E9 0%, #80D0C7 100%);
   --linear-grad-exp: linear-gradient(90deg, rgb(232, 232, 232) 0,transparent);
 
+  --titles: 'Inter', sans-serif;
   --numberAbout: 'Alfa Slab One', sans-serif;
 }
 
@@ -826,11 +827,11 @@ h1 {
 /* Proyectos */
 
 .pro_text h3 {
-  font-family:  var(--numberAbout);
+  font-family: var(--numberAbout);
   letter-spacing: .1rem;
   color: black;
   transition: color 1s ease-in-out 0s, background 1s ease-in-out 0s;
-  font-weight:lighter;
+  font-weight: lighter;
   font-size: 1.8rem;
 }
 
@@ -1440,6 +1441,10 @@ footer p {
 
   .boton-demo {
     width: 100%;
+  }
+
+  .seccion-titulo {
+    font-size: 2.3rem;
   }
 
 }
