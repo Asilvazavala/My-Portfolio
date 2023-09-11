@@ -181,7 +181,7 @@ closeMenuResponsive.addEventListener('click' , () => {
 
   // Descargar CV en inglés/español
   btnCV.addEventListener('click', () => {    
-    if (toggleIconLanguage.src.includes("English")) {
+    if (toggleIconLanguage.src.includes("english")) {
       btnCV.setAttribute('href', './documents/ANTONIO SILVA CV English.pdf')
     } else {
         btnCV.setAttribute('href', './documents/ANTONIO SILVA CV Espanol.pdf')
