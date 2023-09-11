@@ -181,10 +181,10 @@ closeMenuResponsive.addEventListener('click' , () => {
 
   // Descargar CV en inglés/español
   btnCV.addEventListener('click', () => {    
-    if (toggleIconLanguage.src.includes("english")) {
-      btnCV.setAttribute('href', './documents/CV Eng Jose Antonio Silva Zavala.pdf')
+    if (toggleIconLanguage.src.includes("English")) {
+      btnCV.setAttribute('href', './documents/ANTONIO SILVA CV English.pdf')
     } else {
-        btnCV.setAttribute('href', './documents/CV Esp Jose Antonio Silva Zavala.pdf')
+        btnCV.setAttribute('href', './documents/ANTONIO SILVA CV Espanol.pdf')
       }
   })
 
