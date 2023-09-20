@@ -765,9 +765,24 @@ h1 {
   box-shadow: 0 0 20px rgba(215, 0, 58, 1), 0 0 20px rgba(25, 8, 126, 1);
 }
 
+.rosa-rojo {
+  background: linear-gradient(220.55deg, #ff5180 0%, #ff1010 100%);
+  box-shadow: 0 0 20px rgba(255, 81, 128, 1), 0 0 20px rgba(255, 16, 16, 1);
+}
+
 .rojo-naranja {
   background:  linear-gradient(220.55deg, #FF896D 0%, #D02020 100%);
   box-shadow: 0 0 20px rgba(255, 137, 109, 1), 0 0 20px rgba(208, 32, 32, 1);
+}
+
+.azul-naranja {
+  background: linear-gradient(220.55deg, #439b3b 0%, #147ada 100%);
+  box-shadow: 0 0 20px rgba(67, 155, 59, 1), 0 0 20px rgba(20, 122, 218, 1);
+}
+
+.rojo-rojoFuerte {
+  background: linear-gradient(220.55deg, #931212 0%, #000000 100%);
+  box-shadow: 0 0 20px rgba(147, 18, 18, 1), 0 0 20px rgba(0, 0, 0, 1);
 }
 
 .rojo-rojoFuerte {
