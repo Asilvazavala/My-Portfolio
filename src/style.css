@@ -735,6 +735,7 @@ h1 {
 @media (max-width:1100px) {
   .containerProjectsSlider {
     max-width: 95vw;
+    padding: 0 .5rem;
   }
 }
 
@@ -803,7 +804,7 @@ h1 {
 
 @media (max-width:500px) {
   #tranding .tranding-slider {
-    height: 32rem;
+    height: 34rem;
   }
 
   #tranding {
@@ -821,8 +822,8 @@ h1 {
 
 @media (max-width:500px) {
   .tranding-slide {
-    width: 15rem !important;
-    height: 26rem !important;
+    width: 16rem !important;
+    height: 28rem !important;
     padding: .8rem !important;
     border-radius: .8rem !important;
   }
@@ -833,7 +834,7 @@ h1 {
   }
 
   .tranding-slider-control {
-    margin-top: 1rem;
+    margin-top: 1.5rem;
   }
 }
 
@@ -956,7 +957,6 @@ h1 {
     display: none;
   }
 }
-
 
 @media (max-width:990px) {
   .tranding-slider-control .swiper-button-prev {
