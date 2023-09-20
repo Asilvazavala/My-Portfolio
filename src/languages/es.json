@@ -1,53 +1,72 @@
 {
-  "navbar": {
-    "about": "Sobre mí",
-    "skills": "Habilidades",
-    "projects": "Proyectos",
-    "contact": "Contacto"
+  "about": {
+    "buttonCV": "Descargar CV",
+    "description": "También tengo 8 años de experiencia trabajando como técnico de mantenimiento en hardware y software. Vivo en el estado de Guanajuato en México, soy ingeniero en tecnologías de la información.<br><br> Algunas palabras que me describen, proactivo, perseverante, resolutivo, adaptable. Siempre me encuentro en formación, actualmente estoy aprendiendo Amazon web services y GraphQL.",
+    "textAbout1": "Año Dev",
+    "textAbout2": "Proyectos",
+    "textAbout3": "Certificaciones"
+  },
+  "contact": {
+    "contact": "Contacto",
+    "description": "Contáctame para empezar con el desarrollo de tu proyecto <b>asilvazavala@gmail.com</b>",
+    "title": "¡Hablémos!"
+  },
+  "footer": {
+    "copyright": "Creado por Antonio Silva (2023) &#169;",
+    "githubButton": "Sígueme",
+    "githubDescription1": "Consulta mis repositorios sobre los proyectos que he creado.",
+    "linkedinButton": "Contáctame",
+    "linkedinDescription1": "Sígueme para revisar mis últimas publicaciones.",
+    "linkedinDescription2": "+1000 seguidores.",
+    "phrase": "Aprendo y creo todos los días.<br>Hagámos un proyecto juntos.",
+    "title": "¡Contáctame!",
+    "whatsappButton": "Enviar mensaje",
+    "whatsappDescription1": "Atención prioritaria y respuesta rápida.",
+    "whatsappDescription2": "Contactáme para resolver tus dudas."
   },
   "hero": {
     "alert": "¡Gracias por tu visita! ❤️",
     "name": "Hola, soy Antonio Silva",
     "occupation": "Front-end developer"
   },
-  "about": {
-    "description": "También tengo 8 años de experiencia trabajando como técnico de mantenimiento en hardware y software. Vivo en el estado de Guanajuato en México, soy ingeniero en tecnologías de la información.<br><br> Algunas palabras que me describen, proactivo, perseverante, resolutivo, adaptable. Siempre me encuentro en formación, actualmente estoy aprendiendo Amazon web services y GraphQL.",
-    "buttonCV": "Descargar CV",
-    "textAbout1": "Año Dev",
-    "textAbout2": "Proyectos",
-    "textAbout3": "Certificaciones"
+  "navbar": {
+    "about": "Sobre mí",
+    "contact": "Contacto",
+    "projects": "Proyectos",
+    "skills": "Habilidades"
+  },
+  "projects": {
+    "code": "Código",
+    "demo": "En vivo",
+    "project10Description": "Realice una evaluación con este componente, el cual es un desafío en la página frontend mentor.",
+    "project10Name": "Componente de rating",
+    "project11Description": "Componente elegante de un producto de comercio electrónico, desafío de la página de frontend mentor, que adaptable a dispositivos móviles.",
+    "project11Name": "Tarjeta de producto",
+    "project12Description": "Componente que muestra el resumen estadístico de un proceso de evaluación, desafío de la página de frontend mentor.",
+    "project12Name": "Tarjeta de resultados",
+    "project13Description": "Agregue, elimine, modifique y vea sus tareas en un solo lugar; además, las tareas completadas se pueden eliminar.",
+    "project13Name": "Lista de tareas",
+    "project1Description": "Cuenta con autenticación de usuario, CRUD de comentarios, guardado de información en base de datos, filtrado de información, renderizado condicional, formulario de contacto, diseño responsivo.",
+    "project1Name": "Blog Culemania",
+    "project2Description": "Venta de servicios/productos, cuenta con autenticación de usuario, pasarela de pago, modo oscuro/claro, filtros combinados, diseño responsivo, búsqueda, almacenamiento local, panel de administrador, reseñas/puntuaciones.",
+    "project2Name": "Tienda Mi costura",
+    "project3Description": "Se pueden buscar, filtrar, consultar, modificar, eliminar y crear pokemon, los cuales son consumidos a través de una API externa, a su vez, son almacenados en una base de datos. Hecho por un amante de este maravilloso mundo.",
+    "project3Name": "Mundo Pokemon",
+    "project4Description": "Planea tus clases de ejercicio aquí, esta web ofrece sencillez, prioriza la experiencia del usuario con un diseño responsivo, únete a nosotros para transformar por completo tu cuerpo ¿Aceptas el reto?",
+    "project4Name": "Gimnasio Club",
+    "project5Description": "Juega este clásico juego contra una persona o contra la computadora, tiene almacenamiento local para guardar el juego actual al recargar la página.",
+    "project5Name": "3 en raya",
+    "project6Description": "Descubre la cantidad de años, meses y días que han pasado desde cualquier fecha, cuenta con validaciones para años bisiestos, meses con menos de 31 días, basado en la fecha actual.",
+    "project6Name": "Calculadora de edad",
+    "project7Description": "Acorta el enlace que desees y cópialo al portapapeles con un solo clic, los enlaces se guardan en el almacenamiento local, información consumida desde una API.",
+    "project7Name": "Acortador de links",
+    "project8Description": "Reproduce algunas de mis canciones favoritas en un reproductor de música muy colorido, tiene reproducción automática después de terminar la canción.",
+    "project8Name": "Reproductor de música",
+    "project9Description": "Realiza cualquier operación matemática al alcance de un clic, además es adaptable a celulares.",
+    "project9Name": "Calculadora",
+    "title": "Mis proyectos"
   },
   "skills": {
     "title": "Mis conocimientos"
-  },
-  "projects": {
-    "title": "Mis proyectos",
-    "project1Name": "Blog Culemania",
-    "project1Description": "Cuenta con autenticación de usuario, CRUD de comentarios, guardado de información en base de datos, filtrado de información, renderizado condicional, formulario de contacto, diseño responsivo.",
-    "project2Name": "Tienda Mi costura",
-    "project2Description": "Venta de servicios/productos, cuenta con autenticación de usuario, pasarela de pago, modo oscuro/claro, filtros combinados, diseño responsivo, búsqueda, almacenamiento local, panel de administrador, reseñas/puntuaciones.",
-    "project3Name": "Mundo Pokemon",
-    "project3Description": "Se pueden buscar, filtrar, consultar, modificar, eliminar y crear pokemon, los cuales son consumidos a través de una API externa, a su vez, son almacenados en una base de datos. Hecho por un amante de este maravilloso mundo.",
-    "project4Name": "Gimnasio Club",
-    "project4Description": "Planea tus clases de ejercicio aquí, esta web ofrece sencillez, prioriza la experiencia del usuario con un diseño responsivo, únete a nosotros para transformar por completo tu cuerpo ¿Aceptas el reto?",
-    "project5Name": "Reproductor",
-    "project6Name": "3 en raya",
-    "project7Name": "Calculadora",
-    "project8Name": "Resultados",
-    "project9Name": "Tarjeta Producto",
-    "project10Name": "Calculadora Edad",
-    "code": "Código",
-    "demo": "En vivo",
-    "buttonProyectos": "Ver más proyectos"
-  },
-  "contact": {
-    "title": "¡Hablémos!",
-    "description": "Contáctame para empezar con el desarrollo de tu proyecto <b>asilvazavala@gmail.com</b>",
-    "contact": "Contacto"
-  },
-  "footer": {
-    "title": "¡Contáctame!",
-    "phrase": "Aprendo y creo todos los días.<br>Hagámos un proyecto juntos.",
-    "copyright": "Creado por Antonio Silva (2023) &#169;"
   }
 }

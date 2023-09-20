@@ -1,53 +1,72 @@
 {
-  "navbar": {
-    "about": "About",
-    "skills": "Skills",
-    "projects": "Projects",
-    "contact": "Contact"
+  "about": {
+    "buttonCV": "Download CV",
+    "description": "Also have 8 years experience working as hardware and software maintenance technician. I live in the state of Guanajuato in Mexico, have an engineering degree in information technology.<br><br> Some words that describe me, proactive, persevering, decisive, adaptable, teamplayer. I´m always in training, currently learning Amazon web services and GraphQL.",
+    "textAbout1": "Year Dev",
+    "textAbout2": "Projects",
+    "textAbout3": "Certifications"
+  },
+  "contact": {
+    "contact": "Contact",
+    "description": "Contact me to start your web development project <b>asilvazavala@gmail.com</b>",
+    "title": "Let´s talk!"
+  },
+  "footer": {
+    "copyright": "Created by Antonio Silva (2023) &#169;",
+    "githubButton": "Follow me",
+    "githubDescription1": "Check out my repositories for projects I've created.",
+    "linkedinButton": "Contact me",
+    "linkedinDescription1": "Follow me to check my latest posts.",
+    "linkedinDescription2": "+1000 followers.",
+    "phrase": "I learn and create every day.<br>Let's create a project together.",
+    "title": "Contact me!",
+    "whatsappButton": "Send message",
+    "whatsappDescription1": "Priority attention and quick response.",
+    "whatsappDescription2": "Contact me to resolve your questions."
   },
   "hero": {
     "alert": "Thanks for watching! ❤️",
     "name": "Hi, I´m Antonio Silva",
     "occupation": "Front-end developer"
   },
-  "about": {
-    "description": "Also have 8 years experience working as hardware and software maintenance technician. I live in the state of Guanajuato in Mexico, have an engineering degree in information technology.<br><br> Some words that describe me, proactive, persevering, decisive, adaptable, teamplayer. I´m always in training, currently learning Amazon web services and GraphQL.",
-    "buttonCV": "Download CV",
-    "textAbout1": "Year Dev",
-    "textAbout2": "Projects",
-    "textAbout3": "Certifications"
+  "navbar": {
+    "about": "About",
+    "contact": "Contact",
+    "projects": "Projects",
+    "skills": "Skills"
+  },
+  "projects": {
+    "code": "Code",
+    "demo": "Demo",
+    "project10Description": "Make an assessment with this component, which is a challenge on the mentor frontend page.",
+    "project10Name": "Rating Component",
+    "project11Description": "Elegant component of an e-commerce product, frontend mentor page challenge, which is responsive to mobile devices.",
+    "project11Name": "Card component",
+    "project12Description": "Component that displays the statistics summary of an evaluation process, frontend mentor page challenge.",
+    "project12Name": "Results summary",
+    "project13Description": "Add, delete, modify and view your tasks in one place, plus completed tasks can be deleted.",
+    "project13Name": "Todo List",
+    "project1Description": "Has user authentication, CRUD of comments with (like/dislike), saving information in the database, filtering by category/ID, conditional rendering, pagination, contact form, responsive design.",
+    "project1Name": "Blog Culemania",
+    "project2Description": "Focused sell products/services, has user authentication, payment gateway, dark/light mode, combined filters, minimalist design, search by name, local storage, dashboard admin, reviews/score.",
+    "project2Name": "Marketplace My seam",
+    "project3Description": "You can search, filter, modify, delete and create pokemon, which are consumed through an external API and, in turn, are stored in a database. Made by a lover of this wonderful world.",
+    "project3Name": "Pokemon World",
+    "project4Description": "Plan your exercise classes here, this website offers simplicity and clean design,  prioritizes user experience, has responsive design, join us to fit easily and completely your body, do you accept the challenge?",
+    "project4Name": "Gym Fitness Club",
+    "project5Description": "Play this classic game against a person or against the computer, it has local storage to save the current game when reloading the page.",
+    "project5Name": "Tic tac toe",
+    "project6Description": "Discover the number of years, months and days that have passed since any date, it has validations for leap years, months with less than 31 days, based on current date.",
+    "project6Name": "Age calculator",
+    "project7Description": "Shorten the link you want and copy it to the clipboard with a single click, the links are saved in the local storage, information consumed from an API.",
+    "project7Name": "Shorter link",
+    "project8Description": "Play some of my favorite songs in a very colorful music player, it has automatic playback after finishing the song.",
+    "project8Name": "Music Player",
+    "project9Description": "Perform any mathematical operation within the reach of a click, and it is also adaptable to cell phones.",
+    "project9Name": "Calculator",
+    "title": "My projects"
   },
   "skills": {
     "title": "My skills"
-  },
-  "projects": {
-    "title": "My projects",
-    "project1Name": "Blog Culemania",
-    "project1Description": "Has user authentication, CRUD of comments with (like/dislike), saving information in the database, filtering by category/ID, conditional rendering, pagination, contact form, responsive design.",
-    "project2Name": "Marketplace My seam",
-    "project2Description": "Focused sell products/services, has user authentication, payment gateway, dark/light mode, combined filters, minimalist design, search by name, local storage, dashboard admin, reviews/score.",
-    "project3Name": "Pokemon World",
-    "project3Description": "You can search, filter, modify, delete and create pokemon, which are consumed through an external API and, in turn, are stored in a database. Made by a lover of this wonderful world.",
-    "project4Name": "Gym Fitness Club",
-    "project4Description": "Plan your exercise classes here, this website offers simplicity and clean design,  prioritizes user experience, has responsive design, join us to fit easily and completely your body, do you accept the challenge?",
-    "project5Name": "Music Player",
-    "project6Name": "Tic Tac Toe",
-    "project7Name": "Calculator",
-    "project8Name": "Results Card",
-    "project9Name": "Product Card",
-    "project10Name": "Age Calculator",
-    "code": "Code",
-    "demo": "Demo",
-    "buttonProyectos": "See more projects"
-  },
-  "contact": {
-    "title": "Let´s talk!",
-    "description": "Contact me to start your web development project <b>asilvazavala@gmail.com</b>",
-    "contact": "Contact"
-  },
-  "footer": {
-    "title": "Contact me!",
-    "phrase": "I learn and create every day.<br>Let's create a project together.",
-    "copyright": "Created by Antonio Silva (2023) &#169;"
   }
 }

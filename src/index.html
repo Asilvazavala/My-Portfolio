@@ -2,11 +2,14 @@
 <html lang="es">
   <head>
     <!-- Metadatos -->
-    <meta charset="utf-8">
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="author" content="Antonio Silva">
     <meta name="description" content="Portafolio de desarrollo web de Antonio Silva">
     <meta name="keywords" content="HTML, CSS, JavaScript, React">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- Swiper -->
+    <link rel="stylesheet" href="https://unpkg.com/swiper@8/swiper-bundle.min.css" />
     <!-- Título -->
     <title>Antonio Silva | Web Dev</title>
     <!-- FavIcon -->
@@ -19,13 +22,6 @@
     <link href="style.css" rel="stylesheet">
     <!-- Box Icons -->
    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
-    <!-- Google Fonts -->
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Rubik+Dirt&family=Inter:wght@500;800&family=Alfa+Slab+One&display=swap" rel="stylesheet">  
-    <!-- Sweet ALert -->
-    <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
-    
   </head>  
   
   <body class="dark">
@@ -99,11 +95,11 @@
             <h3>Github</h3>
           </article>
           
-          <article>
-            <a href="https://leetcode.com/Asilvazavala/" target="_blank" rel="noopener noreferrer">
-              <i class="bi bi-code-slash"></i>
+          <article class="whatsapp">
+            <a href='https://api.whatsapp.com/send?phone=524561148433' target="_blank" rel="noopener noreferrer">
+              <i class='bx bxl-whatsapp'></i>
             </a>
-            <h3>Leetcode</h3>
+            <h3>Whatsapp</h3>
           </article>
         </div>
       </div>
@@ -491,35 +487,117 @@
                 </div>
               </div>
             </div>
-            
           </div>
         </div>
       </div>
 
-      <button id="buttonOtherProjects" class="boton-otros-proyectos">
-        <div class='wrapper'>
-          <i class='bx bxs-right-down-arrow-circle'></i>
-        </div>
-        <span id="spanOtherProjects" data-section="projects" data-value="buttonProyectos">See more projects</span>
-      </button>
 
-      <footer id="otherProjects" class="otros-proyectos hide">
-        <div class="container text-center proyectos-contenedor">
-          <div class="row">
-            <!-- Proyecto 5 -->
-            <div class="col-12 col-md-6 col-lg-4">
-              <div class="proyecto">
-                <img decoding="async" loading="lazy" src="./imagenes/Projects/musicPlayer.webp" alt="Music Player">
-                <div class="overlay">
-                  <p data-section="projects" data-value="project5Name">Music Player</p>
-                  <div class="iconos-contenedor">
-                    <a target="_blank" href="https://github.com/Asilvazavala/Music-player" rel="noopener noreferrer">
-                      <i class="bi bi-github"></i>
-                    </a>
-                    <a target="_blank" href="https://music-player-tau-five.vercel.app/" rel="noopener noreferrer">
-                      <i class="bi bi-laptop"></i>
-                    </a>
+    </section>    
+    
+    <!-- Otros Proyectos -->
+    <section id="tranding">
+      <div class="containerProjectsSlider">
+        <div class="swiper tranding-slider">
+          <div class="swiper-wrapper">
+
+            <article class="swiper-slide tranding-slide yellow-pink">
+              <picture class="tranding-slide-img">
+                <img src="./imagenes/Projects/3EnRaya.webp" alt="3 en Raya">
+              </picture>
+              <main class="tranding-slide-content">
+                <h2 data-section="projects" data-value="project5Name" class="project-name">Tic tac toe</h2>
+                <p data-section="projects" data-value="project5Description" class="project-description">Play this classic game against a person or against the computer, it has local storage to save the current game when reloading the page.</p>
+              </main>
+              <footer class="slide-content-footer">
+                <div class="stacks">
+                  <article>
+                    <img loading="lazy" decoding="async" src="./imagenes/Technologys/javascript-original.svg" alt="JavaScript"/>
+                    <h5 class="javascriptText">JavaScript</h5>
+                  </article>
+                  <article>
+                    <img loading="lazy" decoding="async" src="./imagenes/Technologys/react-original.svg" alt="React"/>
+                    <h5 class="reactText">React</h5>
+                  </article>
+                  <article>
+                    <img loading="lazy" decoding="async" src="./imagenes/Technologys/tailwindcss-plain.svg" alt="TailwindCSS"/>
+                    <h5 class="tailwindText">Tailwind</h5>
+                  </article>
+                </div>
+                <div class="buttons-Projects">
+                  <a href="https://github.com/Asilvazavala/Juego-3-en-raya" target="_blank" rel="noreferrer"><i class="bi bi-github"></i></a>
+                  <a href="https://juego-3-en-raya.vercel.app/" target="_blank" rel="noreferrer"><i class="bi bi-laptop"></i></a>
+                </div>
+              </footer>
+            </article>
+
+            <article class="swiper-slide tranding-slide lila-morado">
+              <picture class="tranding-slide-img">
+                <img src="./imagenes/Projects/age-calculator.webp" alt="Age Calc">
+              </picture>
+              <main class="tranding-slide-content">
+                <h2 data-section="projects" data-value="project6Name" class="project-name">Age calculator</h2>
+                <p data-section="projects" data-value="project6Description" class="project-description">Discover the number of years, months and days that have passed since any date, it has validations for leap years, months with less than 31 days, based on current date.</p>
+                <footer class="slide-content-footer">
+                  <div class="stacks">
+                    <article>
+                      <img loading="lazy" decoding="async" src="./imagenes/Technologys/javascript-original.svg" alt="JavaScript"/>
+                      <h5 class="javascriptText">JavaScript</h5>
+                    </article>
+                    <article>
+                      <img loading="lazy" decoding="async" src="./imagenes/Technologys/html5-original.svg" alt="HTML"/>
+                      <h5 class="htmlText">HTML</h5>
+                    </article>
+                    <article>
+                      <img loading="lazy" decoding="async" src="./imagenes/Technologys/tailwindcss-plain.svg" alt="TailwindCSS"/>
+                      <h5 class="tailwindText">Tailwind</h5>
+                    </article>
                   </div>
+                  <div class="buttons-Projects">
+                    <a href="https://github.com/Asilvazavala/Challenges-Frontend-Mentor/tree/main/C9-age-calculator-app-main" target="_blank" rel="noreferrer"><i class="bi bi-github"></i></a>
+                    <a href="https://age-calc-antonio-silva.netlify.app/" target="_blank" rel="noreferrer"><i class="bi bi-laptop"></i></a>
+                  </div>
+                </footer>
+              </main>
+            </article>
+
+            <article class="swiper-slide tranding-slide naranja-azul">
+              <picture class="tranding-slide-img">
+                <img src="./imagenes/Projects/shorter-link.webp" alt="Shorter link">
+              </picture>
+              <main class="tranding-slide-content">
+                <h2 data-section="projects" data-value="project7Name" class="project-name">Shorter link</h2>
+                <p data-section="projects" data-value="project7Description" class="project-description">Shorten the link you want and copy it to the clipboard with a single click, the links are saved in the local storage, information consumed from an API.</p>
+                <footer class="slide-content-footer">
+                  <div class="stacks">
+                    <article>
+                      <img loading="lazy" decoding="async" src="./imagenes/Technologys/javascript-original.svg" alt="JavaScript"/>
+                      <h5 class="javascriptText">JavaScript</h5>
+                    </article>
+                    <article>
+                      <img loading="lazy" decoding="async" src="./imagenes/Technologys/html5-original.svg" alt="HTML"/>
+                      <h5 class="htmlText">HTML</h5>
+                    </article>
+                    <article>
+                      <img loading="lazy" decoding="async" src="./imagenes/Technologys/tailwindcss-plain.svg" alt="TailwindCSS"/>
+                      <h5 class="tailwindText">Tailwind</h5>
+                    </article>
+                  </div>
+                  <div class="buttons-Projects">
+                    <a href="https://github.com/Asilvazavala/Challenges-Frontend-Mentor/tree/main/C7-url-shortening-api-master" target="_blank" rel="noreferrer"><i class="bi bi-github"></i></a>
+                    <a href="https://shorter-link-antonio-silva.netlify.app/" target="_blank" rel="noreferrer"><i class="bi bi-laptop"></i></a>
+                  </div>
+                </footer>
+              </main>
+            </article>
+
+            <article class="swiper-slide tranding-slide azul-cyan">
+              <picture class="tranding-slide-img">
+                <img src="./imagenes/Projects/musicPlayer.webp" alt="Music Player">
+              </picture>
+              <main class="tranding-slide-content">
+                <h2 data-section="projects" data-value="project8Name" class="project-name">Music Player</h2>
+                <p data-section="projects" data-value="project8Description" class="project-description">Play some of my favorite songs in a very colorful music player, it has automatic playback after finishing the song.</p>
+                <footer class="slide-content-footer">
                   <div class="stacks">
                     <article>
                       <img loading="lazy" decoding="async" src="./imagenes/Technologys/javascript-original.svg" alt="JavaScript"/>
@@ -534,56 +612,22 @@
                       <h5 class="cssText">CSS</h5>
                     </article>
                   </div>
-                </div>
-              </div>
-            </div>
-
-            <!-- Proyecto 6 -->
-            <div class="col-12 col-md-6 col-lg-4">
-              <div class="proyecto">
-                <img decoding="async" loading="lazy" src="./imagenes/Projects/3EnRaya.webp" alt="3 en Raya">
-                <div class="overlay">
-                  <p data-section="projects" data-value="project6Name">Tic tac toe</p>
-                  <div class="iconos-contenedor">
-                    <a target="_blank" href="https://github.com/Asilvazavala/Juego-3-en-raya" rel="noopener noreferrer">
-                      <i class="bi bi-github"></i>
-                    </a>
-                    <a target="_blank" href="https://juego-3-en-raya.vercel.app/" rel="noopener noreferrer">
-                      <i class="bi bi-laptop"></i>
-                    </a>
+                  <div class="buttons-Projects">
+                    <a href="https://github.com/Asilvazavala/Music-player" target="_blank" rel="noreferrer"><i class="bi bi-github"></i></a>
+                    <a href="https://music-player-tau-five.vercel.app/" target="_blank" rel="noreferrer"><i class="bi bi-laptop"></i></a>
                   </div>
-                  <div class="stacks">
-                    <article>
-                      <img loading="lazy" decoding="async" src="./imagenes/Technologys/javascript-original.svg" alt="JavaScript"/>
-                      <h5 class="javascriptText">JavaScript</h5>
-                    </article>
-                    <article>
-                      <img loading="lazy" decoding="async" src="./imagenes/Technologys/react-original.svg" alt="React"/>
-                      <h5 class="reactText">React</h5>
-                    </article>
-                    <article>
-                      <img loading="lazy" decoding="async" src="./imagenes/Technologys/tailwindcss-plain.svg" alt="TailwindCSS"/>
-                      <h5 class="tailwindText">Tailwind</h5>
-                    </article>
-                  </div>
-                </div>
-              </div>
-            </div>
+                </footer>
+              </main>
+            </article>
 
-            <!-- Proyecto 7 -->
-            <div class="col-12 col-md-6 col-lg-4">
-              <div class="proyecto">
+            <article class="swiper-slide tranding-slide rojo-azul">
+              <picture class="tranding-slide-img">
                 <img src="./imagenes/Projects/calculator.webp" alt="Calculator">
-                <div class="overlay">
-                  <p data-section="projects" data-value="project7Name">Calculator</p>
-                  <div class="iconos-contenedor">
-                    <a target="_blank" href="https://github.com/Asilvazavala/My-projects/tree/main/004_calculator_react" rel="noopener noreferrer">
-                      <i class="bi bi-github"></i>
-                    </a>
-                    <a target="_blank" href="https://my-projects-ruby.vercel.app/" rel="noopener noreferrer">
-                      <i class="bi bi-laptop"></i>
-                    </a>
-                  </div>
+              </picture>
+              <main class="tranding-slide-content">
+                <h2 data-section="projects" data-value="project9Name" class="project-name">Calculator</h2>
+                <p data-section="projects" data-value="project9Description" class="project-description">Perform any mathematical operation within the reach of a click, and it is also adaptable to cell phones.</p>
+                <footer class="slide-content-footer">
                   <div class="stacks">
                     <article>
                       <img loading="lazy" decoding="async" src="./imagenes/Technologys/javascript-original.svg" alt="JavaScript"/>
@@ -598,23 +642,82 @@
                       <h5 class="cssText">CSS</h5>
                     </article>
                   </div>
-                </div>
-              </div>
-            </div>
-            <!-- Proyecto 8 -->
-            <div class="col-12 col-md-6 col-lg-4">
-              <div class="proyecto proyecto8">
-                <img decoding="async" loading="lazy" src="./imagenes/Projects/Results summary component.webp" alt="Results summary">
-                <div class="overlay">
-                  <p data-section="projects" data-value="project8Name">Results Card</p>
-                  <div class="iconos-contenedor">
-                    <a target="_blank" href="https://github.com/Asilvazavala/Challenges-Frontend-Mentor/tree/main/C1-results-summary-component-main" rel="noopener noreferrer">
-                      <i class="bi bi-github"></i>
-                    </a>
-                    <a target="_blank" href="https://dynamic-zuccutto-7920b6.netlify.app/" rel="noopener noreferrer">
-                      <i class="bi bi-laptop"></i>
-                    </a>
+                  <div class="buttons-Projects">
+                    <a href="https://github.com/Asilvazavala/My-projects/tree/main/004_calculator_react" target="_blank" rel="noreferrer"><i class="bi bi-github"></i></a>
+                    <a href="https://my-projects-ruby.vercel.app/" target="_blank" rel="noreferrer"><i class="bi bi-laptop"></i></a>
                   </div>
+                </footer>
+              </main>
+            </article>
+
+            <article class="swiper-slide tranding-slide naranja-rojo">
+              <picture class="tranding-slide-img">
+                <img src="./imagenes/Projects/Interactive rating component.webp" alt="Rating component">
+              </picture>
+              <main class="tranding-slide-content">
+                <h2 data-section="projects" data-value="project10Name" class="project-name">Rating Component</h2>
+                <p data-section="projects" data-value="project10Description" class="project-description">Make an assessment with this component, which is a challenge on the mentor frontend page.</p>
+                <footer class="slide-content-footer">
+                  <div class="stacks">
+                    <article>
+                      <img loading="lazy" decoding="async" src="./imagenes/Technologys/javascript-original.svg" alt="JavaScript"/>
+                      <h5 class="javascriptText">JavaScript</h5>
+                    </article>
+                    <article>
+                      <img loading="lazy" decoding="async" src="./imagenes/Technologys/react-original.svg" alt="React"/>
+                      <h5 class="reactText">React</h5>
+                    </article>
+                    <article>
+                      <img loading="lazy" decoding="async" src="./imagenes/Technologys/css3-original.svg" alt="CSS"/>
+                      <h5 class="cssText">CSS</h5>
+                    </article>
+                  </div>
+                  <div class="buttons-Projects">
+                    <a href="https://github.com/Asilvazavala/Challenges-Frontend-Mentor/tree/main/C3-interactive-rating-component-main" target="_blank" rel="noreferrer"><i class="bi bi-github"></i></a>
+                    <a href="https://challenges-frontend-mentor-git-main-asilvazavala.vercel.app/" target="_blank" rel="noreferrer"><i class="bi bi-laptop"></i></a>
+                  </div>
+                </footer>
+              </main>
+            </article>
+
+            <article class="swiper-slide tranding-slide verdeClaro-verdeObscuro">
+              <picture class="tranding-slide-img">
+                <img src="./imagenes/Projects/Product preview card component.webp" alt="Card component">
+              </picture>
+              <main class="tranding-slide-content">
+                <h2 data-section="projects" data-value="project11Name" class="project-name">Card component</h2>
+                <p data-section="projects" data-value="project11Description" class="project-description">Elegant component of an e-commerce product, frontend mentor page challenge, which is responsive to mobile devices.</p>
+                <footer class="slide-content-footer">
+                  <div class="stacks">
+                    <article>
+                      <img loading="lazy" decoding="async" src="./imagenes/Technologys/javascript-original.svg" alt="JavaScript"/>
+                      <h5 class="javascriptText">JavaScript</h5>
+                    </article>
+                    <article>
+                      <img loading="lazy" decoding="async" src="./imagenes/Technologys/html5-original.svg" alt="HTML"/>
+                      <h5 class="htmlText">HTML</h5>
+                    </article>
+                    <article>
+                      <img loading="lazy" decoding="async" src="./imagenes/Technologys/tailwindcss-plain.svg" alt="TailwindCSS"/>
+                      <h5 class="tailwindText">Tailwind</h5>
+                    </article>
+                  </div>
+                  <div class="buttons-Projects">
+                    <a href="https://github.com/Asilvazavala/Challenges-Frontend-Mentor/tree/main/C2-product-preview-card-component-main" target="_blank" rel="noreferrer"><i class="bi bi-github"></i></a>
+                    <a href="https://64a720df636ca1791eedb1f4--idyllic-heliotrope-2d09b6.netlify.app/" target="_blank" rel="noreferrer"><i class="bi bi-laptop"></i></a>
+                  </div>
+                </footer>
+              </main>
+            </article>
+
+            <article class="swiper-slide tranding-slide azul-morado">
+              <picture class="tranding-slide-img">
+                <img src="./imagenes/Projects/Results summary component.webp" alt="Results card">
+              </picture>
+              <main class="tranding-slide-content">
+                <h2 data-section="projects" data-value="project12Name" class="project-name">Results summary</h2>
+                <p data-section="projects" data-value="project12Description" class="project-description">Component that displays the statistics summary of an evaluation process, frontend mentor page challenge.</p>
+                <footer class="slide-content-footer">
                   <div class="stacks">
                     <article>
                       <img loading="lazy" decoding="async" src="./imagenes/Technologys/javascript-original.svg" alt="JavaScript"/>
@@ -629,78 +732,58 @@
                       <h5 class="cssText">CSS</h5>
                     </article>
                   </div>
-                </div>
-              </div>
-            </div>
-
-            <!-- Proyecto 9 -->
-            <div class="col-12 col-md-6 col-lg-4">
-              <div class="proyecto proyecto9">
-                <img decoding="async" loading="lazy" src="./imagenes/Projects/Product preview card component.webp" alt="Product card">
-                <div class="overlay">
-                  <p data-section="projects" data-value="project9Name">Product Card</p>
-                  <div class="iconos-contenedor">
-                    <a target="_blank" href="https://github.com/Asilvazavala/Challenges-Frontend-Mentor/tree/main/C2-product-preview-card-component-main" rel="noopener noreferrer">
-                      <i class="bi bi-github"></i>
-                    </a>
-                    <a target="_blank" href="https://64a720df636ca1791eedb1f4--idyllic-heliotrope-2d09b6.netlify.app/" rel="noopener noreferrer">
-                      <i class="bi bi-laptop"></i>
-                    </a>
+                  <div class="buttons-Projects">
+                    <a href="https://github.com/Asilvazavala/Challenges-Frontend-Mentor/tree/main/C1-results-summary-component-main" target="_blank" rel="noreferrer"><i class="bi bi-github"></i></a>
+                    <a href="https://dynamic-zuccutto-7920b6.netlify.app/" target="_blank" rel="noreferrer"><i class="bi bi-laptop"></i></a>
                   </div>
+                </footer>
+              </main>
+            </article>
+
+            <article class="swiper-slide tranding-slide rojo-naranja">
+              <picture class="tranding-slide-img">
+                <img src="./imagenes/Projects/Todo-TypeScript.webp" alt="Todo TypeScript">
+              </picture>
+              <main class="tranding-slide-content">
+                <h2 data-section="projects" data-value="project13Name" class="project-name">Todo List</h2>
+                <p data-section="projects" data-value="project13Description" class="project-description">Add, delete, modify and view your tasks in one place, plus completed tasks can be deleted.</p>
+                <footer class="slide-content-footer">
                   <div class="stacks">
                     <article>
-                      <img loading="lazy" decoding="async" src="./imagenes/Technologys/javascript-original.svg" alt="JavaScript"/>
-                      <h5 class="javascriptText">JavaScript</h5>
+                      <img loading="lazy" decoding="async" src="./imagenes/Technologys/typescript-original.svg" alt="JavaScript"/>
+                      <h5 class="typescriptText">TypeScript</h5>
                     </article>
                     <article>
-                      <img loading="lazy" decoding="async" src="./imagenes/Technologys/html5-original.svg" alt="HTML"/>
-                      <h5 class="htmlText">HTML</h5>
+                      <img loading="lazy" decoding="async" src="./imagenes/Technologys/react-original.svg" alt="HTML"/>
+                      <h5 class="reactText">React</h5>
                     </article>
                     <article>
                       <img loading="lazy" decoding="async" src="./imagenes/Technologys/tailwindcss-plain.svg" alt="TailwindCSS"/>
                       <h5 class="tailwindText">Tailwind</h5>
                     </article>
                   </div>
-                </div>
-              </div>
-            </div>
-
-            <!-- Proyecto 10 -->
-            <div class="col-12 col-md-6 col-lg-4">
-              <div class="proyecto proyecto10">
-                <img src="./imagenes/Projects/age-calculator.webp" alt="Rating">
-                <div class="overlay">
-                  <p data-section="projects" data-value="project10Name">Age Calculator</p>
-                  <div class="iconos-contenedor">
-                    <a target="_blank" href="https://github.com/Asilvazavala/Challenges-Frontend-Mentor/tree/main/C9-age-calculator-app-main" rel="noopener noreferrer">
-                      <i class="bi bi-github"></i>
-                    </a>
-                    <a target="_blank" href="https://age-calc-antonio-silva.netlify.app/" rel="noopener noreferrer">
-                      <i class="bi bi-laptop"></i>
-                    </a>
+                  <div class="buttons-Projects">
+                    <a href="https://github.com/Asilvazavala/Todo-Typescript" target="_blank" rel="noreferrer"><i class="bi bi-github"></i></a>
+                    <a href="https://todo-typescript-antonio-silva.vercel.app/" target="_blank" rel="noreferrer"><i class="bi bi-laptop"></i></a>
                   </div>
-                  <div class="stacks">
-                    <article>
-                      <img loading="lazy" decoding="async" src="./imagenes/Technologys/javascript-original.svg" alt="JavaScript"/>
-                      <h5 class="javascriptText">JavaScript</h5>
-                    </article>
-                    <article>
-                      <img loading="lazy" decoding="async" src="./imagenes/Technologys/html5-original.svg" alt="HTML"/>
-                      <h5 class="htmlText">HTML</h5>
-                    </article>
-                    <article>
-                      <img loading="lazy" decoding="async" src="./imagenes/Technologys/tailwindcss-plain.svg" alt="TailwindCSS"/>
-                      <h5 class="tailwindText">Tailwind</h5>
-                    </article>
-                  </div>
-                </div>
-              </div>
-            </div>
-
+                </footer>
+              </main>
+            </article>
           </div>
+
+          <div class="tranding-slider-control">
+            <div class="swiper-button-prev slider-arrow">
+              <ion-icon name="arrow-back-outline"></ion-icon>
+            </div>
+            <div class="swiper-button-next slider-arrow">
+              <ion-icon name="arrow-forward-outline"></ion-icon>
+            </div>
+            <div class="swiper-pagination"></div>
+          </div>
+
         </div>
-      </footer>
-    </section>      
+      </div>
+    </section>
 
     <!-- Contacto -->
     <section class="contacto seccion-oscura" id="contacto">
@@ -737,29 +820,45 @@
     <footer class="seccion-oscura d-flex flex-column align-items-center justify-content-center">
       <img class="footer-logo" src="imagenes/General/yo-linkedin.webp" alt="Logo del portafolio">
       <p data-section="footer" data-value="phrase" class="footer-texto text-center">I learn and create every day.<br>Let's create a project together.</p>
-      <div class="iconos-redes-sociales d-flex flex-wrap align-items-center justify-content-center">
-        <article>
-          <a href="https://www.linkedin.com/in/antonio-silva-developer/" target="_blank" rel="noopener noreferrer">
-            <i class="bi bi-linkedin"></i>
-          </a>
-          <h3>Linkedin</h3>
-        </article>
-        
-        <article>
-          <a href="https://github.com/Asilvazavala?tab=repositories" target="_blank" rel="noopener noreferrer">
-            <i class="bi bi-github"></i>
-          </a>
-          <h3>Github</h3>
-        </article>
-        
-        <article>
-          <a href="https://leetcode.com/Asilvazavala/" target="_blank" rel="noopener noreferrer">
-            <i class="bi bi-code-slash"></i>
-          </a>
-          <h3>Leetcode</h3>
-        </article>
+     
+      <main class="main flow">
+        <div class="main__cards cards">
+          <div class="cards__inner">
+            <div class="cards__card card">
+              <h2 class="card__heading">Whatsapp</h2>
+              <p class="card__icon"><i class='bx bxl-whatsapp'></i></p>
+              <ul role="list" class="card__bullets flow">
+                <li data-section="footer" data-value="whatsappDescription1">Atención prioritaria y respuesta rápida.</li>
+                <li data-section="footer" data-value="whatsappDescription2">Contactáme para resolver tus dudas.</li>
+              </ul>
+              <a data-section="footer" data-value="whatsappButton" target='_blank' rel='noopener noreferrer' href='https://api.whatsapp.com/send?phone=524561148433' class="card__cta cta">Send message</a>
+            </div>
+      
+            <div class="cards__card card">
+              <h2 class="card__heading">Linkedin</h2>
+              <p class="card__icon"><i class='bx bxl-linkedin-square'></i></p>
+              <ul role="list" class="card__bullets flow">
+                <li data-section="footer" data-value="linkedinDescription1">Sígueme para revisar mis últimas publicaciones.</li>
+                <li data-section="footer" data-value="linkedinDescription1">+1000 seguidores.</li>
+              </ul>
+              <a data-section="footer" data-value="linkedinButton" href="https://www.linkedin.com/in/antonio-silva-developer/" target="_blank" rel="noopener noreferrer" class="card__cta cta">Contact me</a>
+            </div>
+      
+            <div class="cards__card card">
+              <h2 class="card__heading">Github</h2>
+              <p class="card__icon"><i class='bx bxl-github'></i></p>
+              <ul role="list" class="card__bullets flow">
+                <li data-section="footer" data-value="githubDescription1">Consulta mis repositorios sobre los proyectos que he creado.</li>
+                <li data-section="footer" data-value="githubDescription1">+500 commits.</li>
+              </ul>
+              <a data-section="footer" data-value="githubButton" href="https://github.com/Asilvazavala" target="_blank" rel="noopener noreferrer" class="card__cta cta">Follow me</a>
+            </div>
+          </div>
+          
+          <div class="overlay cards__inner"></div>
+        </div>
+      </main>
 
-      </div>
       <div data-section="footer" data-value="copyright" class="derechos-de-autor">
         Created by Antonio Silva (2023) &#169;
       </div>
@@ -767,6 +866,10 @@
 
     <!-- Bootstrap JS-->
     <script defer src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js" integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN" crossorigin="anonymous"></script>
+    <!-- Swiper JS -->
+    <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+    <script src="https://unpkg.com/swiper@8/swiper-bundle.min.js"></script>
     <!-- JS -->
     <script defer src="./script.js"></script>
   </body>
