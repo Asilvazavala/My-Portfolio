@@ -1380,7 +1380,7 @@ footer p {
   align-items: start ;
   gap: .5em;
   color: #eceff1;
-  background-color: transparent;
+  background-color: rgba(0, 0, 0, .1);
   border: 1px solid var(--blueLight-black);
   border-radius: 15px;
   max-height: 25rem;
@@ -1438,7 +1438,8 @@ footer p {
   text-align: center;
   text-decoration: none;
   color: #fff;
-  background-color: #0d0d0d;
+  border: 1px solid white;
+  background-color: rgba(0, 0, 0, .6);
   padding: 0.7em;
   border-radius: 10px;
   font-size: 1rem;
