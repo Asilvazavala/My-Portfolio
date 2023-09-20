@@ -822,14 +822,14 @@ h1 {
 
 @media (max-width:500px) {
   .tranding-slide {
-    width: 16rem !important;
+    width: 16.5rem !important;
     height: 28rem !important;
     padding: .8rem !important;
     border-radius: .8rem !important;
   }
 
   .tranding-slide .tranding-slide-img img {
-    height: 8rem !important;
+    height: 9rem !important;
     border-radius: .2rem;
   }
 
