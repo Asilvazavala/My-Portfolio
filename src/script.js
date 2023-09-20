@@ -122,30 +122,6 @@ logoAS.addEventListener('click', () => {
   document.documentElement.scrollTo(0, 0)
 })
 
-// Iniciar efecto imagen proyectos
-const effectProject1 = () => {
-  project1.className = "project1Effect"     
-};
-
-const effectProject2 = () => {
-  project2.className = "project2Effect"     
-};
-
-const effectProject3 = () => {
-  project3.className = "project3Effect"     
-};
-
-const effectProject4 = () => {
-  project4.className = "project4Effect"     
-};
-
-// Regresar a la imagen original proyectos
-const normalProject = () => {
-  project1.className = "project1"     
-  project2.className = "project2"     
-  project3.className = "project3"     
-  project4.className = "project4"     
-};
 
 // Cambiar entre dark/light mode
 toggleTheme.addEventListener('click', () => {
@@ -233,30 +209,6 @@ closeMenuResponsive.addEventListener('click' , () => {
       })
     })
   }
-
-  // Ver otros proyectos
-  let isMarginSmall = true;
-
-  buttonOtherProjects.addEventListener('click', () => {
-    otherProjects.classList.toggle('hide')
-    if (isMarginSmall && toggleIconLanguage.src.includes("english")) {
-      buttonOtherProjects.style.marginBottom = '5px';
-      spanOtherProjects.textContent = 'Hide other projects';
-      isMarginSmall = false;
-    } else if (!isMarginSmall && toggleIconLanguage.src.includes("english")) {
-        buttonOtherProjects.style.marginBottom = '200px';
-        spanOtherProjects.textContent = 'See more projects';
-        isMarginSmall = true;
-      } else if (isMarginSmall && !toggleIconLanguage.src.includes("english")) {
-          buttonOtherProjects.style.marginBottom = '5px';
-          spanOtherProjects.textContent = 'Ocultar proyectos';
-          isMarginSmall = false;
-        } else {
-            buttonOtherProjects.style.marginBottom = '200px';
-            spanOtherProjects.textContent = 'Ver más proyectos';
-            isMarginSmall = true;
-          }
-  })
 
   // Descargar CV en inglés/español
   btnCV.addEventListener('click', () => {    
