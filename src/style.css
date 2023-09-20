@@ -359,35 +359,7 @@ h1 {
   text-align: center;
 }
 
-.boton-code {
-  font-size: 1.5rem;
-  width: 35%;
-}
-
-.boton-demo {
-  font-size: 1.7rem;
-  width: 55%;
-}
-
-.boton-code,
-.boton-demo {
-  box-shadow: 0 0 15px #0093E9;
-  color: #0093E9;
-  background: transparent;
-  padding: 0.3rem 0;
-}
-
-.boton-demo:hover,
-.boton-code:hover {
-  box-shadow: 0 0 5px #0093E9,
-  0 0 12px #0093E9,
-  0 0 25px #0093E9,
-  0 0 50px #0093E9;
-}
-
 .contactButton,
-.boton-demo,
-.boton-code,
 .boton-CV {
   text-decoration: none;
   display: flex;
@@ -400,7 +372,6 @@ h1 {
   border: none;  
 }
 
-.boton-otros-proyectos,
 .boton-CV {
   color: white;
   font-size: 1.25rem;
@@ -409,25 +380,6 @@ h1 {
   background: transparent;
 }
 
-.boton-otros-proyectos {
-  color: #0093E9;
-  box-shadow: #0093E9;
-  font-size: 1.25rem;
-  background: transparent;
-  font-weight: 700;
-  border: none;
-  padding: 0.8rem 1em;
-  text-decoration: none;
-  display: flex;
-  align-items: center;
-  border-radius: 1.5rem;
-  overflow: hidden;
-  transition: color 0.2s ease-in-out 0s, border-color 1s ease-in-out 0s;
-  margin-top: 70px;
-  margin-bottom: 200px;
-}
-
-.boton-otros-proyectos:hover,
 .boton-CV:hover {
   box-shadow: 0 0 5px var(--blueLight-blueStrong),
               0 0 25px var(--blueLight-blueStrong),
@@ -436,18 +388,9 @@ h1 {
 }
 
 .contactButton span,
-.boton-demo span,
-.boton-code span,
-.boton-otros-proyectos span,
 .boton-CV span {
   display: block;
   margin-left: 0.3em;
-  transition: color 1s ease-in-out 0s, background 1s ease-in-out 0s, transform .3s ease-in-out;
-}
-
-.boton-demo i,
-.boton-code i {
-  display: block;
   transition: color 1s ease-in-out 0s, background 1s ease-in-out 0s, transform .3s ease-in-out;
 }
 
@@ -457,7 +400,6 @@ h1 {
   transition: color 1s ease-in-out 0s, background 1s ease-in-out 0s, transform .3s ease-in-out;
 }
 
-.boton-otros-proyectos i,
 .boton-CV i {
   display: block;
   transform-origin: center center;
@@ -466,9 +408,6 @@ h1 {
 }
 
 .contactButton:hover .wrapper,
-.boton-demo:hover .wrapper,
-.boton-code:hover .wrapper,
-.boton-otros-proyectos:hover .wrapper,
 .boton-CV:hover .wrapper {
   animation: fly 0.6s ease-in-out infinite alternate;
 }
@@ -477,34 +416,16 @@ h1 {
   transform: translateX(3.2em) rotate(0deg) scale(2.2);
 }
 
-.boton-demo:hover i {
-  transform: translateX(1.6em) scale(1.6);
-}
-
-.boton-code:hover i {
-  transform: translateX(1.5em) scale(1.6);
-}
-
-.boton-otros-proyectos:hover i {
-  transform: translateX(4.2em) rotate(45deg) scale(2.3);
-}
-
 .contactButton:hover i {
   transform: translateX(1.8em) scale(2.5);
 }
 
 .contactButton:hover span,
-.boton-demo:hover span,
-.boton-code:hover span,
-.boton-otros-proyectos:hover span,
 .boton-CV:hover span {
   transform: translateX(10em);
 }
 
 .contactButton:active,
-.boton-demo:active,
-.boton-code:active,
-.boton-otros-proyectos:active,
 .boton-CV:active {
   transform: scale(0.95);
 }
@@ -550,8 +471,9 @@ h1 {
 
 /* Experiencia */
 .slider {
-  width: 85vw;
-  max-width: 1050px;
+  width: 100%;
+  margin-left: 5vw;
+  max-width: 1000px;
   height: auto;
   overflow: hidden;
   -webkit-box-reflect: below 0 linear-gradient(180deg,transparent,rgba(0,0,0,.2));
@@ -727,7 +649,7 @@ h1 {
 }
 
 .containerProjectsSlider {
-  max-width: 1100px;
+  max-width: 1050px;
   padding: 0 1rem;
   margin: 0 auto;
 }
@@ -1090,7 +1012,7 @@ h1 {
 }
 
 .contacto .container {
-  max-width: 1100px;
+  max-width: 1050px;
   min-height: 200px;
   padding: 20px;
 }
@@ -1244,7 +1166,7 @@ footer p {
 }
 
 .main {
-  max-width: 75rem;
+  max-width: 1050px;
   padding: 0 1.5em 3em 1.5em;
 }
 
@@ -1492,7 +1414,8 @@ footer p {
   }
 
   .slider {
-    width: 92vw;
+    width: 85vw;
+    margin-left: 0;
   }
 }
 
