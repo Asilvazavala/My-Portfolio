@@ -677,11 +677,6 @@ h1 {
   box-shadow: 0 0 20px rgba(222, 181, 255, 1), 0 0 20px rgba(111, 0, 179, 1);
 }
 
-.rosa-azul {
-  background: linear-gradient(220.55deg, #FF5E98 0%, #0F213E 100%);
-  box-shadow: 0 0 20px rgba(255, 94, 152, 1), 0 0 20px rgba(15, 33, 62, 1);
-}
-
 .rojo-azul {
   background: linear-gradient(220.55deg, #D7003A 0%, #19087E 100%);
   box-shadow: 0 0 20px rgba(215, 0, 58, 1), 0 0 20px rgba(25, 8, 126, 1);
@@ -703,18 +698,13 @@ h1 {
 }
 
 .rojo-rojoFuerte {
-  background: linear-gradient(220.55deg, #931212 0%, #000000 100%);
-  box-shadow: 0 0 20px rgba(147, 18, 18, 1), 0 0 20px rgba(0, 0, 0, 1);
-}
-
-.rojo-rojoFuerte {
   background: linear-gradient(220.55deg, #FF0000 0%, #470000 100%);
   box-shadow: 0 0 20px rgba(255, 0, 0, 1), 0 0 20px rgba(71, 0, 0, 1);
 }
 
 .amarillo-negro {
-  background: linear-gradient(220.55deg, #B9A14C 0%, #000000 100%);
-  box-shadow: 0 0 20px rgba(185, 161, 76, 1), 0 0 20px rgba(0, 0, 0, 1);
+  background: linear-gradient(220.55deg, #d4be6e 0%, #a58923 100%);
+  box-shadow: 0 0 20px rgba(212, 190, 110, 1), 0 0 20px rgba(165, 137, 35, 1);
 }
 
 .verdeClaro-verdeObscuro {
@@ -735,11 +725,6 @@ h1 {
 .azul-cyan {
   background: linear-gradient(220.55deg, #24CFC5 0%, #001C63 100%);
   box-shadow: 0 0 20px rgba(36, 207, 197, 1), 0 0 20px rgba(0, 28, 99, 1);
-}
-
-.azulClaro-azulFuerte {
-  background: linear-gradient(220.55deg, #5D85A6 0%, #0E2C5E 100%);
-  box-shadow: 0 0 20px rgba(93, 133, 166, 1), 0 0 20px rgba(14, 44, 94, 1);
 }
 
 .azul-morado {

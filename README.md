@@ -10,4 +10,4 @@ I start programming in August 2022, I will be adding more projects soon, for now
 <p>CSS</p>
 
 ### LIVE DEMO: 
-<a href="https://antonio-silva-portfolio.onrender.com/" >GYM AS</a>
+<a href="https://as-work.vercel.app/" >GYM AS</a>
