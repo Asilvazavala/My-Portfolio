@@ -581,6 +581,11 @@ h1 {
 }
 
 .mercadopagoText {
+  background-color: #120A83;
+  color: white;
+}
+
+.chakrajsText {
   background-color: #4FC3F7;
   color: black;
 }
@@ -811,16 +816,30 @@ h1 {
 
 .slide-content-footer .stacks {
   column-gap: .2rem;
+  display: flex;
+  position: relative;
 }
 
 .slide-content-footer .stacks img {
   width: 30px;
   height: 30px;
   margin-bottom: .7rem;
+  opacity: 1;
 }
 
 .slide-content-footer .stacks h5 {
+  position: absolute;
   margin-top: -.5rem;
+  border-radius: 1rem;
+  padding: .2rem .6rem;
+  font-size: 1rem;
+  opacity: 0;
+  transition: .3s ease;
+  transition-property: opacity;
+}
+
+.stacks img:hover+ h5 {
+  opacity: 1;
 }
 
 .buttons-Projects {
@@ -848,12 +867,12 @@ h1 {
   }
 
   .buttons-Projects i {
-    font-size: 1.8rem;
+    font-size: 1.7rem;
   }
 
   .slide-content-footer .stacks img {
-    width: 30px;
-    height: 30px;
+    width: 27px;
+    height: 27px;
     margin-bottom: .9rem;
   }
 }
@@ -941,49 +960,6 @@ h1 {
 
 .swiper-slide-active {
   opacity: 1;
-}
-
-.stack {
-  display: flex;
-  justify-content: flex-start;
-  margin: 8px 0 32px;
-  position: relative;
-}
-
-.stacks h5,
-.stack h5 {
-  position: absolute;
-  margin-top: .2rem;
-  border-radius: 1rem;
-  padding: .2rem .6rem;
-  font-size: 1rem;
-  opacity: 0;
-  transition: .3s ease;
-  transition-property: opacity;
-  font-size: 1rem;
-}
-
-.stacks h5 {
-  margin-top: -1rem;
-}
-
-.stacks img:hover+ h5,
-.stack img:hover+ h5 {
-  opacity: 1;
-}
-
-.stacks {
-  display: flex;
-  position: relative;
-  justify-content: flex-end;
-}
-
-.stacks img {
-  width: 50px;
-  height: 50px;
-  margin-bottom: 10px;
-  opacity: 1 !important;
-  border-radius: 0 !important;
 }
 
 .proyectos-recientes h2 {
