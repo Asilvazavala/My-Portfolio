@@ -990,6 +990,12 @@ h1 {
   box-shadow: 0px 1px 4px 1px white;
 }
 
+@media (max-width:500px) {
+  .contacto .rectangulo {
+    margin-top: -10rem;
+  }
+}
+
 .contacto .row {
   width: 100%;
   display: flex;
@@ -1134,6 +1140,12 @@ footer p {
 .main {
   max-width: 1050px;
   padding: 0 1.5em 3em 1.5em;
+}
+
+@media (max-width:500px) {
+  .main {
+    padding-top: 5rem;
+  }
 }
 
 .main i {
