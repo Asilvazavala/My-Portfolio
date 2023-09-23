@@ -1144,7 +1144,7 @@ footer p {
 
 @media (max-width:500px) {
   .main {
-    padding-top: 5rem;
+    padding-top: 3rem;
   }
 }
 
@@ -1436,7 +1436,7 @@ footer p {
     padding: 70px 0 0 0;
   }
 
-  }
+}
   
 @media screen and (max-width: 680px) {
   .hero-imagen-inferior {
@@ -1502,6 +1502,10 @@ footer p {
 
   .hero-principal h1 {
     margin-top: 1rem;
+  }
+
+  .proyectos-recientes {
+    margin-bottom: 2rem;
   }
   
 }
