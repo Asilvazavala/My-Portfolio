@@ -1,5 +1,3 @@
-@import url("https://fonts.googleapis.com/css2?family=Rubik+Dirt&family=Inter:wght@500;800&family=Alfa+Slab+One&display=swap");
-
 /* Modo Dark/Light */
 :root {
   --semiBlack: #454545ad;
@@ -777,6 +775,13 @@ h1 {
 }
 
 .tranding-slide .tranding-slide-img img {
+  width: 100%;
+  height: 10rem;
+  border-radius: 1rem;
+  object-fit: cover;
+}
+
+.tranding-slide .tranding-slide-img video {
   width: 100%;
   height: 10rem;
   border-radius: 1rem;

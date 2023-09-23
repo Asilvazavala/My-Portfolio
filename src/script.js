@@ -43,18 +43,18 @@ document.addEventListener('DOMContentLoaded', function () {
     },
   });
 
+  // Al hacer clic en slide poner en el centro
   var slides = document.querySelectorAll('.swiper-slide');
-
   slides.forEach(function (slide, index) {
     slide.addEventListener('click', function () {
       TrandingSlider.slideTo(index);
+      pauseAllVideos(slides, index);
     });
   });
+
 });
 
-// Cards redes
-console.clear();
-
+// Cards footer
 const cardsContainer = document.querySelector(".cards");
 const cardsContainerInner = document.querySelector(".cards__inner");
 const cards = Array.from(document.querySelectorAll(".card"));
