@@ -57,7 +57,7 @@
     "project4Name": "Gimnasio club",
     "project5Description": "Juega este clásico juego contra una persona o contra la computadora, tiene almacenamiento local para guardar el juego actual al recargar la página.",
     "project5Name": "3 en raya",
-    "project6Description": "Descubre la cantidad de años, meses y días que han pasado desde cualquier fecha, cuenta con validaciones para años bisiestos, meses con menos de 31 días.",
+    "project6Description": "Descubre la cantidad de años, meses y días que han pasado desde cualquier fecha, cuenta con validaciones.",
     "project6Name": "Calculadora de edad",
     "project7Description": "Acorta el enlace que desees y cópialo al portapapeles con un solo clic, los enlaces se guardan en el almacenamiento local, información consumida desde una API.",
     "project7Name": "Acortador de links",
