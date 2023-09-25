@@ -700,6 +700,11 @@ h1 {
   box-shadow: 0 0 20px rgba(67, 155, 59, 1), 0 0 20px rgba(20, 122, 218, 1);
 }
 
+.azulFuerte-azul {
+  background: linear-gradient(220.55deg, #466FFF 0%, #0A1335 100%);
+  box-shadow: 0 0 20px rgba(70, 111, 255, 1), 0 0 20px rgba(10, 19, 53, 1);
+}
+
 .rojo-rojoFuerte {
   background: linear-gradient(220.55deg, #FF0000 0%, #470000 100%);
   box-shadow: 0 0 20px rgba(255, 0, 0, 1), 0 0 20px rgba(71, 0, 0, 1);
@@ -901,8 +906,8 @@ h1 {
 }
 
 .tranding-slider-control .swiper-button-next {
-  left: 64% !important;
-  transform: translateX(-64%) !important;
+  left: 65% !important;
+  transform: translateX(-65%) !important;
   z-index: 100;
 }
 
@@ -927,8 +932,8 @@ h1 {
   width: 3.5rem;
   height: 3.5rem;
   border-radius: 50%;
-  left: 36%;
-  transform: translateX(-36%);
+  left: 35%;
+  transform: translateX(-35%);
   filter: drop-shadow(0px 8px 24px rgba(18, 28, 53, 0.1));
   font-size: 2rem;
   color: #222224;

@@ -45,6 +45,8 @@
     "project12Name": "Results summary",
     "project13Description": "Add, delete, modify and view your tasks in one place, plus completed tasks can be deleted.",
     "project13Name": "Todo list",
+    "project14Description": "Rent a car quick and easy, has search by make or model, conditional rendering, car details, responsive design.",
+    "project14Name": "Car rent",
     "project1Description": "FC Barcelona news, has user authentication, CRUD of comments, saving information in database, filtering, conditional rendering.",
     "project1Name": "Blog culemania",
     "project2Description": "Clothing sale, has user authentication, payment gateway, combined filters, search by name, local storage, dashboard admin, reviews.",
