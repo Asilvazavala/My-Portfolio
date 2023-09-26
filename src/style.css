@@ -700,14 +700,14 @@ h1 {
   box-shadow: 0 0 20px rgba(255, 137, 109, 1), 0 0 20px rgba(208, 32, 32, 1);
 }
 
-.azul-naranja {
+.verde-azul {
   background: linear-gradient(220.55deg, #439b3b 0%, #147ada 100%);
   box-shadow: 0 0 20px rgba(67, 155, 59, 1), 0 0 20px rgba(20, 122, 218, 1);
 }
 
-.azulFuerte-azul {
-  background: linear-gradient(220.55deg, #466FFF 0%, #0A1335 100%);
-  box-shadow: 0 0 20px rgba(70, 111, 255, 1), 0 0 20px rgba(10, 19, 53, 1);
+.amarillo-naranja {
+  background: linear-gradient(220.55deg, #FADD76 0%, #9F3311 100%);
+  box-shadow: 0 0 20px rgba(250, 221, 118, 1), 0 0 20px rgba(159, 51, 17, 1);
 }
 
 .rojo-rojoFuerte {
@@ -725,9 +725,9 @@ h1 {
   box-shadow: 0 0 20px rgba(97, 198, 149, 1), 0 0 20px rgba(19, 49, 20, 1);
 }
 
-.naranja-azul {
-  background: linear-gradient(220.55deg, #FF8570 0%, #418CB7 100%);
-  box-shadow: 0 0 20px rgba(255, 133, 112, 1), 0 0 20px rgba(65, 140, 183, 1);
+.cyan-azul {
+  background: linear-gradient(220.55deg, #3793FF 0%, #0017E4 100%);
+  box-shadow: 0 0 20px rgba(55, 147, 255, 1), 0 0 20px rgba(0, 23, 228, 1);
 }
 
 .naranja-rojo {
@@ -735,9 +735,9 @@ h1 {
   box-shadow: 0 0 20px rgba(255, 195, 40, 1), 0 0 20px rgba(226, 0, 0, 1);
 }
 
-.azul-cyan {
-  background: linear-gradient(220.55deg, #24CFC5 0%, #001C63 100%);
-  box-shadow: 0 0 20px rgba(36, 207, 197, 1), 0 0 20px rgba(0, 28, 99, 1);
+.morado-rosa {
+  background: linear-gradient(220.55deg, #DD7BFF 0%, #FF6C6C 100%);
+  box-shadow: 0 0 20px rgba(221, 123, 255, 1), 0 0 20px rgba(255, 108, 108, 1);
 }
 
 .azul-morado {
