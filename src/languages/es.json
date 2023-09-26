@@ -36,7 +36,7 @@
   },
   "projects": {
     "code": "Código",
-    "demo": "En vivo",
+    "live": "Demo",
     "project10Description": "Realice una evaluación con este componente, el cual es un desafío en la página frontend mentor.",
     "project10Name": "Componente de rating",
     "project11Description": "Componente elegante de un producto de comercio electrónico, desafío de la página de frontend mentor, que adaptable a dispositivos móviles.",

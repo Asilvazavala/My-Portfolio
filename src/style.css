@@ -588,6 +588,11 @@ h1 {
   color: black;
 }
 
+.codeLiveText {
+  background-color: #081b29;
+  color: white;
+}
+
 
 @keyframes scroll {
   0% {
@@ -829,9 +834,10 @@ h1 {
   opacity: 1;
 }
 
+.buttons-Projects h5, 
 .slide-content-footer .stacks h5 {
   position: absolute;
-  margin-top: -.5rem;
+  margin-top: 3.5rem;
   border-radius: 1rem;
   padding: .2rem .6rem;
   font-size: 1rem;
@@ -839,6 +845,15 @@ h1 {
   transition: .3s ease;
   transition-property: opacity;
 }
+
+
+.buttons-Projects h5 {
+  margin-top: 4.5rem;
+}
+
+.buttons-Projects a:hover+ h5 {
+  opacity: 1;
+} 
 
 .stacks img:hover+ h5 {
   opacity: 1;
@@ -850,6 +865,14 @@ h1 {
   margin-bottom: 1rem;
   right: 0;
   position: absolute;
+}
+
+.slide-content-footer .stacks article,
+.buttons-Projects article {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
 }
 
 .buttons-Projects i {
