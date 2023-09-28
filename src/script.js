@@ -183,6 +183,7 @@ openMenuResponsive.addEventListener('click' , () => {
 });
 
 closeMenuResponsive.addEventListener('click' , () => {
+  navbarResponsive.classList.remove('show');
   closeMenuResponsive.classList.toggle('hide');
   openMenuResponsive.classList.toggle('hide');
   toggleTheme.style.display = 'none'
