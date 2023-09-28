@@ -31,8 +31,8 @@
   "navbar": {
     "about": "Sobre mí",
     "contact": "Contacto",
-    "projects": "Proyectos",
-    "skills": "Habilidades"
+    "home": "Inicio",
+    "projects": "Proyectos"
   },
   "projects": {
     "code": "Código",

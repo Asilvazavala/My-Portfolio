@@ -9,7 +9,7 @@
     <meta name="description" content="Portafolio de desarrollo web de Antonio Silva">
     <meta name="keywords" content="HTML, CSS, JavaScript, React">
     <!-- Google Fonts  -->
-    <link href="https://fonts.googleapis.com/css2?family=Rubik+Dirt&family=Inter:wght@500;800&family=Alfa+Slab+One&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Rubik+Dirt&family=Heebo:wght@500;800&family=Alfa+Slab+One&display=swap" rel="stylesheet">
     <!-- Swiper -->
     <link rel="stylesheet" href="https://unpkg.com/swiper@8/swiper-bundle.min.css" />
     <!-- Título -->
@@ -41,10 +41,10 @@
         <div class="collapse navbar-collapse" id="navbarTogglerDemo01" >
           <ul id="ulNav" class="navbar-nav d-flex justify-content-sm-between align-items-center ulNav">
             <li class="nav-item">
-              <a data-section="navbar" data-value="about" class="nav-link" href="#sobre-mi">About</a>
+              <a data-section="navbar" data-value="home" class="nav-link" href="#home">Home</a>
             </li>
             <li class="nav-item">
-              <a data-section="navbar" data-value="skills" class="nav-link" href="#experiencia">Skills</a>
+              <a data-section="navbar" data-value="about" class="nav-link" href="#sobre-mi">About</a>
             </li>
             <li class="nav-item">
               <a data-section="navbar" data-value="projects" class="nav-link" href="#proyectos">Projects</a>
@@ -56,13 +56,20 @@
         </div>
         <!-- Cambiar tema -->
         <div id="toggleTheme">
-          <i title="Cambiar Tema" id="toggleIcon" class='bx bxs-moon toggleThemeIcon'></i>
+          <label class="labelToggleTheme" for="checkboxTheme">
+            <input id="checkboxTheme" class="inputToggleTheme" type="checkbox">
+            <i title="Cambiar Tema" class='bx bxs-sun sun'></i>
+            <i title="Cambiar Tema" class='bx bxs-moon moon'></i>
+            <span class="toggle"></span>
+          </label>
         </div>
+
         <!-- Cambiar idioma -->
         <div id="flags" class="flags">
-          <div data-language="es">
-            <img title="Cambiar Idioma" id="toggleIconLanguage" class="idiom" src="./imagenes/General/english.svg" alt="Idioma" />
-          </div>
+          <span class="english">EN</span>
+          <input type="checkbox" id="checkboxIdiom">
+          <label for="checkboxIdiom" class="toggleIdiom"></label>
+          <span class="espanol">ES</span>
         </div>
 
         <div id='menu-backdrop' class='menuBackdrop'>
@@ -152,7 +159,7 @@
     </section>
 
     <!-- Experiencia -->
-    <section id="experiencia" class="experiencia seccion-semiClara">
+    <!-- <section id="experiencia" class="experiencia seccion-semiClara">
       <div class="container text-center">
         <h2 id="titleHabilidades" data-section="skills" data-value="title" class="seccion-titulo texto-negro">My skills</h2>
         <header class="slider">
@@ -226,7 +233,7 @@
         </header>
         
       </div>
-    </section>
+    </section> -->
 
     <!-- Proyectos -->
     <section id="proyectos" class="proyectos-recientes d-flex flex-column seccion-semiClara">

@@ -5,8 +5,9 @@ const project2 = document.getElementById('project2');
 const project3 = document.getElementById('project3');
 const project4 = document.getElementById('project4');
 const toggleTheme = document.getElementById('toggleTheme');
-const toggleIconLanguage = document.getElementById('toggleIconLanguage');
-const toggleIcon = document.getElementById('toggleIcon');
+const checkboxTheme = document.getElementById('checkboxTheme');
+const checkboxIdiom = document.getElementById('checkboxIdiom');
+const flags = document.getElementById('flags');
 const textsToChange = document.querySelectorAll("[data-section]");
 const navLinks = document.querySelectorAll('.nav-link');
 const navbarResponsive = document.querySelector('.navbar-collapse');
@@ -123,43 +124,42 @@ logoAS.addEventListener('click', () => {
 })
 
 
-// Cambiar entre dark/light mode
-toggleTheme.addEventListener('click', () => {
-  document.body.classList.toggle('dark')
-  if (toggleIcon.classList.value.includes("moon")) {
-    toggleIcon.classList.value = "bx bxs-sun toggleThemeIcon"
+// Cambiar dark/light mode
+checkboxTheme.addEventListener('change', function() {
+  if (this.checked) {
+    document.body.classList.remove('dark');
   } else {
-      toggleIcon.classList.value = "bx bxs-moon toggleThemeIcon"
-    }
-})
+    document.body.classList.add('dark');
+  }
+});
+
 
 // Cambiar idioma inglés/español
-const changeLanguage = async () => {
+checkboxIdiom.addEventListener('change', function() {
   let language = ""
-  !toggleIconLanguage.src.includes("english")
-  ? language = 'en'
-  : language = 'es'
 
-  const requestJson = await fetch(`./languages/${language}.json`)
-  const texts = await requestJson.json()
-
-  for(const textToChange of textsToChange) {    
-    const section = textToChange.dataset.section
-    const value = textToChange.dataset.value
-    
-    textToChange.innerHTML = texts[section][value]
-  }
-}
-
-// Cambiar icono español/inglés
-toggleIconLanguage.addEventListener('click', (e) => {
-  changeLanguage();
-  if (toggleIconLanguage.src.includes("english")) {
-    toggleIconLanguage.src = "./imagenes/General/spain.svg"
+  if (this.checked) {
+    language = 'es'
+    btnCV.setAttribute('href', './documents/ANTONIO SILVA CV Espanol.pdf')
   } else {
-      toggleIconLanguage.src = "./imagenes/General/english.svg"
+      language = 'en'
+      btnCV.setAttribute('href', './documents/ANTONIO SILVA CV English.pdf')
     }
-})
+
+  const changeLanguage = async () => {
+    const requestJson = await fetch(`./languages/${language}.json`)
+    const texts = await requestJson.json()
+  
+    for(const textToChange of textsToChange) {    
+      const section = textToChange.dataset.section
+      const value = textToChange.dataset.value
+      
+      textToChange.innerHTML = texts[section][value]
+    }
+  }
+
+  changeLanguage()
+});
 
 // Evento "click" a cada enlace para cerrar la navbar
 navLinks.forEach(link => {
@@ -169,7 +169,7 @@ navLinks.forEach(link => {
       closeMenuResponsive.classList.toggle('hide');
       openMenuResponsive.classList.toggle('hide');
       toggleTheme.style.display = 'none'
-      toggleIconLanguage.style.display = 'none'    
+      flags.style.display = 'none'    
     }
   });
 });
@@ -179,14 +179,14 @@ openMenuResponsive.addEventListener('click' , () => {
   closeMenuResponsive.classList.toggle('hide');
   openMenuResponsive.classList.toggle('hide');
   toggleTheme.style.display = 'block'
-  toggleIconLanguage.style.display = 'block'
+  flags.style.display = 'flex'
 });
 
 closeMenuResponsive.addEventListener('click' , () => {
   closeMenuResponsive.classList.toggle('hide');
   openMenuResponsive.classList.toggle('hide');
   toggleTheme.style.display = 'none'
-  toggleIconLanguage.style.display = 'none'
+  flags.style.display = 'none'
 });
 
 // Hover li items Navbar
@@ -209,16 +209,6 @@ closeMenuResponsive.addEventListener('click' , () => {
       })
     })
   }
-
-  // Descargar CV en inglés/español
-  btnCV.addEventListener('click', () => {    
-    if (toggleIconLanguage.src.includes("english")) {
-      btnCV.setAttribute('href', './documents/ANTONIO SILVA CV English.pdf')
-    } else {
-        btnCV.setAttribute('href', './documents/ANTONIO SILVA CV Espanol.pdf')
-      }
-  })
-
   
 /*   Descargar todas las imágenes de una página web
   $$('img').forEach(img => {

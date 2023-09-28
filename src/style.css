@@ -16,13 +16,14 @@
   --linear-grad: linear-gradient(160deg, #0093E9 0%, #80D0C7 100%);
   --linear-grad-exp: linear-gradient(90deg, rgb(232, 232, 232) 0,transparent);
 
-  --titles: 'Inter', sans-serif;
+  --mainFontFamily: 'Heebo', sans-serif;
   --numberAbout: 'Alfa Slab One', sans-serif;
 }
 
 body {
   background-color: var(--blueMedium-whiteLight);
   color: var(--blueLight-black);
+  font-family: var(--mainFontFamily);
 }
 
 body.dark {
@@ -130,7 +131,6 @@ h1 {
 .seccion-texto {
   font-size: 1.2rem;
   text-align: left;
-  font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
 }
 
 .btn-info {
@@ -149,7 +149,7 @@ h1 {
 /* Barra de navegación */
 .navbar {
   padding: 1rem;
-  font-size: 20px;
+  font-size: 1.1rem;
   position: fixed;
   top: 0;
   width: 100%;
@@ -208,28 +208,114 @@ h1 {
   font-size: 30px;
 }
 
-.toggleThemeIcon {
+ .labelToggleTheme {
   width: 30px;
-  color: var(--blueLight-white);
-  font-size: 43px;
-  margin-top: 5px;
+  height: 30px;
   border-radius: 50%;
   cursor: pointer;
+  display: flex;
+  justify-content: center;
+  align-items: center;
  }
- 
- .flags {
-   display: flex;
-   justify-content: center;
-   align-items: center;
+
+ .inputToggleTheme {
+  position: absolute;
+  opacity: 0;
+  cursor: pointer;
  }
- 
- .idiom {
-   width: 100%;
-   height: 45px;
-   margin-left: 40px;
-   cursor: pointer;
-   display: block;
-  }
+
+ .sun {
+  position: absolute;
+  font-size: 1.4rem;
+  color: var(--blueStrong-black);
+  transform: scale(0);
+  transition: .5s ease;
+  cursor: pointer;
+}
+
+.inputToggleTheme:checked~.sun {
+  transition-delay: .5s;
+  transform: scale(1) rotate(360deg);
+}
+
+ .moon {
+  font-size: 1.4rem;
+  color: var(--blueStrong-black);
+  transition: .5s ease;
+  transition-delay: .5s;
+  cursor: pointer;
+ }
+
+ .inputToggleTheme:checked~.moon {
+  transition-delay: 0s;
+  transform: rotate(360deg) scale(0);
+}
+
+ .toggle {
+  position: absolute;
+  display: block;
+  background: var(--blueLight-white);
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+  z-index: -1;
+  transition: 1s;
+ }
+
+ #checkboxIdiom {
+  display: none;
+}
+
+.toggleIdiom {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  width: 50px;
+  height: 30px;
+  background-color: var(--blueLight-black);
+  border-radius: 20px;
+  cursor: pointer;
+  transition-duration: .2s;
+  margin: 0 .5rem;
+}
+
+.toggleIdiom::after {
+  content: "";
+  position: absolute;
+  height: 10px;
+  width: 10px;
+  left: 5px;
+  background-color: transparent;
+  border-radius: 50%;
+  transition-duration: .2s;
+  border: 10px solid white;
+}
+
+#checkboxIdiom:checked + .toggleIdiom::after {
+  transform: translateX(110%);
+  transition-duration: .2s;
+  background-color: white;
+}
+
+#checkboxIdiom:checked + .toggleIdiom {
+  background-color: var(--blueLight-black);
+  transition-duration: .2s;
+}
+
+.flags {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-left: 30px;
+  margin-right: 10px;
+}
+
+.espanol,
+.english {
+  font-size: 1.1rem;
+  color: var(--blueLight-white);
+}
 
 /* Sección Hero */
 .hero {
@@ -261,7 +347,6 @@ h1 {
   background-clip: text;
   background-position: -33rem 0;
   animation-delay: .5s;
-  
   background-repeat: no-repeat;
   -webkit-background-clip: text;
 }
@@ -800,8 +885,8 @@ h1 {
 }
 
 .project-description {
-  color: #e1e1e1;
-  font-weight: 400;
+  color: #d0d0d0;
+  font-weight: 500;
   font-size: 1rem;
   margin-top: -.3rem;
 }
@@ -981,6 +1066,10 @@ h1 {
   opacity: 1;
 }
 
+.proyectos-recientes {
+  padding-top: 5rem;
+}
+
 .proyectos-recientes h2 {
   color: var(--blueLight-black);
   transition: all 1s ease-in-out 0s;
@@ -1076,7 +1165,6 @@ footer {
 .footer-texto {
   font-size: 1.5rem;
   padding: 20px;
-  font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
 }
 
 footer p {
@@ -1440,10 +1528,28 @@ footer p {
   }
 
   #toggleTheme,
-  .idiom {
+  #flags {
     display: none;
-  
+    margin: 0 auto;
   }
+
+  #toggleTheme {
+    margin: .7rem 0 1.2rem 0;
+  }
+
+  .navbar-collapse {
+    border-bottom: .5px solid var(--blueLight-black);
+    width: 100%;
+  }
+
+  .container-fluid {
+    flex-direction: column;
+  }
+  
+  #logoAS {
+    align-self: flex-start !important;
+  }
+
   .otros-proyectos {
     padding: 40px 0 120px 0;
   }

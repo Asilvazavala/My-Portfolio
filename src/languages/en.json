@@ -31,8 +31,8 @@
   "navbar": {
     "about": "About",
     "contact": "Contact",
-    "projects": "Projects",
-    "skills": "Skills"
+    "home": "Home",
+    "projects": "Projects"
   },
   "projects": {
     "code": "Code",
