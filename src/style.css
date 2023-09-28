@@ -16,14 +16,13 @@
   --linear-grad: linear-gradient(160deg, #0093E9 0%, #80D0C7 100%);
   --linear-grad-exp: linear-gradient(90deg, rgb(232, 232, 232) 0,transparent);
 
-  --mainFontFamily: 'Heebo', sans-serif;
   --numberAbout: 'Alfa Slab One', sans-serif;
 }
 
 body {
   background-color: var(--blueMedium-whiteLight);
   color: var(--blueLight-black);
-  font-family: var(--mainFontFamily);
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
 }
 
 body.dark {
