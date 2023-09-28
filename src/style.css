@@ -271,7 +271,7 @@ h1 {
   justify-content: center;
   position: relative;
   width: 50px;
-  height: 30px;
+  height: 25px;
   background-color: var(--blueLight-black);
   border-radius: 20px;
   cursor: pointer;
@@ -314,6 +314,17 @@ h1 {
 .english {
   font-size: 1.1rem;
   color: var(--blueLight-white);
+}
+
+.espanolSVG,
+.englishSVG {
+  width: 30px !important;
+  height: 20px !important;
+  border-radius: none !important;
+  margin: 0 !important;
+  padding: 0 !important;
+  margin-top: .1rem !important;
+  cursor: default !important;
 }
 
 /* Sección Hero */
