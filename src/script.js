@@ -60,20 +60,23 @@ document.addEventListener('DOMContentLoaded', function () {
     },
   });
 
-  // Obtén la imagen con la clase .swiper-slide-active
-  // TrandingSlider.on('slideChange', function () {
-  //   let activeImage = document.querySelector('.swiper-slide-active img');
+ // Agregar eventos a cada imagen y video
+//  const trandingSlideImgs = document.querySelectorAll('.tranding-slide-img');
 
-  //   activeImage.addEventListener('mouseenter', () => {
-  //     activeImage.setAttribute('data-original-src', activeImage.src);
-  //     activeImage.src = './videos/homero.gif';
-  //   });
-  
-  //   activeImage.addEventListener('mouseleave', () => {
-  //     const originalSrc = activeImage.getAttribute('data-original-src');
-  //     activeImage.src = originalSrc;
-  //   });
-  // });
+//  trandingSlideImgs.forEach(function (trandingSlideImg) {
+//   trandingSlideImg.addEventListener('mouseenter', function () {
+//     this.querySelector('img').style.display = 'none';
+//     const video = this.querySelector('video');
+//     video.style.display = 'block';
+//     video.play();
+//   });
+
+//   trandingSlideImg.addEventListener('mouseleave', function () {
+//     const video = this.querySelector('video');
+//     video.style.display = 'none';
+//     this.querySelector('img').style.display = 'block';
+//   });
+// });
 
   // Al hacer clic en slide poner en el centro
   var slides = document.querySelectorAll('.swiper-slide');  

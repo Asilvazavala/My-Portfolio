@@ -800,6 +800,17 @@ h1 {
   }
 }
 
+.tranding-slide-img {
+  z-index: 9999;
+}
+
+.tranding-slide-img video {
+  width: 100%;
+  height: 10rem;
+  border-radius: 1rem;
+  display: none;
+}
+
 .tranding-slide .tranding-slide-img img {
   width: 100%;
   height: 10rem;
@@ -898,6 +909,10 @@ h1 {
   transition-property: color;
 }
 
+.buttons-Projects .liveIcon {
+  font-size: 2.3rem;
+}
+
 @media (max-width:500px) {
   .buttons-Projects {
     column-gap: .5rem;
@@ -909,6 +924,10 @@ h1 {
 
   .buttons-Projects i {
     font-size: 1.7rem;
+  }
+
+  .buttons-Projects .liveIcon {
+    font-size: 2rem;
   }
 
   .slide-content-footer .stacks img {
