@@ -1,12 +1,9 @@
 const alert = document.getElementById('alert');
 const logoAS = document.getElementById('logoAS');
-const project1 = document.getElementById('project1');
-const project2 = document.getElementById('project2');
-const project3 = document.getElementById('project3');
-const project4 = document.getElementById('project4');
 const toggleTheme = document.getElementById('toggleTheme');
 const checkboxTheme = document.getElementById('checkboxTheme');
 const checkboxIdiom = document.getElementById('checkboxIdiom');
+const englishSVG = document.querySelector('.englishSVG');
 const flags = document.getElementById('flags');
 const textsToChange = document.querySelectorAll("[data-section]");
 const navLinks = document.querySelectorAll('.nav-link');
@@ -16,10 +13,21 @@ const closeMenuResponsive = document.getElementById('closeMenuResponsive');
 const screenWidth = window.innerWidth;  
 const listItem = document.querySelectorAll('nav ul li');
 const menuBackDrop = document.querySelector('#menu-backdrop');
-const buttonOtherProjects = document.getElementById('buttonOtherProjects');
-const otherProjects = document.getElementById('otherProjects');
-const spanOtherProjects = document.getElementById('spanOtherProjects');
-const btnCV = document.getElementById('btnCV')
+const btnCV = document.getElementById('btnCV');
+const navbar = document.querySelector('.navbar');
+
+// Función para cambiar el fondo del navbar al hacer scroll
+function handleScroll() {
+  if (window.scrollY > 0) {
+    navbar.classList.add('scrolling');
+    navbar.style.background = 'rgba(0, 0, 0, 0.2)';
+  } else {
+    navbar.classList.remove('scrolling');
+    navbar.style.background = 'var(--blueStrong-blueLight)'
+  }
+}
+
+window.addEventListener('scroll', handleScroll);
 
 document.addEventListener('DOMContentLoaded', function () {
   var TrandingSlider = new Swiper('.tranding-slider', {
@@ -44,15 +52,28 @@ document.addEventListener('DOMContentLoaded', function () {
     },
   });
 
+  // Obtén la imagen con la clase .swiper-slide-active
+  // TrandingSlider.on('slideChange', function () {
+  //   let activeImage = document.querySelector('.swiper-slide-active img');
+
+  //   activeImage.addEventListener('mouseenter', () => {
+  //     activeImage.setAttribute('data-original-src', activeImage.src);
+  //     activeImage.src = './videos/homero.gif';
+  //   });
+  
+  //   activeImage.addEventListener('mouseleave', () => {
+  //     const originalSrc = activeImage.getAttribute('data-original-src');
+  //     activeImage.src = originalSrc;
+  //   });
+  // });
+
   // Al hacer clic en slide poner en el centro
-  var slides = document.querySelectorAll('.swiper-slide');
+  var slides = document.querySelectorAll('.swiper-slide');  
   slides.forEach(function (slide, index) {
     slide.addEventListener('click', function () {
       TrandingSlider.slideTo(index);
-      pauseAllVideos(slides, index);
     });
   });
-
 });
 
 // Cards footer
@@ -161,15 +182,30 @@ checkboxIdiom.addEventListener('change', function() {
   changeLanguage()
 });
 
+// Cambiar SVG ingles cuando esta checked el input
+checkboxIdiom.addEventListener('change', () => {
+  if (checkboxIdiom.checked) {
+    englishSVG.style.opacity = '0.5'; // Cambia la opacidad cuando el checkbox está marcado
+  } else {
+    englishSVG.style.opacity = '1'; // Restaura la opacidad cuando el checkbox está desmarcado
+  }
+});
+
+function closeNavMobile() {
+  toggleTheme.style.display = 'none'
+  flags.style.display = 'none'    
+  navbarResponsive.classList.remove('show');
+  closeMenuResponsive.classList.toggle('hide');
+  openMenuResponsive.classList.toggle('hide');
+}
+
 // Evento "click" a cada enlace para cerrar la navbar
 navLinks.forEach(link => {
   link.addEventListener('click', () => {
-    if (navbarResponsive.classList.contains('show')) {
-      navbarResponsive.classList.remove('show');
-      closeMenuResponsive.classList.toggle('hide');
-      openMenuResponsive.classList.toggle('hide');
-      toggleTheme.style.display = 'none'
-      flags.style.display = 'none'    
+    console.log(screenWidth);
+    
+    if (screenWidth < 767) {
+      closeNavMobile();
     }
   });
 });
@@ -183,11 +219,7 @@ openMenuResponsive.addEventListener('click' , () => {
 });
 
 closeMenuResponsive.addEventListener('click' , () => {
-  navbarResponsive.classList.remove('show');
-  closeMenuResponsive.classList.toggle('hide');
-  openMenuResponsive.classList.toggle('hide');
-  toggleTheme.style.display = 'none'
-  flags.style.display = 'none'
+  closeNavMobile();
 });
 
 // Hover li items Navbar

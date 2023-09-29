@@ -155,7 +155,12 @@ h1 {
   overflow: hidden;
   z-index: 1000;
   transition: color 1s ease-in-out 0s, background 1s ease-in-out 0s;
-  background: var(--blueStrong-blueLight) !important;
+  background: var(--blueStrong-blueLight);
+}
+
+.scrolling {
+  backdrop-filter: blur(10px); 
+  -webkit-backdrop-filter: blur(10px); 
 }
 
 .toggler {
@@ -324,6 +329,14 @@ h1 {
   margin: 0 !important;
   padding: 0 !important;
   cursor: default !important;
+}
+
+.espanolSVG {
+  opacity: .5;
+}
+
+#checkboxIdiom:checked ~ .espanolSVG {
+  opacity: 1;
 }
 
 /* Sección Hero */
@@ -534,12 +547,8 @@ h1 {
   font-weight: 700;
 }
 
-.datosImportantes aside {
-  display: flex;
-  column-gap: 3.5rem;
-}
 
-.datosImportantes aside article {
+.datosImportantes article {
   display: flex;
   flex-direction: column;
 }
@@ -1400,10 +1409,18 @@ footer p {
     column-gap: 1rem;
   }
 
+  .navbar a {
+    padding: 0.5rem .8rem !important;
+  }
+
+  .flags {
+    margin-left: 25px;
+    margin-right: 0;
+  }
+
   .overlay {
     opacity: 1;
   }
-  
 }
 
 @media screen and (max-width: 767px) {
@@ -1422,7 +1439,7 @@ footer p {
   }
 
   .navbar-collapse {
-    border-bottom: .5px solid var(--blueLight-black);
+    border-bottom: .5px solid var(--blueLight-white);
     width: 100%;
   }
 
@@ -1432,6 +1449,21 @@ footer p {
   
   #logoAS {
     align-self: flex-start !important;
+  }
+
+  .menuBackdrop {
+    background: transparent;
+  }
+  
+  .datosImportantes {
+    flex-wrap: wrap;
+    justify-content: center;
+    margin-bottom: 1rem;
+  }
+
+  .datosImportantes article {
+    flex-basis: calc(50% - 1rem);
+    margin-bottom: 1.5rem;
   }
 
 }
@@ -1446,16 +1478,6 @@ footer p {
     font-size: 1.3rem;
   }
 
-  .datosImportantes {
-    justify-content: center;
-    column-gap: 2rem;
-  }
-  
-  .datosImportantes aside {
-    flex-direction: column;
-    row-gap: 2rem;
-    column-gap: 2rem;
-  }
 }
 
 @media screen and (max-width: 585px) {
@@ -1599,16 +1621,6 @@ footer p {
 
   .stack h5 {
     display: none;
-  }
-
-  .datosImportantes {
-    column-gap: 1.5rem;
-  }
-
-  .datosImportantes aside {
-    flex-direction: column;
-    row-gap: 1.5rem;
-    column-gap: 1.5rem;
   }
   
 }
