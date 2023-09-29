@@ -16,15 +16,23 @@ const menuBackDrop = document.querySelector('#menu-backdrop');
 const btnCV = document.getElementById('btnCV');
 const navbar = document.querySelector('.navbar');
 
+function addEffectNavbar() {
+  navbar.classList.add('scrolling');
+  navbar.style.background = 'rgba(0, 0, 0, 0.2)';
+}
+
+function removeEffectNavbar() {
+  navbar.classList.remove('scrolling');
+  navbar.style.background = 'var(--blueStrong-blueLight)'
+}
+
 // Función para cambiar el fondo del navbar al hacer scroll
 function handleScroll() {
   if (window.scrollY > 0) {
-    navbar.classList.add('scrolling');
-    navbar.style.background = 'rgba(0, 0, 0, 0.2)';
+    addEffectNavbar();
   } else {
-    navbar.classList.remove('scrolling');
-    navbar.style.background = 'var(--blueStrong-blueLight)'
-  }
+      removeEffectNavbar();
+    }
 }
 
 window.addEventListener('scroll', handleScroll);
@@ -205,6 +213,7 @@ navLinks.forEach(link => {
     console.log(screenWidth);
     
     if (screenWidth < 767) {
+      addEffectNavbar();
       closeNavMobile();
     }
   });
@@ -212,6 +221,7 @@ navLinks.forEach(link => {
 
 // Comportamiento botón menú responsive
 openMenuResponsive.addEventListener('click' , () => {
+  removeEffectNavbar();
   closeMenuResponsive.classList.toggle('hide');
   openMenuResponsive.classList.toggle('hide');
   toggleTheme.style.display = 'block'
@@ -219,6 +229,7 @@ openMenuResponsive.addEventListener('click' , () => {
 });
 
 closeMenuResponsive.addEventListener('click' , () => {
+  addEffectNavbar();
   closeNavMobile();
 });
 
