@@ -4,6 +4,7 @@ const toggleTheme = document.getElementById('toggleTheme');
 const checkboxTheme = document.getElementById('checkboxTheme');
 const checkboxIdiom = document.getElementById('checkboxIdiom');
 const englishSVG = document.querySelector('.englishSVG');
+const english = document.querySelector('.english');
 const flags = document.getElementById('flags');
 const textsToChange = document.querySelectorAll("[data-section]");
 const navLinks = document.querySelectorAll('.nav-link');
@@ -61,22 +62,23 @@ document.addEventListener('DOMContentLoaded', function () {
   });
 
  // Agregar eventos a cada imagen y video
-//  const trandingSlideImgs = document.querySelectorAll('.tranding-slide-img');
+ const trandingSlideImgs = document.querySelectorAll('.tranding-slide-img');
 
-//  trandingSlideImgs.forEach(function (trandingSlideImg) {
-//   trandingSlideImg.addEventListener('mouseenter', function () {
-//     this.querySelector('img').style.display = 'none';
-//     const video = this.querySelector('video');
-//     video.style.display = 'block';
-//     video.play();
-//   });
+ trandingSlideImgs.forEach(function (trandingSlideImg) {
+  trandingSlideImg.addEventListener('mouseenter', function () {
+    this.querySelector('img').style.display = 'none';
+    const video = this.querySelector('video');
+    video.style.display = 'block';
+    video.play();
+  });
 
-//   trandingSlideImg.addEventListener('mouseleave', function () {
-//     const video = this.querySelector('video');
-//     video.style.display = 'none';
-//     this.querySelector('img').style.display = 'block';
-//   });
-// });
+  trandingSlideImg.addEventListener('mouseleave', function () {
+    const video = this.querySelector('video');
+    video.pause();
+    video.style.display = 'none';
+    this.querySelector('img').style.display = 'block';
+  });
+});
 
   // Al hacer clic en slide poner en el centro
   var slides = document.querySelectorAll('.swiper-slide');  
@@ -193,12 +195,14 @@ checkboxIdiom.addEventListener('change', function() {
   changeLanguage()
 });
 
-// Cambiar SVG ingles cuando esta checked el input
+// Cambiar opacidad del SVG ingles cuando esta checked el input
 checkboxIdiom.addEventListener('change', () => {
   if (checkboxIdiom.checked) {
-    englishSVG.style.opacity = '0.5'; // Cambia la opacidad cuando el checkbox está marcado
+    englishSVG.style.opacity = '0.5'; 
+    english.style.opacity = '0.5'; 
   } else {
-    englishSVG.style.opacity = '1'; // Restaura la opacidad cuando el checkbox está desmarcado
+    englishSVG.style.opacity = '1'; 
+    english.style.opacity = '1'; 
   }
 });
 
