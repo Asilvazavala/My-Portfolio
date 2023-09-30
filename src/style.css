@@ -794,7 +794,7 @@ h1 {
 
   .tranding-slide .tranding-slide-img img {
     border-radius: .2rem;
-    height: 8.4rem !important;
+    /* height: 8.4rem !important; */
   }
 
   .tranding-slide .tranding-slide-img video {
@@ -811,7 +811,8 @@ h1 {
 
 .tranding-slide .tranding-slide-img img {
   width: 100%;
-  height: 10.7rem;
+  height: 10rem;
+  /* height: 10.7rem; */
   border-radius: 1rem;
 }
 
