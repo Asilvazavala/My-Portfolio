@@ -787,18 +787,20 @@ h1 {
 @media (max-width:500px) {
   .tranding-slide {
     width: 16.5rem !important;
-    height: 28rem !important;
+    height: 26rem !important;
     padding: .8rem !important;
     border-radius: .8rem !important;
   }
 
   .tranding-slide .tranding-slide-img img {
     border-radius: .2rem;
+    height: 8.4rem !important;
   }
 
-  .tranding-slider-control {
-    margin-top: 1.5rem;
+  .tranding-slide .tranding-slide-img video {
+    height: auto;
   }
+
 }
 
 .tranding-slide-img video {
