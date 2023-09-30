@@ -214,8 +214,8 @@ h1 {
 }
 
  .labelToggleTheme {
-  width: 30px;
-  height: 30px;
+  width: 25px;
+  height: 25px;
   border-radius: 50%;
   cursor: pointer;
   display: flex;
@@ -231,7 +231,7 @@ h1 {
 
  .sun {
   position: absolute;
-  font-size: 1.4rem;
+  font-size: 1.2rem;
   color: var(--blueStrong-black);
   transform: scale(0);
   transition: .5s ease;
@@ -244,7 +244,7 @@ h1 {
 }
 
  .moon {
-  font-size: 1.4rem;
+  font-size: 1.2rem;
   color: var(--blueStrong-black);
   transition: .5s ease;
   transition-delay: .5s;
@@ -260,8 +260,8 @@ h1 {
   position: absolute;
   display: block;
   background: var(--blueLight-white);
-  width: 30px;
-  height: 30px;
+  width: 25px;
+  height: 25px;
   border-radius: 50%;
   z-index: -1;
   transition: 1s;
