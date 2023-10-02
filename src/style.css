@@ -679,25 +679,6 @@ h1 {
   background: #f9f9f9;
 }
 
-.containerProjectsSlider {
-  max-width: 1050px;
-  padding: 0 1rem;
-  margin: 0 auto;
-}
-
-@media (max-width:1100px) {
-  .containerProjectsSlider {
-    max-width: 95vw;
-    padding: 0 .5rem;
-  }
-}
-
-
-#tranding {
-  padding: 0 0 4rem 0;
-  margin-bottom: 7rem;
-}
-
 .yellow-pink {
   background: linear-gradient(220.55deg, #FFED46 0%, #FF7EC7 100%);
   box-shadow: 0 0 20px rgba(255, 206, 0, 0.5), 0 0 20px rgba(255, 126, 199, 0.5);
@@ -734,8 +715,8 @@ h1 {
 }
 
 .amarillo-negro {
-  background: linear-gradient(220.55deg, #c6c661 0%, #303113 100%);
-  box-shadow: 0 0 20px rgba(198, 198, 97, 1), 0 0 20px rgba(48, 49, 19, 1);
+  background: linear-gradient(220.55deg, #c6c661 0%, #4a4c1f 100%);
+  box-shadow: 0 0 20px rgba(198, 198, 97, 1), 0 0 20px rgba(74, 76, 31, 1);
 }
 
 .verdeClaro-verdeObscuro {
@@ -763,6 +744,24 @@ h1 {
   box-shadow: 0 0 20px rgba(70, 67, 223, 1), 0 0 20px rgba(11, 10, 71, 1);
 }
 
+.containerProjectsSlider {
+  max-width: 1050px;
+  padding: 0 1rem;
+  margin: 0 auto;
+}
+
+@media (max-width:1100px) {
+  .containerProjectsSlider {
+    max-width: 95vw;
+    padding: 0 .5rem;
+  }
+}
+
+#tranding {
+  padding: 0 0 4rem 0;
+  margin-bottom: 7rem;
+}
+
 #tranding .tranding-slider {
   height: 33rem;
   padding: 2rem 0;
@@ -773,7 +772,6 @@ h1 {
   #tranding .tranding-slider {
     height: 34rem;
   }
-
 }
 
 .tranding-slide {
