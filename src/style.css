@@ -642,6 +642,11 @@ h1 {
   color: white;
 }
 
+.astroText {
+  background-color: #E54896;
+  color: white;
+}
+
 /* Proyectos */
 @media (min-width: 1440px) {
   html {
@@ -742,6 +747,11 @@ h1 {
 .azul-morado {
   background: linear-gradient(220.55deg, #4643DF 0%, #0B0A47 100%);
   box-shadow: 0 0 20px rgba(70, 67, 223, 1), 0 0 20px rgba(11, 10, 71, 1);
+}
+
+.rosa-azulFuerte {
+  background: linear-gradient(220.55deg, #FF5E98 0%, #0F213E 100%);
+  box-shadow: 0 0 20px rgba(255, 94, 152, 1), 0 0 20px rgba(15, 33, 62, 1);
 }
 
 .containerProjectsSlider {
@@ -956,8 +966,8 @@ h1 {
 }
 
 .tranding-slider-control .swiper-button-next {
-  left: 65% !important;
-  transform: translateX(-65%) !important;
+  left: 66% !important;
+  transform: translateX(-66%) !important;
   z-index: 100;
 }
 
@@ -982,8 +992,8 @@ h1 {
   width: 3.5rem;
   height: 3.5rem;
   border-radius: 50%;
-  left: 35%;
-  transform: translateX(-35%);
+  left: 34%;
+  transform: translateX(-34%);
   filter: drop-shadow(0px 8px 24px rgba(18, 28, 53, 0.1));
   font-size: 2rem;
   color: #222224;

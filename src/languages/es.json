@@ -47,6 +47,8 @@
     "project13Name": "Lista de tareas",
     "project14Description": "Renta cualquier carro fácil y rápido, cuenta con búsqueda por fabricante o modelo, renderizado condicional, modal con detalles del carro, diseño responsivo.",
     "project14Name": "Renta de carros",
+    "project15Description": "Sitio web para cliente, en el que al reservar una cita en la clínica te llega una notificación por correo, cuenta con modo oscuro/claro y es adaptable a celulares.",
+    "project15Name": "Clínica fisioterapia",
     "project1Description": "Noticias del FC Barcelona, tiene autenticación de usuario, CRUD de comentarios, base de datos, filtrado, renderizado condicional.",
     "project1Name": "Blog culemania",
     "project2Description": "Venta de ropa, cuenta con autenticación de usuario, pasarela de pago, filtros combinados, búsqueda, almacenamiento local, panel de administrador, reseñas.",
