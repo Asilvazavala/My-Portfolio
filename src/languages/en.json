@@ -49,6 +49,8 @@
     "project14Name": "Car rent",
     "project15Description": "Website for client, where when you book an appointment at the clinic you receive a notification by email, it has dark/light mode and is adaptable to cell phones.",
     "project15Name": "Physical clinic",
+    "project16Description": "Consult countries from all around the world, you can search, filter, and find more than 250 countries. Information consumed from an API.",
+    "project16Name": "Countries wikipedia",
     "project1Description": "FC Barcelona news, has user authentication, CRUD of comments, saving information in database, filtering, conditional rendering.",
     "project1Name": "Blog culemania",
     "project2Description": "Clothing sale, has user authentication, payment gateway, combined filters, search by name, local storage, dashboard admin, reviews.",

@@ -976,13 +976,8 @@ h1 {
 }
 
 @media (max-width:990px) {
+  .tranding-slider-control .swiper-button-prev,
   .tranding-slider-control .swiper-button-next {
-    display: none;
-  }
-}
-
-@media (max-width:990px) {
-  .tranding-slider-control .swiper-button-prev {
     display: none;
   }
 }
