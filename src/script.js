@@ -174,10 +174,10 @@ checkboxIdiom.addEventListener('change', function() {
 
   if (this.checked) {
     language = 'es'
-    btnCV.setAttribute('href', './documents/ANTONIO SILVA CV Espanol.pdf')
+    btnCV.setAttribute('href', './documents/ANTONIO SILVA FRONT-END CV Español.pdf')
   } else {
       language = 'en'
-      btnCV.setAttribute('href', './documents/ANTONIO SILVA CV English.pdf')
+      btnCV.setAttribute('href', './documents/ANTONIO SILVA FRONT-END CV English.pdf')
     }
 
   const changeLanguage = async () => {
