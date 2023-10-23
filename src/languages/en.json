@@ -46,7 +46,7 @@
     "project4Name": "Marketplace",
     "project4Description": "Clothing sale, has user authentication, payment gateway, combined filters, search by name, local storage, dashboard admin, reviews.",
     "project5Name": "Physical clinic",
-    "project5Description": "Website for client, where when you book an appointment at the clinic you receive a notification by email, it has dark/light mode and is adaptable to cell phones.",
+    "project5Description": "You can book an appointment at the clinic you receive a notification by email, it has dark/light mode and is adaptable to cell phones.",
     "project6Name": "Car rent",
     "project6Description": "Rent a car quick and easy, has search by make or model, conditional rendering, car details, responsive design.",
     "project7Name": "Age calculator",
