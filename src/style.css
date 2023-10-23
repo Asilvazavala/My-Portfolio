@@ -12,7 +12,7 @@
 
   --blueStrong-blueLight: #024c81;
   --blueStrong-black: #000;
-  --white-blueStrong: #081b29;
+  --white-blueStrong: #0B1120;
   --linear-grad: linear-gradient(160deg, #0093E9 0%, #80D0C7 100%);
   --linear-grad-exp: linear-gradient(90deg, rgb(232, 232, 232) 0,transparent);
 
@@ -29,10 +29,10 @@ body.dark {
   --blueLight-black: #00abf0;
   --blueLight-white: #00abf0;
   --blueLight-blueStrong: #0093E9;
-  --blueMedium-whiteLight: #122939;
+  --blueMedium-whiteLight: #0e1525;
 
-  --blueStrong-blueLight: #081b29;
-  --blueStrong-black: #081b29;
+  --blueStrong-blueLight: #0B1120;
+  --blueStrong-black: #0B1120;
   --white-blueStrong: #fff;
   --linear-grad: linear-gradient(160deg, #0093E9 0%, #80D0C7 100%);
   --linear-grad-exp: linear-gradient(90deg, #122939 0,transparent);
@@ -439,7 +439,7 @@ h1 {
 .hero-imagen-inferior {
   margin-top: -50px;
   margin-bottom: 50px;
-  filter: drop-shadow(8px 8px 4px #081b29);
+  filter: drop-shadow(8px 8px 4px #0B1120);
 }
 
 /* Sobre mi */
@@ -638,7 +638,7 @@ h1 {
 }
 
 .codeLiveText {
-  background-color: #081b29;
+  background-color: #0B1120;
   color: white;
 }
 
@@ -948,7 +948,7 @@ h1 {
 }
 
 .buttons-Projects i:hover {
-  color: #081b29;
+  color: #0B1120;
 }
 
 
