@@ -648,13 +648,13 @@ h1 {
 }
 
 /* Proyectos */
-@media (min-width: 2560px) {
+@media (min-width: 2000px) {
   html {
-    zoom: 1.4;
+    zoom: 1.5;
   }
 }
 
-@media (min-width: 3860px) {
+@media (min-width: 3000px) {
   html {
     zoom: 2;
   }
