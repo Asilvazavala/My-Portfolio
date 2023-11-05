@@ -167,7 +167,7 @@ h1 {
   position: absolute;
   top: 21px;
   right: 30px;
-  transition: color 1s ease-in-out 0s, background 1s ease-in-out 0s;
+  transition: color .3s ease-in-out 0s, background .3s ease-in-out 0s;
   background: var(--blueLight-white);
   font-size: 1rem;
 }
