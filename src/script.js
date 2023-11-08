@@ -61,25 +61,6 @@ document.addEventListener('DOMContentLoaded', function () {
     },
   });
 
- // Agregar eventos a cada imagen y video
-//  const trandingSlideImgs = document.querySelectorAll('.tranding-slide-img');
-
-//  trandingSlideImgs.forEach(function (trandingSlideImg) {
-//   trandingSlideImg.addEventListener('mouseenter', function () {
-//     this.querySelector('img').style.display = 'none';
-//     const video = this.querySelector('video');
-//     video.style.display = 'block';
-//     video.play();
-//   });
-
-//   trandingSlideImg.addEventListener('mouseleave', function () {
-//     const video = this.querySelector('video');
-//     video.pause();
-//     video.style.display = 'none';
-//     this.querySelector('img').style.display = 'block';
-//   });
-// });
-
   // Al hacer clic en slide poner en el centro
   var slides = document.querySelectorAll('.swiper-slide');  
   slides.forEach(function (slide, index) {
