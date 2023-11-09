@@ -820,25 +820,22 @@ h1 {
   transform: translateY(-72%)
 }
 
-.imgClinica img:hover {
-  transform: translateY(-80%)
-}
-
 .imgMySeam img:hover,
+.imgClinica img:hover {
+  transform: translateY(-78%)
+}
+
+.imgCar img:hover,
 .imgCountries img:hover {
-  transform: translateY(-76%)
-}
-
-.imgPokemon img:hover {
-  transform: translateY(-57%)
-}
-
-.imgCar img:hover {
   transform: translateY(-74%)
 }
 
+.imgPokemon img:hover {
+  transform: translateY(-55%)
+}
+
 .imgShorter img:hover {
-  transform: translateY(-65%)
+  transform: translateY(-63%)
 }
 
 .imgGym img:hover {
@@ -1572,6 +1569,32 @@ footer p {
 
   .tranding-slide .tranding-slide-img img {
     border-radius: .2rem;
+  }
+
+  .imgBlog img:hover {
+    transform: translateY(-65%)
+  }
+  
+  .imgMySeam img:hover,
+  .imgClinica img:hover {
+    transform: translateY(-71%)
+  }
+  
+  .imgCar img:hover,
+  .imgCountries img:hover {
+    transform: translateY(-67%)
+  }
+  
+  .imgPokemon img:hover {
+    transform: translateY(-46%)
+  }
+  
+  .imgShorter img:hover {
+    transform: translateY(-56%)
+  }
+  
+  .imgGym img:hover {
+    transform: translateY(-83%)
   }
 
 }
