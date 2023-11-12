@@ -807,18 +807,18 @@ h1 {
 .imgCar img,
 .imgClinica img,
 .imgMySeam img {
-  transition: 15s;
+  transition: 7s linear;
 }
 
 .imgGym img {
-  transition: 20s;
+  transition: 10s linear;
 }
 
 .imgShorter img,
 .imgPokemon img,
 .imgCountries img,
 .imgBlog img {
-  transition: 10s;
+  transition: 5s linear;
 }
 
 .imgBlog img:hover {
