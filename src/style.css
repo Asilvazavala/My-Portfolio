@@ -709,8 +709,8 @@ h1 {
 }
 
 .rojo-rojoFuerte {
-  background: linear-gradient(220.55deg, #FF607D 0%, #652531 100%);
-  box-shadow: 0 0 20px rgba(255, 96, 125, 1), 0 0 20px rgba(101, 37, 49, 1);
+  background: linear-gradient(220.55deg, #FF607D 0%, #300B12 100%);
+  box-shadow: 0 0 20px rgba(255, 96, 125, 1), 0 0 20px rgba(48, 11, 18, 1);
 }
 
 .amarillo-negro {
@@ -746,6 +746,11 @@ h1 {
 .rosa-azulFuerte {
   background: linear-gradient(220.55deg, #FF5E98 0%, #0F213E 100%);
   box-shadow: 0 0 20px rgba(255, 94, 152, 1), 0 0 20px rgba(15, 33, 62, 1);
+}
+
+.azulCyan-azulFuerte {
+  background: linear-gradient(220.55deg, #259EAC 0%, #16565D 100%);
+  box-shadow: 0 0 20px rgba(37, 158, 172, 1), 0 0 20px rgba(22, 86, 93, 1);
 }
 
 .containerProjectsSlider {
