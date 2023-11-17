@@ -1242,6 +1242,7 @@ footer p {
 @media (max-width:500px) {
   .main {
     padding-top: 3rem;
+    padding: 0 1.2em 3em 1.2em;
   }
 }
 
@@ -1542,7 +1543,7 @@ footer p {
    }
 
   .seccion-texto {
-    padding: 0 35px;
+    padding: 0 1.5rem;
   }
 
   .boton-demo,
@@ -1562,6 +1563,16 @@ footer p {
 }
 
 @media (max-width:500px) {
+  .navbar {
+    padding-left: .4rem;
+  }
+
+  .toggler {
+    margin-right: -.7rem;
+    padding-top: .35rem;
+    padding-bottom: .35rem;
+  }
+
   .tranding-slide {
     width: 16.5rem !important;
     height: 26rem !important;
