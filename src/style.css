@@ -718,11 +718,6 @@ h1 {
   box-shadow: 0 0 20px rgba(198, 198, 97, 1), 0 0 20px rgba(74, 76, 31, 1);
 }
 
-.verdeClaro-verdeObscuro {
-  background: linear-gradient(220.55deg, #61C695 0%, #133114 100%);
-  box-shadow: 0 0 20px rgba(97, 198, 149, 1), 0 0 20px rgba(19, 49, 20, 1);
-}
-
 .cyan-azul {
   background: linear-gradient(220.55deg, #3793FF 0%, #0017E4 100%);
   box-shadow: 0 0 20px rgba(55, 147, 255, 1), 0 0 20px rgba(0, 23, 228, 1);
@@ -751,6 +746,11 @@ h1 {
 .azulCyan-azulFuerte {
   background: linear-gradient(220.55deg, #259EAC 0%, #16565D 100%);
   box-shadow: 0 0 20px rgba(37, 158, 172, 1), 0 0 20px rgba(22, 86, 93, 1);
+}
+
+.verdeClaro-verdeObscuro {
+  background: linear-gradient(220.55deg, #16A085 0%, #133114 100%);
+  box-shadow: 0 0 20px rgba(22, 160, 133, 1), 0 0 20px rgba(19, 49, 20, 1);
 }
 
 .containerProjectsSlider {
@@ -810,6 +810,7 @@ h1 {
   transition: 7s linear;
 }
 
+.imgRealState img,
 .imgGym img {
   transition: 10s linear;
 }
@@ -841,6 +842,10 @@ h1 {
 
 .imgShorter img:hover {
   transform: translateY(-63%)
+}
+
+.imgRealState img:hover {
+  transform: translateY(-83%)
 }
 
 .imgGym img:hover {
@@ -1600,6 +1605,10 @@ footer p {
   
   .imgGym img:hover {
     transform: translateY(-83%)
+  }
+
+  .imgRealState img:hover {
+    transform: translateY(-80%)
   }
 
 }
