@@ -1656,6 +1656,14 @@ footer p {
     transform: translateY(-80%)
   }
 
+  .imgDashboard img:hover {
+    transform: translateY(-2%)
+  }
+  
+  .imgEcommerceBurger img:hover {
+    transform: translateY(-53%)
+  }
+
 }
 
 @media screen and (max-width: 473px) {
