@@ -602,6 +602,11 @@ h1 {
   color: black;
 }
 
+.mysqlText {
+  background-color: #0e88c0;
+  color: black;
+}
+
 .nodejsText {
   background-color: #83CD29;
   color: black;
@@ -703,6 +708,11 @@ h1 {
   box-shadow: 0 0 20px rgba(255, 137, 109, 1), 0 0 20px rgba(208, 32, 32, 1);
 }
 
+.naranjaOscuro-naranja {
+  background:  linear-gradient(220.55deg, #EC7C6A 0%, #e84930 100%);
+  box-shadow: 0 0 20px rgba(236, 124, 106, 1), 0 0 20px rgba(232, 73, 48, 1);
+}
+
 .verde-azul {
   background: linear-gradient(220.55deg, #439b3b 0%, #147ada 100%);
   box-shadow: 0 0 20px rgba(67, 155, 59, 1), 0 0 20px rgba(20, 122, 218, 1);
@@ -736,6 +746,16 @@ h1 {
 .azul-morado {
   background: linear-gradient(220.55deg, #4643DF 0%, #0B0A47 100%);
   box-shadow: 0 0 20px rgba(70, 67, 223, 1), 0 0 20px rgba(11, 10, 71, 1);
+}
+
+.azulFuerte-morado {
+  background: linear-gradient(220.55deg, #0a2260 0%, #05102b 100%);
+  box-shadow: 0 0 20px rgba(10, 34, 96, 1), 0 0 20px rgba(5, 16, 43, 1);
+}
+
+.azul-indigo {
+  background: linear-gradient(220.55deg, #2d3a47 0%, #334a5e 100%);
+  box-shadow: 0 0 20px rgba(45, 58, 71, 1), 0 0 20px rgba(51, 74, 94, 1);
 }
 
 .rosa-azulFuerte {
@@ -804,6 +824,7 @@ h1 {
   height: auto;
 }
 
+.imgEcommerceBurger img,
 .imgCar img,
 .imgClinica img,
 .imgMySeam img {
@@ -813,6 +834,10 @@ h1 {
 .imgRealState img,
 .imgGym img {
   transition: 10s linear;
+}
+
+.imgDashboard img {
+  transition: 2s linear;
 }
 
 .imgShorter img,
@@ -834,6 +859,14 @@ h1 {
 .imgCar img:hover,
 .imgCountries img:hover {
   transform: translateY(-74%)
+}
+
+.imgDashboard img:hover {
+  transform: translateY(-8%)
+}
+
+.imgEcommerceBurger img:hover {
+  transform: translateY(-61%)
 }
 
 .imgPokemon img:hover {
