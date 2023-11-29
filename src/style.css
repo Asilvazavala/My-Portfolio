@@ -657,6 +657,11 @@ h1 {
   color: white;
 }
 
+.websiteX5Text {
+  background-color: #232323;
+  color: white;
+}
+
 /* Proyectos */
 @media (min-width: 2000px) {
   html {
@@ -689,8 +694,8 @@ h1 {
 }
 
 .yellow-pink {
-  background: linear-gradient(220.55deg, #FFED46 0%, #FF7EC7 100%);
-  box-shadow: 0 0 20px rgba(255, 206, 0, 0.5), 0 0 20px rgba(255, 126, 199, 0.5);
+  background: linear-gradient(220.55deg, #FFED46 0%, #b8287a 100%);
+  box-shadow: 0 0 20px rgba(255, 206, 0, 1), 0 0 20px rgba(184, 40, 122, 1);
 }
 
 .lila-morado {
@@ -698,9 +703,9 @@ h1 {
   box-shadow: 0 0 20px rgba(222, 181, 255, 1), 0 0 20px rgba(111, 0, 179, 1);
 }
 
-.rojo-azul {
-  background: linear-gradient(220.55deg, #D7003A 0%, #19087E 100%);
-  box-shadow: 0 0 20px rgba(215, 0, 58, 1), 0 0 20px rgba(25, 8, 126, 1);
+.verde-azulClaro {
+  background: linear-gradient(220.55deg, #027c02 0%, #0482ab 100%);
+  box-shadow: 0 0 20px rgba(2, 124, 2, 1), 0 0 20px rgba(4, 130, 171, 1);
 }
 
 .rosa-rojo {
@@ -743,9 +748,9 @@ h1 {
   box-shadow: 0 0 20px rgba(255, 195, 40, 1), 0 0 20px rgba(226, 0, 0, 1);
 }
 
-.morado-rosa {
-  background: linear-gradient(220.55deg, #947cc3 0%, #3D3056 100%);
-  box-shadow: 0 0 20px rgba(148, 124, 195, 1), 0 0 20px rgba(61, 48, 86, 1);
+.vino-rojo {
+  background: linear-gradient(220.55deg, #D20404 0%, #400000 100%);
+  box-shadow: 0 0 20px rgba(210, 4, 4, 1), 0 0 20px rgba(64, 0, 0, 1);
 }
 
 .azul-morado {
@@ -829,11 +834,17 @@ h1 {
   height: auto;
 }
 
+
+.imgBank img,
 .imgEcommerceBurger img,
 .imgCar img,
 .imgClinica img,
 .imgMySeam img {
   transition: 7s linear;
+}
+
+.imgValle img {
+  transition: 13s linear;
 }
 
 .imgRealState img,
@@ -852,8 +863,16 @@ h1 {
   transition: 5s linear;
 }
 
+.imgBank img:hover {
+  transform: translateY(-69%)
+}
+
 .imgBlog img:hover {
   transform: translateY(-72%)
+}
+
+.imgValle img:hover {
+  transform: translateY(-79%)
 }
 
 .imgMySeam img:hover,
@@ -910,8 +929,8 @@ h1 {
 }
 
 .project-description {
-  color: #d0d0d0;
-  font-weight: 500;
+  color: #bbbbbb;
+  font-weight: 400;
   font-size: 1rem;
   margin-top: -.3rem;
 }
@@ -1631,10 +1650,18 @@ footer p {
     border-radius: .2rem;
   }
 
+  .imgBank img:hover {
+    transform: translateY(-62%)
+  }
+
   .imgBlog img:hover {
     transform: translateY(-65%)
   }
   
+  .imgValle img:hover {
+    transform: translateY(-72%)
+  }
+
   .imgMySeam img:hover,
   .imgClinica img:hover {
     transform: translateY(-71%)
