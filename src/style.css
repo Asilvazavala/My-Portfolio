@@ -1873,6 +1873,10 @@ footer p {
     margin-left: 200px;
   }
 
+  .separator {
+    left: -1px;
+  }
+
 }
 
 @media screen and (max-width: 420px){
