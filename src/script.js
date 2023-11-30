@@ -17,6 +17,148 @@ const menuBackDrop = document.querySelector('#menu-backdrop');
 const btnCV = document.getElementById('btnCV');
 const navbar = document.querySelector('.navbar');
 
+const experiences = [
+  {
+    year: 2023,
+    icon: '<i class="bx bxl-angular"></i>',
+    title: 'Today',
+    description: 'Currently learning Astro and Angular doing projects and improving my english conversation.'
+  },
+    {
+    year: '',
+    icon: '<i class="bx bx-buildings"></i>',
+    title: 'Project',
+    description: 'Finished real estate project learning new libraries like Leaflet or Framer Motion.'
+  },
+  {
+    year: '',
+    icon: '<i class="bx bx-calendar-check"></i>',
+    title: 'Page',
+    description: 'Improving and updating content and responsive design of the Valle de Santiago page.'
+  },
+  {
+    year: '',
+    icon: '<i class="bx bxl-tailwind-css"></i>',
+    title: 'Challenges',
+    description: 'Finished more than 10 challenges from Frontend Mentor page learning new technologies like Tailwind or Next.js.'
+  },
+  { 
+    year: 2022,
+    icon: '<i class="bx bxl-typescript"></i>',
+    title: 'Improving skills',
+    description: 'Practicing and learning TypeScript, Next.js, Tailwind and PostgreSQL creating various projects.'
+  },
+  {
+    year: '',
+    icon: '<i class="bx bx-cart"></i>',
+    title: 'Project',
+    description: 'Finished e-commerce project learning new technologies such as Clerk, MySQL and Stripe, creating an administrator panel to manage sales.'
+  },
+  {
+    year: '',
+    icon: '<i class="bx bx-briefcase"></i>',
+    title: 'Work',
+    description: 'Freelance work at Henry, carrying out several full-stack projects individually and as a team.'
+  },
+  {
+    year: '',
+    icon: '<i class="bx bx-football"></i>',
+    title: 'Project',
+    description: 'Finished blog project, learning techs like Auth0 and Express, focused on news about my favorite team, FC Barcelona.'
+  },
+  {
+    year: 2021,
+    icon: '<i class="bx bxl-react"></i>',
+    title: 'Improving skills',
+    description: 'Practicing and learning JavaScript, React, Redux and Node.js creating various projects.'
+  },
+  {
+    year: 2020,
+    icon: '<i class="bx bxl-php"></i>',
+    title: 'First project',
+    description: 'Creation of an internal page in PHP to manage the database of beneficiaries of a government program.'
+  },
+  {
+    year: 2015,
+    icon: '<i class="bx bx-briefcase"></i>',
+    title: 'Work',
+    description: 'I got my first job, in the government as a technician, performing hardware and software maintenance on PCs and printers.'
+  },
+];
+
+const experiencesContainer = document.getElementById('experiencesContainer');
+let activeExperience = null;
+
+experiences.forEach((experience, index) => {
+  const article = document.createElement('article');
+  const contentContainer = document.createElement('div');
+  const informationContainer = document.createElement('div');
+  const separatorContainer = document.createElement('div');
+  const yearSpan = document.createElement('span');
+  const line = document.createElement('div');
+  const iconContainer = document.createElement('div');
+  const titleH2 = document.createElement('h2');
+  const descriptionP = document.createElement('p');
+  const separator = document.createElement('div');
+
+  titleH2.dataset.section = 'about'; 
+  titleH2.dataset.value = `title-experience-${index}`;
+
+  descriptionP.dataset.section = 'about'; 
+  descriptionP.dataset.value = `desciption-experience-${index}`;
+
+  article.classList.add('experience-article');
+  contentContainer.classList.add('content-container');
+  separatorContainer.classList.add('separator-container');
+  informationContainer.classList.add('information-container');
+  line.classList.add('vertical-line');
+  iconContainer.classList.add('experience-icon');
+  
+  yearSpan.classList.add('experience-year');
+  titleH2.classList.add('experience-title');
+  descriptionP.classList.add('experience-description');
+  separator.classList.add('separator');
+
+  yearSpan.innerText = experience.year;
+  iconContainer.insertAdjacentHTML('beforeend', experience.icon);
+  titleH2.innerText = experience.title;
+  descriptionP.innerText = experience.description;
+
+  if (index !== experiences.length - 1) {
+    separator.innerHTML = `<span class="symbol-space">|</span> <span class="symbol-space">|</span> <span class="symbol-space">|</span> <span class="symbol-space">|</span> <span class="symbol-space">|</span> <span class="symbol-space">|</span> <span class="symbol-space">|</span> <span class="symbol-space">|</span> <span class="symbol-space">|</span> <span class="symbol-space">|</span> <span class="symbol-space">|</span>`;
+  }
+
+  line.appendChild(separator);
+  separatorContainer.appendChild(line);
+
+  informationContainer.appendChild(titleH2);
+  informationContainer.appendChild(descriptionP);
+
+  contentContainer.appendChild(yearSpan);
+  contentContainer.appendChild(separatorContainer);
+  contentContainer.appendChild(iconContainer);
+  contentContainer.appendChild(informationContainer);
+
+  article.appendChild(contentContainer);
+
+  article.addEventListener('mouseover', () => {
+    setActiveExperience(article);
+  });
+
+  experiencesContainer.appendChild(article);
+});
+
+setActiveExperience(experiencesContainer.firstElementChild);
+
+function setActiveExperience(experience) {
+  if (activeExperience) {
+    activeExperience.classList.remove('active');
+  }
+
+  experience.classList.add('active');
+  activeExperience = experience;
+}
+
 function addEffectNavbar() {
   navbar.classList.add('scrolling');
   navbar.style.background = 'rgba(0, 0, 0, 0.2)';

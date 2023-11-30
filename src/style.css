@@ -559,6 +559,10 @@ h1 {
   font-size: 1.7rem;
 }
 
+#descriptionSobreMi {
+  margin-bottom: 3rem;
+}
+
 .numberAbout {
   background-clip: text;
   -webkit-background-clip: text;
@@ -569,6 +573,129 @@ h1 {
   letter-spacing: .2rem;
   margin-bottom: -.7rem;
 }
+
+#experiencesContainer {
+  display: flex;
+  margin-top: 5rem;
+  max-width: 1000px;
+  min-height: 380px;
+  overflow-x: auto;
+  overflow-y: hidden;
+}
+
+.content-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  position: relative;
+}
+
+.separator-container {
+  display: flex;
+  margin-top: 2rem;
+  position: relative;
+}
+
+.vertical-line {
+  display: flex;
+  height: 40px;
+  width: 2px;
+  background-color: gray;
+  transition: height 0.5s;
+  margin-right: 7rem;
+  margin-left: 1rem;
+}
+
+.separator {
+  position: absolute;
+  top: -10px;
+  left: 0;
+  width: 150px;
+}
+
+.symbol-space {
+  margin-left: 0.3rem;
+  font-size: .7rem;
+  color: gray;
+}
+
+.experience-article {
+  display: flex;
+  flex-direction: column;
+  max-height: 50px;
+}
+
+.experience-article.active .vertical-line {
+  height: 100px;
+  background-color: var(--blueLight-white);
+  width: 2px;
+}
+
+.experience-year {
+  color: gray;
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
+.experience-icon {
+  color: gray;
+  font-size: 1.5rem;
+  margin-right: 6rem;
+}
+
+.experience-article.active .experience-year,
+.experience-article.active .experience-icon {
+  color: white;
+}
+
+.experience-article.active .experience-title,
+.experience-article.active .experience-description {
+  display: block;
+  transition: opacity 0.5s;
+  margin-right: 6rem;
+}
+
+.experience-article:first-child .experience-title {
+  margin-right: 60px;
+}
+
+.experience-article:first-child .experience-description {
+  margin-left: 280px;
+  text-align: left;
+}
+
+.experience-article:last-child .experience-title,
+.experience-article:last-child .experience-description {
+  margin-right: 150px;
+  text-align: left;
+}
+
+.information-container {
+  position: absolute;
+  display: flex;
+  flex-direction: column;
+  gap: 0;
+  margin-top: 11rem;
+}
+
+.experience-title,
+.experience-description {
+  display: none;
+}
+
+.experience-title {
+  position: relative;
+  font-size: 1.5rem;
+}
+
+.experience-description {
+  color: gray !important;
+  min-width: 300px;
+  line-height: 1.5rem !important;
+}
+
+/* Proyectos */
 
 
 .javascriptText {
@@ -1536,6 +1663,11 @@ footer p {
   .overlay {
     opacity: 1;
   }
+
+  #experiencesContainer {
+    max-width: 80vw;
+  }
+
 }
 
 @media screen and (max-width: 767px) {
@@ -1731,6 +1863,14 @@ footer p {
     margin: 0 auto;  
     margin-top: 30px;
     margin-bottom: 10px;
+  }
+
+  .experience-description {
+    min-width: 230px;
+  }
+
+  .experience-article:first-child .experience-description {
+    margin-left: 200px;
   }
 
 }

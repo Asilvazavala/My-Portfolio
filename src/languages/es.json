@@ -4,7 +4,11 @@
     "description": "Vivo en el estado de Guanajuato en México, me especializo en JavaScript, React y TailwindCSS para crear hermosas experiencias de usuario. Me encanta resolver problemas, afrontar nuevos retos y alcanzar objetivos.<br><br>También tengo 8 años de experiencia trabajando como técnico de mantenimiento. Tengo un título en ingeniería en tecnologías de la información.<br><br>Algunas palabras que me describen: proactivo, perseverante, trabajador en equipo. Siempre estoy en formación, actualmente estoy aprendiendo AWS y Astro. Me encanta el fútbol, los videojuegos y la tecnología.",
     "textAbout1": "Año Dev",
     "textAbout2": "Proyectos",
-    "textAbout3": "Certificaciones"
+    "textAbout3": "Certificaciones",
+    "title-experience-1": "H",
+    "title-experience-2": "Y",
+    "title-experience-3": "U",
+    "desciption-experience-0": "Hola"
   },
   "contact": {
     "contact": "Contacto",
