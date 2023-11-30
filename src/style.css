@@ -1873,8 +1873,10 @@ footer p {
     margin-left: 200px;
   }
 
-  .separator {
-    left: -5px;
+  .vertical-line {
+    width: 3px;
+    margin-right: 7rem;
+    margin-left: 1rem;
   }
 
 }
