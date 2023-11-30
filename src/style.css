@@ -1874,9 +1874,7 @@ footer p {
   }
 
   .vertical-line {
-    width: 3px;
-    margin-right: 7rem;
-    margin-left: 1rem;
+    margin-left: 1.1rem;
   }
 
 }
