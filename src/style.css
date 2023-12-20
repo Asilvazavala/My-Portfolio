@@ -1049,17 +1049,18 @@ h1 {
 .project-name {
   color: white !important;
   font-weight: bolder;
-  font-size: 1.7rem;
+  font-size: 1.6rem;
   transition-property: opacity;
   transition: .3s ease;
   width: fit-content;
+  margin-top: -.2rem;
 }
 
 .project-description {
   color: #bbbbbb;
   font-weight: 400;
   font-size: 1rem;
-  margin-top: -.3rem;
+  margin-top: -.5rem;
 }
 
 .slide-content-footer {
