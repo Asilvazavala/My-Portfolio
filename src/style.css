@@ -876,8 +876,8 @@ h1 {
 }
 
 .vino-rojo {
-  background: linear-gradient(220.55deg, #D20404 0%, #400000 100%);
-  box-shadow: 0 0 20px rgba(210, 4, 4, 1), 0 0 20px rgba(64, 0, 0, 1);
+  background: linear-gradient(220.55deg, #9E3451 0%, #691D33 100%);
+  box-shadow: 0 0 20px rgba(158, 52, 81, 1), 0 0 20px rgba(105, 29, 51, 1);
 }
 
 .azul-morado {
@@ -971,7 +971,7 @@ h1 {
 }
 
 .imgValle img {
-  transition: 13s linear;
+  transition: 10s linear;
 }
 
 .imgRealState img,
@@ -999,7 +999,7 @@ h1 {
 }
 
 .imgValle img:hover {
-  transform: translateY(-79%)
+  transform: translateY(-78%)
 }
 
 .imgMySeam img:hover,
@@ -1791,7 +1791,7 @@ footer p {
   }
   
   .imgValle img:hover {
-    transform: translateY(-72%)
+    transform: translateY(-73%)
   }
 
   .imgMySeam img:hover,
